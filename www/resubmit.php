@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Developer 2 Homework</title>
+</head>
 <body>
 
 <h1>Developer 2 Homework</h1>
