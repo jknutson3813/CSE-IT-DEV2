@@ -4,6 +4,7 @@ This repository is for the homework assignment requested as part of the process 
 
 Primary Files
 ---------------
+ReadMe.txt
 www/index.html
 www/resubmit.php
 www/submit_form.php
@@ -46,4 +47,4 @@ and monolog.
 ** Incomplete **
 ● Bonus points for using Laravel.
 * Explanation
-- Setting up Docker Desktop to run in a VMWare Desktop virtual environment proved to be complicated because VMWare v16 does not support nest virtualization.  Due to time constraints, the Laravel portion was not completed.
+- Setting up Docker Desktop to run in a VMWare Desktop virtual environment proved to be complicated because VMWare v16 does not support nested virtualization.  Due to time constraints, the Laravel portion was not completed.
