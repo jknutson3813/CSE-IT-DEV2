@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" method="upgrade">
+	<name>sv-SE_joomla_lang_full_4.2.5v1</name>
+	<packagename>sv-SE</packagename>
+	<version>4.2.5.1</version>
+	<creationDate>2022-11-08</creationDate>
+	<author>Swedish Joomla translator team - SvenskJoomla</author>
+	<authorEmail>info@svenskjoomla.se</authorEmail>
+	<authorUrl>https://www.svenskjoomla.se</authorUrl>
+	<copyright>Copyright (C) 2005 - 2022 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url></url>
+	<packager></packager>
+	<packagerurl></packagerurl>
+	<description><![CDATA[<h1><strong>Svensk översättning för Joomla! 4.2.5 version 1 </strong></h1><h4>Översatt av SvenskJoomla - Stefan Gagner, Sune Hultman, Henrik Mattson-Mårn, Oscar Signell och många fler som bidragit genom åren. Inget tidigare arbete har gått till spillo.</h4><hr /><h4>Besök gärna vår hemsida <a href="https://www.svenskjoomla.se">svenskjoomla.se och stöd vårt arbete.</a></h4><hr />]]></description>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files>
+		<folder type="language" client="site" id="sv-SE">language/sv-SE</folder>
+		<folder type="language" client="administrator" id="sv-SE">administrator/language/sv-SE</folder>
+		<folder type="language" client="api" id="sv-SE">api/language/sv-SE</folder>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_4.xml</server>
+	</updateservers>
+</extension>

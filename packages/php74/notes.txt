@@ -1,0 +1,16 @@
+1. Add ssh2 extension from :
+https://pecl.php.net/package/ssh2
+
+Choose Windows DLL download option. 
+Currently we are offerring SSH v1.3.1 Beta
+
+2. Add ioncube loader
+
+3. check xdebug.dll in lib 
+
+4. copy opcache.dll from ext to lib 
+
+5. Add cacert.pem in extras/ssl/cacert.pem from old package
+
+6. Add mongodb.dll in ext from :
+https://pecl.php.net/package/mongodb

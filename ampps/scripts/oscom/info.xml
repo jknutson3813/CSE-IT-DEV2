@@ -1,0 +1,64 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/osCommerce
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/osCommerce
+	</ratings>
+	<space>
+		579047596
+	</space>
+	<support>
+		http://www.oscommerce.com
+	</support>
+	<version>
+		4.11.55722
+	</version>
+	<mod>21</mod>
+	<release_date>03-03-2023</release_date>
+	<admin>admin/login</admin>
+	<softversion>
+		5.9.2
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.31" />
+	<requirement check="php" type="extension" name="zlib" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">osCommerce</font> is an online shop e-commerce solution that offers a wide range of out-of-the-box features that allows online stores to be setup fairly quickly with ease, and is available for free as an Open Source based solution.
+		<br /><br />
+		osCommerce is released under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU/GPL license</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Compatible with all PHP 4 versions</li>
+<li>All features enabled by default for a complete out-of-the-box solution</li>
+<li>Object oriented backend (3.0)</li>
+<li>Supports unlimited products and categories </li>
+<li>Add/Edit/Remove categories, products, manufacturers, customers, and reviews</li>
+<li>Support for physical (shippable) and virtual (downloadable) products</li>
+<li>Administration area secured with a username and password defined during installation</li>
+<li>Contact customers directly via email or newsletters</li>
+<li>Easily backup and restore the database</li>
+<li>Print invoices and packaging lists from the order screen</li>
+<li>Statistics for products and customers</li>
+<li>Multicurrency support</li>
+<li>Select what to display, and in what order, in the product listing page</li>
+<li>Support for static and dynamic banners with full statistics</li>
+</ul>
+		</english-features>
+		<english-ad_pin>Store Pincode number</english-ad_pin>
+		<english-invalid_pincode>Please enter a Valid Pincode for the Store.</english-invalid_pincode>
+	</languages>
+</soft>

@@ -1,0 +1,98 @@
+Version 7.2.11
+
+(Release: March 6, 2023)
+
+Enhancements 🚀
+
+    Account for dictionary words when calculating password rank; #1806
+
+Bug Fixes 💃🐛
+
+    Resolved #3048 where entry preview on mobile was broken
+    Resolved #3035 where enabling front-end editing on very complex templates could cause some tags to be not parsed
+    Resolved #3028 where categories tab drag-and-drop re-ordering was not working
+    Resolved issue where turning on front-end editing could cause some tags to not render correctly
+    Resolved issue where CKeditor table in vertical Grid didn’t render correctly when creating a new entry
+    Resolved #2775 where approved members could have Pending as secondary role
+
+Developers 💻
+
+    Resolved #3030 where property in Channel module has wrong visibility
+
+ExpressionEngine 7.2.10
+
+Bug Fixes 💃🐛
+
+    Resolved #2847 where some jump menu items were showing data from other MSM sites
+    Resolved issue where performing post-upgrade checks could show PHP error
+    Resolved issue where PHP notice could be shown on Live Preview when invoked from Entries prolet
+    Resolved #2481 where member count query was suboptimal
+    Resolved an issue where the author filter could have a missing label.
+    Resolved #2838 where the new related entry modal generates JS errors
+    Resolved issue when saving Grid field from third-party code could behave incorrectly
+    Resolved #2233 where cloning entry without comments could generate PHP deprecation notices
+    Resolved #2829 where entry search in mobile view was not working
+
+ExpressionEngine 7.2.9
+
+    no changes
+
+Version 7.2.8
+
+Enhancements 🚀
+
+    Added initial PHP 8.2 compatibility
+    Added options for different display layouts for File Grid fields; #2764
+
+Bug Fixes 💃🐛
+
+    Resolved issue when files on non-local filesystem could not be resized or cropped from CP
+    Resolved #2759 where a checkbox field with the name of "statuses" did not always render correctly
+    Resolved #2758 where reordering did not always work properly in third-party grids
+    Resolved #2761 where Structure could show PHP warning when used with third-party forms
+    Resolved issue where validation error was not properly thrown when saving a Grid in a Pro Variable
+    Resolved issue where saving Fluid without fields could result in PHP error
+
+Version 7.2.7
+
+(Release: January 17, 2023)
+
+    Enhancements 🚀
+        Added ability to set template engine in template manager
+
+    Bug Fixes 💃🐛
+        Resolved #2759 where checkbox field with the name of “statuses” does not render correctly
+        Resolved #2661 where is was not possible to search template group and template at the same time in Pages tab
+        Resolved #2437 where building Pro Search Collection via URL did not work properly
+        Resolved #2667 where errors for password resetting were not shown properly
+        Resolved #2739 where PHP notice could have been shown when accessing plugin documentation when using PHP 8.1
+        Resolved issue where Channel Form grid has extra unneeded column
+        Resolved #2735 where Text Formatter could show deprecation notices when using PHP 8.1
+
+Version 7.2.6
+
+(Release: January 10, 2023)
+
+Important: This version includes important security updates.
+
+    Enhancements 🚀
+        Add additional HTML elements to CP stylesheet; #2685
+        Allow swatches in Colorpicker fieldtype to have names
+        Retain pagination and filters on Entry Manager page after saving & closing entry; #111
+        Improved Pro Search collections page UI
+        Resolved #2658 where some parameters were not available for member management forms
+
+    Bug Fixes 💃🐛
+        Resolved #2663 where forgot password form could generate erroneous reset URLs
+        Resolved #2500 where reordering Grid with images had some issues
+        Resolved #2571 where using exp:channel:categories with no categories assigned could show PHP warning
+        Resolves issue with using lang entries in CLI command
+        Resolved issue with View Type preference not properly encoded
+        Resolved issue where Pro Search filters were using Low Search naming
+        Resolved #2679where password validation URL was giving PHP error
+
+    Developers 💻
+        Added CLI command to generate jump files for add-ons
+
+    Security 🔒
+        Removed possibility for RCE vulnerability for authenticated CP user

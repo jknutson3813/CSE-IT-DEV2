@@ -1,0 +1,73 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Piwigo
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/galleries/Piwigo
+	</ratings>
+	<space>
+		43532069
+	</space>
+	<support>
+		http://piwigo.org/
+	</support>
+	<version>
+		13.6.0
+	</version>
+	<mod>83</mod>
+	<release_date>24-02-2023</release_date>
+	<admin>admin.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Piwigo</font> is a photo gallery software for the web, built by an active community of users and developers. Extensions make Piwigo easily customizable. Icing on the cake, Piwigo is free and opensource.
+		<br /><br />
+		Piwigo is free, open, and available to anyone under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU/GPL license</a>.
+		</english-overview>		
+		<english-features>
+<font size="2" color="#FF7700"><b>Upload your photos</b></font><br /><br />
+You can add photos with the web form, any FTP client or a desktop application like digiKam, Shotwell, Lightroom or mobile applications.
+<br /><br />
+<font size="2" color="#FF7700"><b>Batch Manager</b></font><br /><br />
+Filter photos from your collection, make a selection and apply actions in batch: change the author, add some tags, associate to a new album, set geolocation...<br /><br />
+<font size="2" color="#FF7700"><b>Organize with Albums</b></font><br /><br />
+Distribute your photos among your own albums. The album tree has unlimited depth. Each photo can belong to several albums.<br /><br />
+<font size="2" color="#FF7700"><b>Browse by Dates</b></font><br /><br />
+Digital cameras store the date in the photo and Piwigo uses this date to display your photo collection in a calendar and let you browse from day to day.
+<br /><br />
+<font size="2" color="#FF7700"><b>Privacy on your Photos</b></font><br /><br />
+Make your photos private and decide who can see each of them. You can set permissions on albums and photos, for groups or individual users.
+<br /><br />
+<font size="2" color="#FF7700"><b>Geolocate your photos on a map</b></font><br /><br />
+Piwigo can read GPS latitude and longitude from embedded metadata. Then, with plugin for Google Maps or OpenStreetMap, Piwigo can display your photos on an interactive map.
+<br /><br />
+<font size="2" color="#FF7700"><b>Themes and Plugins</b></font><br /><br />
+Change appearance with themes. Add features with plugins. Extensions require just a few clicks to get installed. 350 extensions available, and growing!
+<br /><br />
+<font size="2" color="#FF7700"><b>Full screen slideshow</b></font><br /><br />
+With the Fotorama plugin, or specific themes such as Bootstrap Darkroom, you can experience the full screen slideshow. <br /><br />
+<font size="2" color="#FF7700"><b>A Great Place For Your Visitors</b></font><br /><br />
+Your visitors can post comments, give ratings, mark photos as favorite, perform searches and get notified of news by email.<br /><br />
+<font size="2" color="#FF7700"><b>Import automatic your metadata</b></font><br /><br />
+For example an IPTC description can be imported into photo properties, displayed next to the photo... and searchable!<br /><br />
+<font size="2" color="#FF7700"><b>Users management</b></font><br /><br />
+Administrators can create users, groups, manage permissions and send notifications. Several administrators can work at the same time in Piwigo. Perfect for your team!<br /><br />
+<font size="2" color="#FF7700"><b>API</b></font><br /><br />
+Piwigo web API makes it easy for developers to perform actions from other applications: display thumbnails in a WordPress blog post, publish photo from Lightroom, synchronize a local folder with a Perl script... As simple as HTTP requests and JSON responses.<br /><br />
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,20 @@
+{
+  "mod": 9,
+  "version": "5.2.0",
+  "space": "51240960",
+  "release_date": "11-05-2022",
+  "name": "phpMyAdmin",
+  "softname": "phpmyadmin",
+  "ins": "1",
+  "type": "utilities",
+  "group_type": "utilities",
+  "category": "utilities",
+  "os": "win",
+  "arch": "64",
+  "support": "https://www.phpmyadmin.net/",
+  "desc": "phpMyAdmin is a popular and free open source tool used for administering MySQL with a web browser.",
+  "description": "phpMyAdmin is a popular and free open source tool used for administering MySQL with a web browser.",
+  "fullname": "phpMyAdmin",
+  "default": "1",
+  "bin":"php/php.exe"
+}

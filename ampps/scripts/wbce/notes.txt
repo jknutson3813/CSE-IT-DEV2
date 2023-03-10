@@ -1,0 +1,5 @@
+1. Some images are created in media folder which does not generate after install, We copied it in our install.php. change and update install.php if new images are created. (Not needed since 1.4.0)
+2. Select GMT -4 in install its America/New_York Time Zone
+3. PHP REQUIREMENT LINK: https://help.wbce-cms.org/pages/installation/system-requirements.php
+4. Remove inserts from [[dbprefix]]blocking,[[dbprefix]]dbsessions table as entries are made after logging in.
+5. Move USING BTREE entries to the left in sql file.

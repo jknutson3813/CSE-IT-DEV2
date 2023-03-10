@@ -1,0 +1,93 @@
+[10.11.0]: https://github.com/owncloud/core/compare/v10.10.0...v10.11.0
+
+Summary
+-------
+
+* Bugfix - Trigger the right event when the filecache is updated: [#39844](https://github.com/owncloud/core/pull/39844)
+* Bugfix - Replace userid with username in login form: [#39870](https://github.com/owncloud/core/pull/39870)
+* Bugfix - Quota can be exceeded by user: [#40140](https://github.com/owncloud/core/issues/40140)
+* Bugfix - List apps only once: [#39930](https://github.com/owncloud/core/issues/39930)
+* Bugfix - Do not crash while running the cleanup-chunks command: [#40000](https://github.com/owncloud/core/pull/40000)
+* Bugfix - Get file size using cURL on Ubuntu 20.04 and 22.04: [#40065](https://github.com/owncloud/core/pull/40065)
+* Bugfix - Filter sensitive data in log for Session::createSessionToken: [#40066](https://github.com/owncloud/core/pull/40066)
+* Bugfix - Correct Executed Unavailable Migrations and New Migrations: [#40084](https://github.com/owncloud/core/issues/40084)
+* Bugfix - Ensure user's directory is always present: [#40091](https://github.com/owncloud/core/pull/40091)
+* Bugfix - Application selection menu now appears on shared folders: [#40143](https://github.com/owncloud/core/pull/40143)
+* Bugfix - Do not invalidate app tokens when no LDAP connection: [#40152](https://github.com/owncloud/core/pull/40152)
+* Bugfix - Convert from utf8_encode to mb_convert_encoding: [#40158](https://github.com/owncloud/core/pull/40158)
+* Bugfix - Apps requiring SAML/SSO session now load correctly at first page: [#40161](https://github.com/owncloud/core/pull/40161)
+* Bugfix - Display error message when a group cannot be created: [#40162](https://github.com/owncloud/core/issues/40162)
+* Bugfix - Error responses to add group API requests are inconsistent: [#40164](https://github.com/owncloud/core/issues/40164)
+* Bugfix - Handle exception when adding mount to existing cache or lock: [#40192](https://github.com/owncloud/core/pull/40192)
+* Bugfix - CORS on WebDAV is not working: [#40204](https://github.com/owncloud/core/pull/40204)
+* Bugfix - Handle extra slashes at start of URI path: [#40216](https://github.com/owncloud/core/pull/40216)
+* Bugfix - Use group's displayname in the user's profile and user list: [#40229](https://github.com/owncloud/core/pull/40229)
+* Bugfix - Init encryption module before calculating unencrypted block-size: [#40240](https://github.com/owncloud/core/pull/40240)
+* Bugfix - Fix personal settings display for apps which are not whitelisted: [#40257](https://github.com/owncloud/core/pull/40257)
+* Bugfix - Only call getGroupDetails when the group exists: [#40261](https://github.com/owncloud/core/pull/40261)
+* Bugfix - Allow usernames to be case-insensitive with app passwords: [#40119](https://github.com/owncloud/core/issues/40119)
+* Bugfix - Refactor to not have required params following an optional parameter: [#40303](https://github.com/owncloud/core/pull/40303)
+* Bugfix - Prevent expiry for version meta data files: [#40325](https://github.com/owncloud/core/pull/40325)
+* Change - Improve visualization of author's comment in the comments section: [#40142](https://github.com/owncloud/core/pull/40142)
+* Change - Update PHP dependencies: [#39368](https://github.com/owncloud/core/pull/39368)
+* Change - Update Symfony components: [#39368](https://github.com/owncloud/core/pull/39368)
+* Enhancement - Add default app setting on a user basis: [#39600](https://github.com/owncloud/core/pull/39600)
+* Enhancement - Ignore thumbnails when propagating in home: [#39988](https://github.com/owncloud/core/pull/39988)
+* Enhancement - Add language prop to /cloud/user and /cloud/users/{userid} endpoint: [#40087](https://github.com/owncloud/core/pull/40087)
+* Enhancement - Add additional columns to background job queue status: [#40113](https://github.com/owncloud/core/pull/40113)
+* Enhancement - Add config option to bypass the proxy setting by domain: [#40148](https://github.com/owncloud/core/pull/40148)
+* Enhancement - Allow sharing with multiple users at once: [#40155](https://github.com/owncloud/core/pull/40155)
+* Enhancement - Allow editing of public link shared single files: [#40264](https://github.com/owncloud/core/pull/40264)
+
+[10.10.0]: https://github.com/owncloud/core/compare/v10.9.1...v10.10.0
+
+Summary
+-------
+
+* Security - Prevent stored mail settings password from showing in the webUI: [#39833](https://github.com/owncloud/core/pull/39833)
+* Bugfix - Properly setup share owner file system on public link shares: [#39518](https://github.com/owncloud/core/pull/39518)
+* Bugfix - Prevent group names starting or ending with white space: [#39540](https://github.com/owncloud/core/pull/39540)
+* Bugfix - Set page title for the tags file list: [#39556](https://github.com/owncloud/core/issues/39556)
+* Bugfix - Don't resend invitation mail if a user is guest: [#39602](https://github.com/owncloud/core/pull/39602)
+* Bugfix - Text previews had faulty content if BOM was present: [#39669](https://github.com/owncloud/core/pull/39669)
+* Bugfix - Fix files:checksums:verify for a single file: [#39683](https://github.com/owncloud/core/pull/39683)
+* Bugfix - Moving a file from one folder into a folder that is a number fails: [#39702](https://github.com/owncloud/core/issues/39702)
+* Bugfix - Make licenses expire at the end of the expiration date: [#39735](https://github.com/owncloud/core/pull/39735)
+* Bugfix - Subadmin will be shown only his assignable groups in the users page: [#39752](https://github.com/owncloud/core/pull/39752)
+* Bugfix - Fix wrong formatted XML in public-files dav endpoint: [#39797](https://github.com/owncloud/core/pull/39797)
+* Bugfix - Fix issue restoring versions from the trashbin after sharing: [#39822](https://github.com/owncloud/core/pull/39822)
+* Bugfix - Fix issue when encryption is enabled and a file is moved out of the share: [#39829](https://github.com/owncloud/core/pull/39829)
+* Bugfix - Avoid sending unneeded passwords in the files_external app: [#39841](https://github.com/owncloud/core/pull/39841)
+* Bugfix - Fix issue with requesting an invalid share id: [#39868](https://github.com/owncloud/core/issues/39868)
+* Bugfix - Remove fr_FR language variant: [#39931](https://github.com/owncloud/core/issues/39931)
+* Bugfix - Limit the width of the form on login page: [#39962](https://github.com/owncloud/core/pull/39962)
+* Bugfix - Allow re-uploading the same folder after being renamed: [#39966](https://github.com/owncloud/core/pull/39966)
+* Bugfix - Default for propfind depth infinity adjusted: [#40016](https://github.com/owncloud/core/pull/40016)
+* Bugfix - Allow partial initialization of the FS: [#40031](https://github.com/owncloud/core/pull/40031)
+* Bugfix - Filter sensitive data in log for Session::createSessionToken: [#40066](https://github.com/owncloud/core/pull/40066)
+* Change - Update the default poll-interval in capabilities: [#39143](https://github.com/owncloud/core/pull/39143)
+* Change - Private keys for SFTP storage will be stored in credentials table: [#39935](https://github.com/owncloud/core/pull/39935)
+* Change - Update JavaScript dependencies: [#39709](https://github.com/owncloud/core/pull/39709)
+* Change - Update PHP dependencies: [#39526](https://github.com/owncloud/core/pull/39526)
+* Change - Update Symfony components: [#39526](https://github.com/owncloud/core/pull/39526)
+* Enhancement - Allow OPTIONS request handling in framework controllers: [#38758](https://github.com/owncloud/core/pull/38758)
+* Enhancement - Unify API responses when setting permissions for public links: [#39194](https://github.com/owncloud/core/pull/39194)
+* Enhancement - Show detailed error message if moving a mount into another fails: [#39584](https://github.com/owncloud/core/pull/39584)
+* Enhancement - Add warnings for commands that are incompatible with object storage: [#39604](https://github.com/owncloud/core/pull/39604)
+* Enhancement - Cache some data in memory from the filecache: [#39847](https://github.com/owncloud/core/pull/39847)
+* Enhancement - Add product to version in capabilities response: [#39851](https://github.com/owncloud/core/pull/39851)
+* Enhancement - Allow files_external app to be disabled: [#39856](https://github.com/owncloud/core/pull/39856)
+* Enhancement - Improve FileDrop view: [#39900](https://github.com/owncloud/core/pull/39900)
+* Enhancement - Align "close" for messages: [#39907](https://github.com/owncloud/core/pull/39907)
+* Enhancement - Changes regarding cookie handling: [#39916](https://github.com/owncloud/core/pull/39916)
+* Enhancement - Expose user type of share receiver in share api: [#40013](https://github.com/owncloud/core/pull/40013)
+* Enhancement - Use the same string in the header also in public view: [#40032](https://github.com/owncloud/core/pull/40032)
+
+[10.9.1]: https://github.com/owncloud/core/compare/v10.9.0...v10.9.1
+
+Summary
+-------
+
+* Bugfix - Prevent encrypted files from being corrupted when overwriting them: [#39623](https://github.com/owncloud/core/pull/39623)
+* Bugfix - Getting the file owner for share recipients: [#39670](https://github.com/owncloud/core/pull/39670)
+* Bugfix - Prevent version author from being overwritten with wrong uid: [#39673](https://github.com/owncloud/core/pull/39673)

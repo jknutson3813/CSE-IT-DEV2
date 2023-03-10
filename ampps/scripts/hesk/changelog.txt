@@ -1,0 +1,45 @@
+Changes in 3.4.2 - 3rd December 2022
+- fix: tickets raised by email piping don't have a due date
+- fix: in canned responses replace URL-encoded special tags
+- fix: email utf-8 conversion may cause missing characters
+- fix: remove unwanted chars from email-generated ticket subjects
+- updated TinyMCE to 5.10.6
+- updated PHPMailer to 6.6.5
+
+Changes in 3.4.1 - 29th September 2022
+- added OAuth support for POP3 fetching
+- fix: missing function error when viewing a resolved ticket
+- fix: do not mark an OAuth Provider as verified on errors
+- fix: unassigned email sending not working correctly on multi-language staff
+- fix: detect and ignore non-3.4.x language files
+- updated HTMLPurifier to 4.15.0
+
+Changes in 3.4.0 - 17th September 2022
+- added OAuth support for email sending and IMAP fetching
+- new permission: Can set due date
+- updates for PHP 8.2 depreciated functionality
+- fix: custom date fields can display the wrong date when editing a ticket
+- fix: wrong current month date range in reporting
+- fix: sending emails does not work with unauthenticated SMTP
+- fix: silent fail if unable to move attachments to the /attachments/temp folder
+- fix: in the "Previous tickets" list only show tickets the user has access to
+- fix: attachments with no file extension will be renamed to *.unknown-file-type instead of fatal error
+- fix: increase some too small display margins
+- fix: SMTP error log should not be echoed directly
+- fix: email to ticket attachment removal notices not visible
+
+Changes in 3.3.2 - 2nd August 2022
+- added option to not validate SSL certificates for SMTP connections
+- fix: minimum requirement set to PHP 5.6 due to Composer compatibility
+- fix: SMTP host name stored with ssl:// prefix when SSL encryption is selected
+- fix: ticket reminder form not working with Invisible ReCaptcha enabled
+- fix: wrong %%MESSAGE%% value in HTML emails when re-sending email notification for replies
+
+Changes in 3.3.1 - 15th July 2022
+- fix: password reset link issues in HTML emails
+- fix: error when elevator duration is set to hours
+- fix: automatically submitting MFA forms could cause double submissions in Chrome
+- fix: survey email template is not needed in the self-hosted version, removed it
+- fix: "Add a note" form misbehaving when "Newest reply at top" is active
+- fix: in admin panel the due date calendar may require horizontal scroll
+- fix: a few date fields not working properly

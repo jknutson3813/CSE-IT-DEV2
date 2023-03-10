@@ -1,0 +1,225 @@
+Version: 4.4
+Date: 21st January 2023
+
+[Feature] Quick reply
+[Feature] User can edit comment
+[Feature] User can delete comment
+[Feature] Merge Users module
+[Improvement] PHP 8.2 compatibility
+[Improvement] Better PHP 8.1 compatibility
+[Improvement] Moves all JS and CSS out of templates
+[Improvement] Set if comment is by admin on edit comment page
+[Improvement] Adds setting for if email should be unique
+[Improvement] Updates countries and states
+[Improvement] Replaces Securimage with custom solution
+[Improvement] Adds setting to show empty pages in admin area
+[Improvement] Changes default date/time format
+[Improvement] Catches exceptions in MySQL
+[Improvement] Improves role of super admin
+[Improvement] Makes 'view replies link' more responsive
+[Improvement] View full size avatar in admin area
+[Improvement] Adds setting to count replies in comments heading
+[Improvement] Checks file and database versions match
+[Improvement] Adds ability to pass URL in integration code
+[Improvement] Updates the Redis caching code
+[Improvement] Sets default caching ports
+[Improvement] Adds ability to delete cache by prefix
+[Improvement] Improves dashboard icon styling
+[Improvement] Makes library methods more versatile
+[Improvement] Unapproving comment unapproves replies
+[Improvement] Language/CSS editor handles missing folders
+[Improvement] Improves installer styling
+[Improvement] Improves coding standards
+[Improvement] Upgrades jQuery script
+[Improvement] Upgrades jQuery UI script
+[Improvement] Upgrades htmLawed script
+[Improvement] Upgrades chart script
+[Improvement] Downgrades highlight script
+[Bug Fix] Fixes empty value on CSS editor module
+[Bug Fix] Fixes dialog close button in admin area
+[Bug Fix] Fixes height between name/email field on mobile
+[Bug Fix] Fixes uploads overlay position styling
+[Bug Fix] Fixes state on edit comment page when no country
+[Bug Fix] Fixes notifications form not hiding extra fields
+[Bug Fix] Fixes email address BB code
+[Other] Allows extended hyphen in name
+[Other] Moves dialog encoding to engine
+
+Version: 4.3
+Date: 29th January 2022
+
+    [Feature] Extra fields module
+    [Feature] Language editor module
+    [Feature] CSS editor module
+    [Improvement] PHP 8.1 compatibility
+    [Improvement] Sortable fields
+    [Improvement] RTL (Right to Left) support
+    [Improvement] Adds ability to pass avatar in integration code
+    [Improvement] Shows link to user page for x days
+    [Improvement] Relaxes name validation if by integration code
+    [Improvement] Dark background improvements
+    [Improvement] Styling of captcha refresh icon
+    [Improvement] Improves reset styling
+    [Improvement] Sets title for iFrame
+    [Improvement] Uses input type color in admin area
+    [Improvement] Improves coding standards
+    [Improvement] Upgrades htmLawed script
+    [Improvement] Upgrades chart script
+    [Improvement] Upgrades iFrame Resizer script
+    [Improvement] Upgrades highlight script
+    [Bug Fix] Fix page jumping to comment field
+    [Bug Fix] Fix today/yesterday date inaccuracy
+    [Bug Fix] Fix visibility of geo fields
+    [Other] Disables resizing of comment field
+
+Version: 4.2
+Date: 29th May 2021
+
+[Feature] Adds avatar upload / selection feature
+[Improvement] MySQL uses utf8mb4 to allow for all characters
+[Improvement] Admin can add/remove comment uploads
+[Improvement] Adds comment upload lightbox for users
+[Improvement] Shows message if layout settings don't correspond
+[Improvement] Adds Rich Snippets property settings
+[Improvement] Keeps index file when clearing cache
+[Improvement] Uses original array syntax for wider PHP compatibility
+[Improvement] Checks for user token collision
+[Improvement] Increases length of user token
+[Improvement] Only sends approval notification email to subscribers
+[Improvement] Removes 'Default Approve' setting in notify tab
+[Improvement] Checks 404 attempts on user page
+[Improvement] Appends modified date of CSS/JS to clear cache
+[Improvement] File uploads stored as /year/month/file
+[Improvement] Improves form layout settings categorisation
+[Improvement] Only shows rating column in admin area if enabled
+[Improvement] Renames /upload/ folder to simplify install steps
+[Improvement] No longer fades out success messages
+[Improvement] Improves form spacing on notify form
+[Improvement] Shows "* required information" on mobile
+[Improvement] Upgrade tool sleeps to avoid DoS detection
+[Improvement] Replaces Swift Mailer with own code
+[Improvement] Adds email SMTP timeout setting
+[Improvement] Adds email attachment support
+[Improvement] Sends both text and HTML when emailing
+[Improvement] Updates .htaccess directives for Apache 2.4
+[Improvement] Updates admin area help menu links
+[Improvement] Allows float (e.g. 0.5mb) for max upload size
+[Improvement] Removes BitNinja detection
+[Improvement] Sets SQL mode when connecting
+[Improvement] Upgrades jQuery script
+[Bug Fix] Fix for headline validation when replying
+[Bug Fix] Fix not clearing headline value after posting
+[Bug Fix] Fix not hiding headline when showing notify form
+[Bug Fix] Fix for comment counter after submit
+[Bug Fix] Fix for topic text overflow
+[Bug Fix] Fix smiley spacing inside comments
+[Bug Fix] Deleting country/state updates comments
+[Bug Fix] ReCaptcha settings validation
+[Bug Fix] Fix handling of special characters in DB details
+[Bug Fix] Fix icon container gradient CSS
+[Other] Updates the Commentics website URL (org to com)
+[Other] Effectively disables long word validation
+[Other] Changes oldest upgradeable version to 3.0
+
+Version: 4.1
+Date: 24th October 2020
+
+[Feature] Adds headline field
+[Feature] Adds setting to change comment wording
+[Feature] Clear cache tool
+[Improvement] PHP 7.4 compatibility
+[Improvement] Comment preview shows image upload
+[Improvement] Comment preview gravatar links to gravatar site
+[Improvement] Allows direct upgrade from v2.5 and above
+[Improvement] iFrame cookies samesite none and secure
+[Improvement] Layout settings combined to one page
+[Improvement] Dashboard checks system settings
+[Improvement] Dashboard detects if BitNinja installed
+[Improvement] Displays version on dashboard
+[Improvement] Adds setting to disable guest rating
+[Improvement] Adds extra admin page messages
+[Improvement] Styling of iFrame loading spinner
+[Improvement] One click upgrade deletes install folder
+[Improvement] Download the version check report
+[Improvement] Allows config file to override settings
+[Improvement] Loads countries using ajax
+[Improvement] Removes the ability to rate when replying
+[Improvement] Translatable dashboard admin tips
+[Improvement] Translatable dashboard quick links
+[Improvement] Clear template cache when changing theme
+[Improvement] Clear all cache after upgrade
+[Improvement] Adds admin detection info modal
+[Improvement] Show overall result in permissions report
+[Improvement] Show real folder in permissions report
+[Improvement] iFrame ignores empty integration values
+[Improvement] Simplifies comment management
+[Improvement] Adds FAQ link to no site found error
+[Improvement] Improvements to template engine
+[Improvement] Improvements to fixCase() method
+[Improvement] Improvements to default styling
+[Improvement] Moves repeat language strings to general file
+[Improvement] jQuery '$' changed to 'jQuery'
+[Improvement] Improvements to theme preview
+[Improvement] Add custom outer comment text
+[Improvement] Upgrades jQuery script
+[Improvement] Upgrades Summernote script
+[Improvement] Upgrades iFrame Resizer script
+[Bug Fix] Removes ambiguous captcha characters
+[Bug Fix] Fix for importing emails
+[Bug Fix] Clearing cache of replies
+[Bug Fix] No captcha questions after switching language
+[Bug Fix] Position of comment messages
+[Bug Fix] Ajax not working after first comment
+[Bug Fix] Fix for getimagesizefromstring() not available
+[Bug Fix] Fix admin restrictions briefly showing
+[Bug Fix] Fix for no states when editing comment
+[Bug Fix] Fix page count on manage sites page
+[Bug Fix] Fix plural wording for dashboard stats
+[Bug Fix] Fix auto detect if optimize setting disabled
+[Bug Fix] Fix for having to click into filled fields
+[Other] Removes check for 'admin' folder
+[Other] Removes styling from backend templates
+[Other] Changes default prefilled field to hide
+[Other] Increases default flooding to 10 per hour
+
+Version 4.0
+Date: 25th January 2020
+Details:
+
+    [Feature] Multisite
+    [Feature] Database caching
+    [Feature] Online viewers
+    [Improvement] PHP 7.3 compatibility
+    [Improvement] Replaces jQuery.filer with custom solution
+    [Improvement] Removes jQuery UI
+    [Improvement] Detect admin by backend session
+    [Improvement] Only generate modification cache once
+    [Improvement] Upgrades jQuery from v1.12.4 to v3.4.1
+    [Improvement] Logs any issues with version check
+    [Improvement] Use labels on admin spam page
+    [Improvement] Don't get states if no country selected
+    [Improvement] Allow redirects for website exists check
+    [Improvement] General performance improvements
+    [Improvement] Updates ReCaptcha options
+    [Improvement] Updates Gravatar options
+    [Improvement] Upgrades chart script
+    [Improvement] Upgrades highlight script
+    [Improvement] Upgrades htmLawed script
+    [Improvement] Upgrades Summernote script
+    [Improvement] Upgrades Timeago script
+    [Bug Fix] Display of upgrade link on dashboard
+    [Bug Fix] Styling fix for comment field
+    [Bug Fix] Slow loading of large error log
+    [Bug Fix] Modal appearing behind overlay
+    [Bug Fix] Admin referrer check
+    [Bug Fix] Deleting a page should delete ratings
+    [Bug Fix] Fix for HTML if default states are loaded
+    [Bug Fix] Admin pagination when sorting certain columns
+    [Bug Fix] Infinite scroll on permalink
+    [Bug Fix] Fix for ReCaptcha IP address parameter
+    [Bug Fix] Fix for rating field after posting
+    [Other] Allow repeat ratings by default
+    [Other] Viewers feature disabled by default
+    [Other] Image captcha easier by default
+    [Other] Removes read more feature
+    [Other] Removes RSS logo setting

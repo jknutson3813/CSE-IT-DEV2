@@ -1,0 +1,3 @@
+1. Remove "<p>Your password for editing everything is: <b>randompass<\/b><\/p>\n\n" from database.js('randompass' is any randomly generated password in manual installation).
+2. PHP REQUIREMENT LINK: https://www.wondercms.com/requirements
+3. Release date : https://www.wondercms.com/news

@@ -1,0 +1,101 @@
+Changes since 3.3.10-RC1
+Bug
+
+    [PHPBB3-17091] - PHP 8.0 builds fail due to incompatible doctrine/instantiator
+    [PHPBB3-17092] - Check for error codes when querying Spamhaus
+
+Changes since 3.3.9
+Bug
+
+    [PHPBB3-16938] - Unexistent css property in inline style
+    [PHPBB3-17039] - Group name not colored in manage groups due to typo
+    [PHPBB3-17056] - PHP 8.2 Deprecation warning about ${var} syntax
+    [PHPBB3-17065] - Emoji characters in MCP add feedback cause SQL error
+    [PHPBB3-17074] - Condition to avoid creation of roles with same name is broken
+    [PHPBB3-17081] - Invalid accept attribute in the post editor
+    [PHPBB3-17082] - Ability to warn Anonymous
+
+Improvement
+
+    [PHPBB3-13291] - Close notification drop down after clicking "mark all read"
+    [PHPBB3-16105] - Use "global" reCAPTCHA domain to circumvent blocking in some countries
+    [PHPBB3-17068] - ALLOW_CDN_EXPLAIN: Incomplete and imprecise description
+    [PHPBB3-17075] - Add template events to ACP footer after SCRIPTS
+
+Task
+
+    [PHPBB3-17066] - Update GitHub Actions configuration to resolve deprecations
+    [PHPBB3-17071] - Update the emoji CDN
+
+Hardening
+
+    [SECURITY-275] - Improve handling of exceptions in cron redirect
+
+Changes since 3.3.9-RC1
+Bug
+
+    [PHPBB3-17058] - Special character issue in emails from PHP 8.0 and higher
+
+Hardening
+
+    [SECURITY-274] - Reset login keys/session when resetting password
+	
+Changes since 3.3.8
+Bug
+
+    [PHPBB3-16917] - bin/phpbb.cli requires 755 permissions
+    [PHPBB3-16932] - Invalid email To: header on notifications to users with @ in name
+    [PHPBB3-17003] - Icon of a topic do not show up in the UCP > Front Page.
+    [PHPBB3-17019] - Missing "youtube" profilefield stops Database update
+    [PHPBB3-17023] - phpBB 3.3: PHP8 supported but not indicated by composer.json
+    [PHPBB3-17026] - Session viewonline not defined in Memberlist
+    [PHPBB3-17030] - Feed doesn't generate valid RFC-3339 dates
+    [PHPBB3-17032] - Missing or invalid user entry for anonymous user may result in stack overflow
+    [PHPBB3-17036] - Update guzzle to latest version
+    [PHPBB3-17050] - Unnecessary trailing slash in void HTML elements
+    [PHPBB3-17051] - Textformatter may generate PHP warnings if user is not fully initialized in PHP 8.1
+
+Improvement
+
+    [PHPBB3-16916] - Enhance the PHP version error message on startup and install
+    [PHPBB3-17005] - List item closing tag missing slash in posting_topic_review
+    [PHPBB3-17006] - "www." not needed and may lead to confusion
+
+Task
+
+    [PHPBB3-17048] - Update composer and dependencies for 3.3.9
+
+Changes since 3.3.7
+Bug
+
+    [PHPBB3-13821] - Always show "Display this post" for foes
+    [PHPBB3-16871] - S_FORUM_ID and S_TOPIC_ID variables set by page_header may cause fatal errors in feeds
+    [PHPBB3-16891] - Controller Helper Routing in ACP can break Extension Installation
+    [PHPBB3-16960] - Migrations table not populated at the end of installation
+    [PHPBB3-16962] - Possible bug related with format date
+    [PHPBB3-16966] - "Insecure redirect" error while permanently deleting posts
+    [PHPBB3-16976] - phpBB Native Search returns 1 match and one page of results
+    [PHPBB3-16977] - Cron-job "img" tag at bottom breaks some styles and is inaccessible
+    [PHPBB3-16978] - </ul> Tag Missing From posting_pm_header.html Template
+    [PHPBB3-16981] - HTML-encoded emojis `&#128396;️ &#128208;` in email subject line
+    [PHPBB3-16990] - Wrong style template code in the post editor prevents deleting a post with certain permission combination
+
+Improvement
+
+    [PHPBB3-13859] - Youtube profilefield needs an upgrade
+    [PHPBB3-15947] - "X out of 0 messages stored" in UCP
+    [PHPBB3-16800] - Language string NO_POSTS should be changed
+    [PHPBB3-16959] - Remove redundant URL parameters from notification mails
+    [PHPBB3-16967] - Deprecate use of PHP and INCLUDEPHP in templates
+    [PHPBB3-16969] - Flash status displays when posting when posts settings don't allow [FLASH] - BBCode
+    [PHPBB3-16988] - Ignore appended branch info when preparing commit message
+    [PHPBB3-16991] - Add events for bookmarks and subscribed topics in UCP
+
+Changes since 3.3.6
+Bug
+
+    [PHPBB3-16973] - Remove orphaned roles migration may incorrectly remove role-based group permissions
+
+Task
+
+    [PHPBB3-16972] - Rename subtype to advanced_update in package.json generation

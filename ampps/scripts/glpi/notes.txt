@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK : http://glpi-install.readthedocs.io/en/latest/prerequisites.html#php
+2. For our note if any users see the warning of 'utf8mb4 support requires additional migration' after upgrade ask them to run 
+"php bin/console glpi:migration:utf8mb4" and "php bin/console glpi:migration:unsigned_keys". This is shown inside admin panel as well.
+(While upgrading from 9.5.x to 10.0.1)

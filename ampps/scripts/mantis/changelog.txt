@@ -1,0 +1,80 @@
+mantisbt - 2.25.6 Released 2023-02-22
+======================================
+Security and maintenance release addressing an information disclosure issue (CVE-2023-22476), with thanks to d3vpoo1 for identifying and responsibly reporting it, as well as a vulnerability in bundled moment.js library (CVE-2022-31129). This release also resolves over 20 issues including several PHP 8.x compatibility fixes.
+
+All installations are strongly advised to upgrade as soon as possible.
+
+    0031086: [security] CVE-2023-22476: Private issue summary disclosure (dregad)
+    0024720: [ldap] Editing user with use_ldap_email = ON empties email address (dregad)
+    0031827: [reports] Graphviz logs syntax error in line xx near ';' (atrol)
+    0031712: [code cleanup] PHP 8.1 deprecated warnings (dregad)
+    0031159: [tagging] Undefined constants TAG_NOT_ATTACHED + TAG_ALREADY_ATTACHED in tag_api.php (dregad)
+    0030922: [bugtracker] Browser extensions may trigger automatic bug monitoring (community)
+    0030918: [markdown] URLs should only be converted to links when process_url is ON (dregad)
+    0030835: [ui] unreachable submit button (Update Information) on issue update when using tab key (dregad)
+    0030841: [api rest] Update Slim Framework to 3.12.4 (dregad)
+    0030794: [signup] Captcha image not showing on PHP 8.1 (dregad)
+    0030777: [upgrade] Scalar typehint is not supported in PHP 5.x (dregad)
+    0030793: [bugtracker] config_flush_cache() doesn't clean the eval cache for individual options (dregad)
+    0030772: [security] Update moment.js to 2.29.4 (dregad)
+    0030791: [security] Allow adding relation type noopener/noreferrer to outgoing links (dregad)
+    0030771: [ldap] Poor error handling when $g_login_method = LDAP and PHP extension missing (dregad)
+    0030814: [signup] Captcha audio not working (dregad)
+    0030429: [other] Upcoming incompatibility with PHP 8.2, "Deprecate ${} string interpolation" RFC (dregad)
+    0031876: [plug-ins] XML import: Undefined property warning when importing bug notes (dregad)
+    0030790: [ldap] Deprecated conversion of false to array in ldap_api.php with PHP 8.1 (dregad)
+    0032037: [bugtracker] Remove "sponsorship_total" from columns default (dregad)
+    0031943: [installation] Creation of dynamic properies is deprecated in PHP 8.2 (dregad)
+    0022238: [documentation] Missing columns on $g_view_issues_page_columns documentation (dregad)
+    0031829: [ui] Status color boxes shown in black on bug_relationship_graph.php (dregad)
+    0031836: [bugtracker] Date conversion fails when editing a project version using a non-US date format (dregad)
+    0031889: [bugtracker] Product Version / Target Version - Date missing (dregad)
+
+mantisbt - 2.25.5 Released 2022-06-24
+======================================
+Security and maintenance release fixing vulnerabilities with SVG files attachments (CVE-2022-33910), which are now disabled by default; instances with a custom $g_disallowed_files should add svg to the list. Support for PHP 5.6 has been restored, fixing the regression introduced in 2.25.4.
+
+    0029135: [security] CVE-2022-33910: Unrestricted SVG File Upload leads to CSS Injection (dregad)
+    0030541: [documentation] Impossibility of deleting attachment with form security validation turned on (dregad)
+    0030193: [bugtracker] PHP 5.6 support broken (dregad)
+    0030204: [filters] Create Permalink - special characters handling (dregad)
+    0030533: [security] Wrong bugnote_user_edit_threshold value used when checking permissions to edit bugnote (community)
+    0030384: [security] CVE-2022-33910: Stored XSS via SVG file upload (dregad)
+    0030416: [security] Upgrade guzzlehttp/guzzle from 6.5.5 to 6.5.8 (dregad)
+
+mantisbt - 2.25.4 Released 2022-05-10
+======================================
+Maintenance release fixing a couple of regressions introduced in 2.25.3, loading a JavaScript library from CDN and initializing the path on PHP 5.6.
+0024393: [db mssql] APPLICATION ERROR 401 Database query failed. Error received from database was #-52: SQLState: IMSSP (dregad)
+0029751: [authorization] APPLICATION ERROR #13 (access denied) while creating new user when theshold configured as MANAGER in administration interface (atrol)
+0029857: [bugtracker] Errors trying to load moment.js library from CDN (dregad)
+0029853: [bugtracker] $g_path incorrectly set in config_defaults_inc.php on PHP 5.6 (dregad)
+0029991: [installation] Javascript error in browser console when upgrading (dregad)
+0030077: [installation] Installer's Oracle-specific warning regarding identifiers' length is shown initially for MySQL (dregad)
+0030178: [authorization] Update issue icon on "My View" page is displayed even without having appropriate access rights (atrol)
+0030182: [authorization] Update issue icon on "View Issues" page is displayed even without having appropriate access rights (atrol)
+
+mantisbt - 2.25.3 Released 2022-04-13
+======================================
+Security and maintenance release, fixing vulnerabilities in CSV Export (CVE-2021-43257) and Plugins management pages (CVE-2022-26144), as well as in bundled libraries guzzlehttp/psr7 (CVE-2022-24775) and moment.js (CVE-2022-24785). It also addresses several PHP 8.1 compatibility issues.
+0029485: [security] Update ADOdb to 5.20.21 (dregad)
+0029848: [security] Update guzzlehttp/psr7 to 1.8.5 (dregad)
+0029034: [api soap] SOAP call mc_project_get_id_from_name fails when there is no matching project in PHP 7.2 (community)
+0029846: [bugtracker] Passing null to parameter of type XXX is deprecated (dregad)
+0028927: [api rest] Slim Application Error when RestFault generated (community)
+0029845: [bugtracker] Constant FILTER_SANITIZE_STRING is deprecated (dregad)
+0029130: [security] CVE-2021-43257: CSV Injection with CSV Export Feature (dregad)
+0029144: [attachments] Adding an attachment with a long filename causes "Data too long for column 'filename'" application error (dregad)
+0029181: [bugtracker] 'format_issue_summary' custom function not called from View Issue Details page (dregad)
+0029416: [ui] Missing closing div tag causes incorrect page footer display (dregad)
+0029462: [installation] Unable to install (dregad)
+0029413: [custom fields] APPLICATION ERROR 1300 Custom field not found with case-sensitive database (dregad)
+0029849: [security] Update moment.js to 2.29.2 (dregad)
+0029688: [security] CVE-2022-26144: XSS in manage_plugin_page.php and manage_plugin_uninstall.php (dregad)
+
+mantisbt - 2.25.2 Released 2021-06-16
+======================================
+Security and maintenance release, fixes vulnerabilities in Custom Fields management page (CVE-2021-33557) and in the PHPMailer library, as well as a PHP 8 compatibility issue.
+0028552: [security] CVE-2021-33557: XSS in manage_custom_field_edit_page.php (dregad)
+0028803: [custom fields] PHP 8: "Bad Request" error on custom field filters (dregad)
+0028821: [security] Update PHPMailer to 6.5.0 (dregad)

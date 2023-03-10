@@ -1,0 +1,7 @@
+1. Select GMT -4 in install its America/New_York Time Zone
+2. Check and Copy "files/*" from manual to package in "files/*" folder and keep config-***** folder name to "config".(Make sure to empty the contents of files/css and files/js as the *.css and *.js files inside the folder contain paths, these files are created again after visiting the installation)
+3. PHP REQUIREMENT LINK: https://backdropcms.org/requirements
+4. CRON command: https://www.drupal.org/docs/7/setting-up-cron/configuring-cron-jobs-using-the-cron-command (As backdrop is a fork of Drupal7 user need to follow drupal7's docs)
+5. hash in `[[dbprefix]]redirect` table in same for all installatiions.
+6. Upgrade notes: https://docs.backdropcms.org/documentation/updates
+7. Always update the core directory in our upgrade package from the original zip.

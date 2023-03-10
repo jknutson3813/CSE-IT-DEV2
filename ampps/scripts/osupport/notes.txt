@@ -1,0 +1,5 @@
+1. leave smtp detail blank
+2. PHP REQUIREMENT LINK : https://docs.opensupports.com/guides/installation/#server-requirements
+3. Do manual installation on non SU-PHP server with https support as script dev has mentioned that, OpenSupports has issues with non-secure HTTP
+https://github.com/opensupports/opensupports/issues/1067 (Since 4.10.0)
+4. We have set Max PHP support to 7.2.x as suggested by vendor via email. 

@@ -1,0 +1,5 @@
+1. PHP REQUIREMENT LINK : https://www.clicshopping.org/forum/technical-information/
+2. Timezone : Select New York.
+3. Install without demo data.
+4. Keep SMTP details blank.
+5. 'api_key' column value is hardcoded in `[[dbprefix]]api` table in install/clicshopping.sql, no need to configure.

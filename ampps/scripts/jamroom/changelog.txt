@@ -1,0 +1,54 @@
+Jamroom System Core change log
+
+Version 6.5.13:
+ - New: Abilty to Pause and Resume individual queues has been added to the Queue Viewer
+ - New: Ability to "delete all matching" from activity log to delete all matching a search
+ - Change: Updated bundled Mobile Detect library to version 2.8.39
+ - Change: Email is no longer blocked if the email has an empty body content
+ - Change: Checktype for phone numbers requires 7 digits apart from spaces
+ - Change: Cache Reset tool now has individual reset options for Javascript and CSS
+ - Bug Fix: Fixed a bug in jrCore_weight_format where decimals on pounds may not show
+ - Bug Fix: jrCore_strip_url_params() fails to strip empty parameters
+ - Bug Fix: CSS Custom Editor contents may not appear after saving changes
+ 
+Version 6.5.12:
+ - Change: New "Database Info" browser/tool linked to the database version in System Check
+ - Change: Updates and optimizations to better support PHP 8+
+ - Bug Fix: Search may break when searching for multuple forward slashes (/)
+ - Bug Fix: Possible duplicated CSS classes in some form fields
+
+Version 6.5.11:
+ - New: "clear" parameter for "daterange" field that adds a "clear" button to reset them
+ - New: Advance Config Key to force stream counter increments for configured modules on each play
+ - New: "included_css" and "included_javascript" events fired before creating site CSS and Javascript
+ - Change: Failed database inserts into the cache tables no longer create debug log entry
+ - Change: Activity log debug data is now limited to a max of 64k per log entry
+ - Change: Form fields set for "email" validation will have white space around entries stripped
+ - Change: Template function jrCore_upload_button now takes "token" as a parameter
+ 
+Version 6.5.10:
+ - New: Time display relative option now supports future as well as past times
+ - New: Core module Recycle Bin support functions added for non-DataStore tables
+ - New: Delete button added to form uploads prior to form submission
+ - Change: Updates to support changes in PHP 8
+ - Change: "multiple" file support with upload limit added to {jrCore_upload_button} template function
+ - Change: Updated bundled Smarty template library to version 3.1.38
+ - Change: Updated bundled jQuery to version 3.6.0
+ - Change: allow the attribute 'autofocus' to be added to text type form fields
+ - Change: Updated bundled Mobile Detect library to version 2.8.37
+ - Bug Fix: Possible SQL error in Activity log when using a search string with hidden characters
+ - Bug Fix: "page_table_row.tpl" updated to work correctly with a single table cell on mobile devices
+ - Bug Fix: Ordering of some lists could be incorrect if using an "in" list without a specified order_by
+ - Bug Fix: Possible double "class" elements on some custom form fields
+ - Bug Fix: File form fields that allow multiple uploads with a limit may not enforce the limit
+ - Bug Fix: Smarty birthday format call not returning years before 1970
+ 
+Version 6.5.9:
+ - New: Added hourly maintenance function to cleanup expired Live Search result temp database entries
+ - New: Form Designer updated with new "Group" column to show which groups fields are visible to
+ - Bug Fix: More than $max_entries queue entries were being created under some circumstances
+ - Bug Fix: "datetime" and "time" fields were not displaying correctly if given a "timezone" key
+ - Bug Fix: jrCore_format_time() was not handling the "adjust" for timezone parameter correctly
+ - Bug Fix: Drop down calendar chooser in form fields could show incorrect weekday order in header
+ - Bug Fix: "Stuck" queue entries may not be cleaned up correctly when exceeding allowed work time
+ - Bug Fix: Some BBCode code blocks may not be parsed correctly if they contain embedded "code" words

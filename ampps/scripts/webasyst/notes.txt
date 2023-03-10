@@ -1,0 +1,5 @@
+1. make package by extracting zip of wa-sources
+2. PHP REQUIREMENT LINK : https://developers.webasyst.com/installation/ and also check /wa-installer/lib/config/requirements.php
+3. Keep default timestamp and regtime values in `wa_widget_params` table.
+4. From sql we remove 'token_data', 'waid_endpoints_sync_time entry' from 'wa_app_settings' since it is made when we visit 'Installer'(from admin panel). Remove inserts from 'wa_log' table as well.
+Also remove insert from 'wa_contact_auths' as it is created again post login.

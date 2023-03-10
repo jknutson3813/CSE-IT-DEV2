@@ -1,0 +1,80 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/pH7Builder
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/socialnetworking/pH7Builder
+	</ratings>
+	<space>
+		310928597
+	</space>
+	<support>
+		https://ph7builder.com/
+	</support>
+	<version>
+		17.9.0
+	</version>
+	<mod>66</mod>
+	<release_date>02-01-2023</release_date>
+	<admin>admin123/main/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="8.0.0" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="zlib" />
+	<requirement check="php" type="extension" name="bz2" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="gettext" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="exif" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="function_exists" name="openssl_public_encrypt" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">pH7Builder </font> (formerly known as pH7CMS) is the first Professional, Free and Open Source Social Dating Site Builder Software. By far, the first choice for creating enterprise-level Dating Apps/Service or social networking sites.
+		<br /><br />
+		This Social Dating Web App is fully coded in object-oriented PHP (OOP) with the MVC pattern (Model-View-Controller). It is low resource intensive, extremely powerful and highly secure. pH7Builder is included with over 42 native modules and based on its homemade pH7 Framework which includes more than 52 packages.
+		<br /><br />
+		pH7Builder is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License</a>.
+		</english-overview>		
+		<english-features><ul>
+<li>Powerful Anti-Spam System (and detects duplicate contents)</li>
+<li>Block Access with IP Restriction for the Admin Panel/</li>
+<li>SEO Friendly (Title, Content, Code, ...), Sitemap module</li>
+<li>Two-Step Verification Option (2Fake Profile GeneratorFA) for Admins/Users/Affiliates</li>
+<li>Schema.org markup and microdata, your social dating web app will considerably increase the ranking in search engines results and enable great features such as Google Rich Snippets!</li>
+<li>Outsmarted Moderation Tools™</li>
+<li>Support for Multiple Languages, Internationalization and Localization (I18N)</li>
+<li>People Nearby Technology™</li>
+<li>Multilingual URLs No matter the language, all URLs are translatable for increasing the SEO of your dating platform</li>
+<li>Related Profiles feature (for easier matches)</li>
+<li>Dynamic User's Fields Management</li>
+<li>In-built affiliate system that encourages brand influencers and ambassadors to promote your dating service</li>
+<li>In-built Basic Statistics &amp; Analytics Tools</li>
+<li>Country Restrictions for Member and Affiliate registration forms (and user search forms!)</li>
+<li>Simple way to create high-quality profiles with the in-built RandomUser.me API</li>
+<li>International US &amp; European Time and Date formats</li>
+</ul>
+		</english-features>
+		<english-err_php54>The PHP Version is less than the required 5.4+</english-err_php54>
+		<english-bug_email>Bug reports Email</english-bug_email>
+		<english-noreply_email>No reply Email</english-noreply_email>
+		<english-feedback_email>Email address for the contact form (feedback )</english-feedback_email>
+		<english-err_passlen92>The password length should be less than 92 characters.</english-err_passlen92>
+		<english-password_noupper>The password must contain at least one uppercase.</english-password_noupper>
+		<english-password_nonumber>The password must contain atleast one number.</english-password_nonumber>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

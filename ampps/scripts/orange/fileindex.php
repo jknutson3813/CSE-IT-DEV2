@@ -1,0 +1,15 @@
+.htaccess
+.php-cs-fixer.dist.php
+CHANGELOG.TXT
+LICENSE
+README.md
+SECURITY.md
+bin
+build
+index.php
+installer
+lib
+logo.png
+phpunit.xml
+src
+web

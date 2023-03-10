@@ -1,0 +1,8 @@
+1. Select "Mysqli" in Database backend and also change db prefix under 'Advanced settings', check 'skip survey' to skip the survey and uncheck "Help us improve CS-Cart" in manual installation.	
+2. Install with demo data.
+3. Do not install aditional languages as it creates all the entries in all the languages in sql.
+4. Take dumps when installation completes. (Before accessing admin panel)
+5. Release date: https://www.cs-cart.com/blog/cs-cart-releases/
+6. Check and move designs/themes/*, images/logos/*, images/product_bundle/*, images/thumbnails/* from manual to our package. We can comapre /designs/themes/* with /var/themes_repository
+7. PHP REQUIREMENT LINK: https://docs.cs-cart.com/latest/install/system_requirements.html
+8. After running fileindex remove random admin file name. we add it in install.php while srename.

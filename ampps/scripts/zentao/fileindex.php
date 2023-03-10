@@ -1,0 +1,17 @@
+VERSION
+api
+bin
+config
+db
+doc
+extension
+framework
+hook
+index.html
+lib
+module
+sdk
+test
+tmp
+www
+index.php

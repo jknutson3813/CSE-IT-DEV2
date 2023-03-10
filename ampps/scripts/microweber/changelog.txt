@@ -1,0 +1,36 @@
+## [1.3.2] - 2023-01-27
+- Big maintenance release
+- Improvements in live edit mode
+- Refactored the admin content list
+- Refactored the admin orders list
+- Refactored file browser
+- Fixed various bugs
+- Added Import and Export module to import content
+- Other fixes
+- [see all changes....](https://github.com/microweber/microweber/compare/1.3.1...1.3.2 "")
+
+## [1.3.1] - 2022-08-11
+- Maintenance release 
+- Fix to add missing config files on update
+- Fixed XSS in the category name
+- Menu url field is now translatable
+- Added helper to compile blade from string
+- Other fixes
+- [see all changes....](https://github.com/microweber/microweber/compare/1.3.0...1.3.1 "")
+
+## [1.3.0] - 2022-07-20
+- Upgraded to Laravel 9 and PHP 8.1
+- Added Livewire support for the admin panel
+- Other fixes
+- [see all changes....](https://github.com/microweber/microweber/compare/1.2.20...1.3.0 "")
+
+## [1.2.21] - 2022-07-18
+- Fixed security related to module attributes
+- Other fixes
+- [see all changes....](https://github.com/microweber/microweber/compare/1.2.20...1.2.21 "")
+
+## [1.2.20] - 2022-07-09
+- Fixed security issue when uploading svg files with script tags
+- Fixed security issue when using special characters as url parameters
+- Other fixes
+- [see all changes....](https://github.com/microweber/microweber/compare/1.2.19...1.2.20 "")

@@ -1,0 +1,9 @@
+1) Copy the 'var/' (exclude database.php) folder from the manual installation and save it in the .zip
+2) While upgrade it is asking to make a directory of random string to avoid that just go to  modules\gallery\controllers\upgrader.php and 
+replace 
+	"if (file_exists(TMPPATH . $upgrade_token))" 
+with 
+	"if (!file_exists(TMPPATH . $upgrade_token))"
+3) Gallery does not work on Windows.
+4) We have kept PHP version 7.1 in info.xml as login wasn't working on PHP 7.0(post manual install) on most of our test servers. Check if it works in next version on PHP 7.0 and change PHP version accordingly.
+5) PHP REQUIREMENT LINK : README.md

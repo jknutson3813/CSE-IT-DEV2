@@ -1,0 +1,28 @@
+ phpMyFAQ 3.1.x
+phpMyFAQ 3.1.11 - 2023-02-12
+
+    Happy 22nd Birthday, phpMyFAQ!
+    fixed multiple vulnerabilities
+    fixed minor bugs
+
+phpMyFAQ 3.1.10 - 2023-01-15
+
+    fixed multiple vulnerabilities
+    fixed minor bugs
+
+phpMyFAQ 3.1.9 - 2022-12-11
+
+    fixed multiple vulnerabilities
+    fixed minor bugs
+    updated bundled dependencies
+
+phpMyFAQ 3.1.8 - 2022-10-24 
+
+    fixed multiple vulnerabilities
+    fixed minor bugs
+    updated bundled dependencies
+
+phpMyFAQ 3.1.8 - 2022-10-24 
+
+    fixed multiple vulnerabilities
+    fixed minor bugs

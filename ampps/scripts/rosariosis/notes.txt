@@ -1,0 +1,8 @@
+1. PHP REQUIREMENT LINK : https://www.rosariosis.org/technical-specifications/
+2. Move all procedures/triggers to the end in sql.
+3. Update '//' to '$$' in DELIMITER in sql.
+4. Change "config_value" of "LOGIN" to "Yes" in "config" table to avoid password reset page after login.
+5. Go "Users" > "User info" to update login username.
+6. Remove DEFINER=`root`@`localhost` from sql.
+7. Keep mysql 8 restriction in info.xml as it throws error i.e Could not make the query numbered : 182. MySQL Error No : 1064. MySQL Error : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank, (select count(*) from student_mp_stats sgm4 ' at line 14. Check if it works in next version on mysql 8 and remove restriction accordingly in info.xml.
+8. While adding any new language in install.xml make sure you check locale/REFERENCE.md file to check it's percentage of translation . Add only if it's >= 80 percent. 

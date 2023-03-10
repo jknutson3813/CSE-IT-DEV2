@@ -1,0 +1,39 @@
+OSSN - OPEN SOURCE SOCIAL NETWORK v6.6
+* [E] output/user/url to profile cover , photos, albums wall template #2205
+* [B] Fix for wrong component installer link #2209
+* [B] Ossn 6.5 crashes if OssnLocation is disabled #2207
+* [E] UI .ossn-users-list-item .uinfo a width to maxwidth #2206
+
+OSSN - OPEN SOURCE SOCIAL NETWORK v6.5 
+* [B] Emoji problem introduced in 6.4 #2186
+* [E] taking care of Upper case file extensions #2185
+* [B] Installation not throwing mysql errors #2183
+* [B] wrong adjustmment of ossn-like-reactions-panel in mobile view #2189
+* [E] Disable admin to change his own type on user edit page (admin panel) #2182
+* [E] prevent loading language files of disabled components #2192
+* [B] With php 8 return type searchFiles not returing count #2199
+* [B] incompatibilty of Ossn 6.4 wall post storage and display with former Ossn releases #2187
+* [B] Places service has been sunsetted #2184
+* [E] Add a filetype block when user try upload video file into OssnWall #2191
+* [B] Covers and profile photos not showing pagination #2198
+* [E] Upgraded to BS5.2.2 from BS5.2.0-beta1
+* [E] Add plugin for user/output_url #2193
+* [B] Apache config being rewritten if modified by cpanel #2179
+* [B] fix for not working comment delete on entities #2201
+* [E] Enhance friends picker because now getFriends searched via OssnUser instance #2202
+* [E] admin_topbar and admin_sidemenu text setting via ossn_register_menu_item #2200
+* [E] Change name fields into max 30 chars each #2203
+* [E] Don't load js if it is not set.
+
+OSSN - OPEN SOURCE SOCIAL NETWORK v6.4 LTS
+* [B] Comment object menu not showing comment menu #2168
+* [B] XSS vulnerability in OssnWall #2173
+* [B] Same Friends tag flooding #2175
+* [B] Bug in ossn_get_relationships when setting only 'from' #2170
+* [E] Enhanced, getFriends make sure it returns relation_id in field list #2171 #2149
+* [B] Multiple css js loaded if multiple ossn_load_js(css) #2169
+* [E] Show like menu on priority 1
+
+OSSN - OPEN SOURCE SOCIAL NETWORK v6.3 LTS
+* [B] deleting profile photo gives error on iconURL() #2166
+* [B] deleting profile cover gives error on coverURL() #2166

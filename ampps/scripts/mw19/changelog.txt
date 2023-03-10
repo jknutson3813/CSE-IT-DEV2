@@ -1,0 +1,199 @@
+== MediaWiki 1.39.2 ==
+
+This is a maintenance release of the MediaWiki 1.39 branch.
+
+=== Changes since MediaWiki 1.39.1 ===
+* Localisation updates.
+* (T325872) ChangeTags: Remove table name from condition.
+* (T324895) MWCallbackStream: Add explicit $stream property.
+* (T297031, T326039) PostgresUpdater: Move setDefault ahead of
+  changeNullableField.
+* (T321319) Produce HTML for invalid JSON.
+* (T215466, T326071) MigrateActors: Write to revision table (Follow-up 24115a8).
+* (T223027) ReservedUsernames config: Add reserved names from maintenance
+  scripts.
+* (T325000, T324896, T307631) Updated OOUI from v0.44.3 to v0.44.5.
+* Remove /images .htaccess rules that are no longer relevant.
+* Disable php in .htaccess of images directory as a hardening measure.
+* (T322583) Include missing message parameter in message.
+* LocalFileTest: use encodeBlob/decodeBlob for img_metadata.
+* DatabaseSqlite: fix null blobs.
+* rdbms: avoid pg_escape_bytea() call-style deprecation notices.
+* (T322278) Improve LocalisationCache post-merge validation check.
+* (T324408, T326367) Updated wikimedia/remex-html from 3.0.2 to 3.0.3.
+* (T322278) Fix the remaining Phan failures on PHP 8.1.
+* (T322278, T326367) Respond to some messages from Phan on PHP 8.1.
+* Fix phan error when Excimer is enabled.
+* (T326021) Add matrix: to $wgUrlProtocols.
+* (T314099) stream wrapper: Declare $context class property.
+* (T314099) libs\jsminplus: Declare JSNode::$expression.
+* (T314096) composer.json: Updated composer/spdx-licenses from 1.5.6 to 1.5.7.
+* (T326472) Upgrading cssjanus/cssjanus (v2.1.0 => v2.1.1).
+* (T308536) rdbms: Remove deprecation mark for $wgSharedDB.
+* (T215466, T326071) installer: Split drop action out of the SQL patch for actor
+  migration.
+* (T322603) SqliteMaintenance.php: Fix fatally broken instanceof check.
+* (T326377) rdbms: Use DBConnRef in SelectQueryBuilder.
+* api/en.json: api-help-datatype-expiry add missing 'may'.
+* (T317329) OutputPage: Fix undefined ['host'] in ImagePreconnect code.
+* (T328222) Pass empty string to strlen() if schema is null for
+  PostgresDatabase.
+* (T289926) SpecialRevisionDelete: Set default of '' for wpReason.
+* (T155582, T328503) Fix XML dumps for content types with non-string
+  getNativeData().
+* (T326886) PoolCounterRedis: Fix wrong cast, locks weren't being released.
+* (T314099) revisiondelete: Replace dynamic property Status::$itemStatuses
+* (T327821) skin: Restore default 'value' attribute in makeSearchButton().
+* (T329198) ParamValidator: Improve paramvalidator-help-multi-max message.
+* (T329415) Clear the statsd data buffer regardless of StatsdServer config.
+* (T292348) WikiImporter: do not fail if upload entry in dump lacks 'text' tag.
+* (T330049) UnregisteredLocalFile: Don't call MimeAnalyzer if no path.
+* (T324894 TempFSFile: Use a WeakMap for reference tracking if available.
+* (T295637) Add no to fallback chain of nb and nn.
+
+== MediaWiki 1.39.1 ==
+
+This is a security and maintenance release of the MediaWiki 1.39 branch.
+
+=== Changes since MediaWiki 1.39.0 ===
+
+MediaWiki 1.39 is a pre-release testing branch, and is not recommended
+for use in production.
+
+=== Changes since MediaWiki 1.39.0-rc.1 ===
+* Localisation updates.
+* exception: Tolerate no service container when trying DB rollback.
+* (T320282) Upgrading wikimedia/xmp-reader (0.8.3 => 0.8.4).
+* objectcache: Deprecate WANObjectCache::reap() and ::reapCheckKey().
+* (T320864) When calling mail(), use an array for headers.
+* Upgrading wikimedia/xmp-reader (0.8.4 => 0.8.5).
+* (T321154) Call setFormIdentifier() on LogEventsList form.
+* When importing revision with same timestamp as latest revision, treat
+  it as the new latest.
+* (T320726) RandomImageGenerator::getImageSpec: Don't pass a float to mt_rand(),
+  for PHP 8.1.
+* (T298485, T322360) WikiExporter: Avoid calling reload in processing every row.
+* (T321551) pager: Fix null used for foreach in Pager::getNavigationBar.
+* (T321551) pager: Remove unused AlphabeticPager::getOrderTypeMessages()
+  support.
+* pager: Remove unused PagerNavigationBuilder::setExtra().
+* PagerNavigationBuilder: Document that nulls in setLinkQuery() etc. are
+  allowed.
+* (T322335) ApiQueryRevisionsBase: Fix 'rvdiffto' parameter handling on PHP 8.0.
+* (T314096) TestFileEditor: Fix string interpolation.
+* (T289926) api: Fix minor PHP 8.1 incompatibility in ApiOptions.
+* (T322803) SpecialBotPasswords: Don't pass null to trim().
+* (T289926) Fix incomplete ITextFormatter mocks.
+* Language: Handle ronna and quetta.
+* (T72510) rdbms: make SqlitePlatform::tableName() apply double quotes.
+* (T323373) Parser: Fix extractSections() behavior for PHP >= 8.0.
+* .gitattributes: Ship docker-compose.yml to the tarball.
+
+== MediaWiki 1.39.0-rc.1 ==
+
+=== Changes since MediaWiki 1.39.0-rc.0 ===
+* Localisation updates.
+* (T318481) composer: Drop symfony/php73-polyfill.
+* (T318460) SpecialChangeEmail: Set default for returntoquery.
+* (T318307) HTMLFormField::validate(): Update docs to permit all data types
+* (T306802) docker: update to latest published images.
+* (T318754) WebInstallerOptions::addPersonalizationOptions(): Close fieldset.
+* (T227047) Soft-deprecate the remainder of ActorMigration.
+* (T316304, CVE-2022-41767) SECURITY: reassignEdits doesn't update results
+  in an IP range check on Special:Contributions.
+* (T309894, CVE-2022-41765) SECURITY: HTMLUserTextField exposes existence
+  of hidden users.
+* (T307278, CVE-2022-41766) SECURITY: On action=rollback the message
+  "alreadyrolled" can leak revision deleted user name.
+* (T319186) .phan/config.php: Update minimum_target_php_version.
+* Tests: Explicit cast to int in RandomImageGenerator test (php8 warnings).
+* (T319186) .phan/config.php: Update minimum_target_php_version.
+* (T310243) Deprecate use of 'wvui-search' package.
+* utils: Fix return doc about false/null for UrlUtils::expand.
+* (T319000) WebInstaller: Don't try and run trim() on null.
+* In the event of preg failure in MagicWordArray throw exception.
+* (T318753) Installer: Disable logo dropper for now.
+
+== MediaWiki 1.39.0-rc.0 ==
+
+== Upgrading notes for 1.39 ==
+Don't forget to always back up your database before upgrading!
+
+See the file UPGRADE for more detailed per-version upgrade instructions from the
+oldest supported upgrading version, MediaWiki 1.31.
+
+Some specific notes for MediaWiki 1.39 upgrades are below:
+* (T278139) Drop PHP 7.3 support in MediaWiki 1.39; require 7.4.3 or higher.
+
+For notes on 1.38.x and older releases, see HISTORY.
+
+=== Configuration changes for system administrators in 1.39 ===
+
+==== New configuration ====
+* $wgAutoCreateTempUser – This configures automatic user creation on page save.
+* $wgCopyUploadAllowOnWikiDomainConfig – This configures if administrators can
+  use the MediaWiki:Copyupload-allowed-domains system message to define which
+  domains can be used with the upload-by-url tool.
+* $wgCdnMatchParameterOrder – This can be set to false if MediaWiki is behind a
+  CDN that re-orders query parameters. This will make the code that matches
+  request URLs to canonical CDN URLs insensitive to parameter order.
+* $wgMultiShardSiteStats – This allows you to split site_stats across multiple
+  rows. Only useful for very large, heavily edited wikis. (T306589)
+
+==== Changed configuration ====
+* $wgInvalidUsernameCharacters – This setting now contains the char '>', which
+  is now the reserved delimiter for external user names.
+* $wgLocalFileRepo – The default serialization method for file meta-data has
+  been changed to JSON. You can revert it to PHP by setting the property
+  'useJsonMetadata' to false.
+* $wgLBFactoryConf – The 'configCallback' flag can now be set to a callback
+  function that returns an array with keys to update in $wgLBFactoryConf. This
+  can be used to update the database configuration on the fly, e.g. to take
+  replica hosts out of rotation.
+* $wgDBservers and $wgLBFactoryConf – The DBO_SSL flag in has been deprecated in
+  favour of a boolean "ssl" parameter.
+* $wgObjectCaches – The 'globalKeyLB' and 'localKeyLB' flags are no longer
+  supported.
+
+==== Removed configuration ====
+* $wgMultiContentRevisionSchemaMigrationStage - This transition flag, deprecated
+  since MediaWiki 1.35, has been removed; the data migration is over.
+* $wgActorTableSchemaMigrationStage - This transition flag has been removed; the
+  data migration is over.
+* $wgWikiFarmSiteDetector – This experimental setting has been removed without
+  replacement. Use the MW_WIKI_NAME environment variable to specifiy the name of
+  the site for which to load configuration. Using the WIKI_NAME environment
+  variable for this purpose is deprecated.
+* $wgParserCacheUseJson - The ParserCache now always uses JSON serialization.
+  Reading old non-JSON cache entries is still supported. The setting had been
+  deprecated since 1.36.
+* $wgAllowJavaUploads - To allow uploads of JAR files, remove application/java
+  from $wgMimeTypeExclusions.
+* $wgMaxRedirects – This broken feature was removed, as it never worked as
+  intended (T296430).
+* $wgElementTiming – This experimental, default-disabled feature has been
+  removed without replacement.
+* $wgPriorityHints and $wgPriorityHintsRatio – The related experimental feature
+  has been removed without replacement.
+* $wgIncludeLegacyJavaScript – This flag has been removed, without loss of any
+  functionality in this release. Most former "wikibits" functions were removed
+  after deprecation in previous releases. The remaining functions, such as
+  importScript, are now available unconditionally.
+* $wgLegacySchemaConversion - This unused setting has been removed.
+* $wgInterwikiPrefixDisplayTypes - This unused setting has been removed.
+* $wgMangleFlashPolicy – This is no longer functional, and is now deprecated.
+  Users who are somehow still using Flash as a browser extension will be exposed
+  to CSRF vulnerabilities.
+
+=== New user-facing features in 1.39 ===
+* Optional automatic user creation on page save ($wgAutoCreateTempUser)
+* Administrators now have the option to delete/undelete the associated "Talk"
+  page when they are (un)deleting a given page. `deletetalk` and `undeletetalk`
+  options were added to the 'delete' and 'undelete' action APIs in MW 1.38.
+* `{{=}}` is now a wikitext built-in magic word, expanding to `=`.  This is
+  conventionally used as an escape mechanism to allow the use of `=` in
+  unnamed template arguments.  Defining [[Template:=]] to expand to something
+  other than `=` has been deprecated since 1.36, with affected pages put into
+  a special tracking category for migration.
+* (T284020) Bot passwords are now supported when using the REST API.
+

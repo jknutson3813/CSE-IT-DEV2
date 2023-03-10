@@ -1,0 +1,68 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="Geeklog Site">
+				<head>{{site_name}}</head>
+			</input>
+			<input type="text" name="site_desc" size="30" value="My Nifty Geeklog Site">
+				<head>{{site_desc}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{db_set}}</heading>
+			<input type="text" name="dbprefix" size="30" value="gl_">
+				<head>{{db_pre}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+			<input type="text" name="noreply_email" size="30" value="noreply" softmail="true">
+				<head>{{noreply_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="english">English</option>
+					<option value="chinese_simplified_utf-8">Chinese Simplified</option>
+					<option value="chinese_traditional_utf-8">Chinese Traditional</option>
+					<option value="french_france_utf-8">French</option>
+					<option value="french_canada_utf-8">French Canada</option>
+					<option value="german_utf-8">German</option>
+					<option value="german_formal_utf-8">German Formal</option>
+					<option value="hebrew_utf-8">Hebrew</option>
+					<option value="japanese_utf-8">Japanese</option>
+					<option value="persian_utf-8">Persian</option>
+					<option value="russian_utf-8">Russian</option>
+					<option value="spanish_utf-8">Spanish</option>
+					<option value="spanish_argentina_utf-8">Spanish Argentina</option>
+				</select>
+				<head>{{select_adm_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<datadir>geekdata</datadir>
+	<files>
+		<exclude>admin/install/*</exclude>
+		<exclude>admin/install/*/*</exclude>
+		<exclude>admin/install/*/*/*</exclude>
+		<exclude>admin/install/*/*/*/*</exclude>
+		<exclude>admin/install/*/*/*/*/*</exclude>
+	</files>
+</softinstall>

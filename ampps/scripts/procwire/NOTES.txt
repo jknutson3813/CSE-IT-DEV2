@@ -1,0 +1,9 @@
+1. Rename "site-Default" to "site" for making procwire.zip (manual also)(Deprecated). From 3.02.00 onwards please rename site-blank to site for making procwire.zip. Do the same in manual install as well.
+2. Select TimeZone : America/New_York
+3. Copy /site/assets/files/ folder and its content from manual installation for making procwire.zip (No need from 3.02.00)
+4. Keep $config->chmodDir = '755'; and $config->chmodFile = '644'; in config file.
+5. Min requirement for upgrading is kept 2.8 because it is identical to 3.x in terms of features. https://processwire.com/docs/install/troubleshooting/#troubleshooting-upgrades
+5. Replace htaccess.txt to .htaccess if there is any change in htaccess.txt for upgrade, also maintain a backup for the same. https://processwire.com/docs/install/upgrade/
+6. PHP REQUIREMENT LINK : https://processwire.com/docs/install/new/#requirements and also check composer.json
+7. Release date : https://github.com/processwire/processwire/releases
+8. No need to copy the file /site/assets/files/README.txt which is made in manual, as it is written in the file "You may delete this file".

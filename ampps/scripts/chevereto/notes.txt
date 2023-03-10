@@ -1,0 +1,4 @@
+1. Vendor has asked us to offer chevereto free.
+2. PHP REQUIREMENT LINK : https://v4-docs.chevereto.com/application/stack/php.html#resources
+3. `setting_value` and `setting_default` for 'xr_host' and 'xr_port' entries in `[[dbprefix]]settings` table are default values. If the user changes this from admin panel this gets changed automatically. (Confirmed with vendor over ticket)
+4. We have disabled the script on windows environment as the CSS is not loading in manual installation as well. We have ask vendor over email and they said they officially do not support windows environment.

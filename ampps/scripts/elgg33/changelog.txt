@@ -1,0 +1,40 @@
+3.3.25 (2022-10-07)
+Contributors
+
+    Jerôme Bakker (2)
+
+3.3.24 (2021-12-23)
+Contributors
+
+    Jerôme Bakker (1)
+
+Bug Fixes
+
+    reported_content: sanitize report URLs (c30b17bf)
+
+3.3.23 (2021-12-03)
+Contributors
+
+    Jerôme Bakker (1)
+
+Bug Fixes
+
+    ajax: forms in the admin namespace are protected (572d210e)
+
+3.3.22 (2021-11-19)
+Contributors
+
+    Jerôme Bakker (3)
+
+Bug Fixes
+
+    groups: prevent misuse of group membership actions (d9fcad76)
+
+3.3.21 (2021-08-03)
+Contributors
+
+    Jeroen Dalsem (1)
+
+Bug Fixes
+
+    http: always disable cache if cookie is being set (30c17f06)

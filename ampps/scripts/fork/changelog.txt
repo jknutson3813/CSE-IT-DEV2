@@ -1,0 +1,114 @@
+5.11.1 (2022-03-24)
+
+Fixed:
+
+    Core: Add missing aria attributes on form errors #3485
+    Core: Fix adding links on images in ckeditor #3478
+    Core: Fix database env variables not resolving before checking installed module #3502
+    Core: Update packages #3500 #3482 #3483 #3489 #3490 #3492
+    Blog: Fix translation in wordpress import page #3484
+    Pages: Fix default breadcrumb style #3487
+
+Security:
+
+All these security issues require access to the backend before they can be exploited.
+
+    Core: Fix xss bug in multiple select box #3501
+    Authentication: Intercept a redirect to a different domain on login using // at the start of the queryparameter #3494
+    Authentication: Reauthenticate a user after password change to log out other sessions #3493
+    Blog: Prevent sql injection in the backend through bulk action marking comments as spam #3497
+    Extensions: Prevent xss in the backend in the theme and module detail page through the description #3499
+    FormBuilder: Prevent sql injection in the backend through bulk deletion of submitted data #3495
+    Locale: Prevent sql injection in the backend through export of translations #3498
+    Tags: Prevent sql injection in the backend through bulk deletion of tags #3496
+
+5.11.0 (2021-10-14)
+
+Fixed:
+
+    Core: Fix array offset error for canonical url in meta #3411
+    Core: Fix deleting cookies #3440
+    Core: Fix encoding problem with generating urls #3429
+    Core: Fixed GenarteUrl to allow Backend Locale #3423
+    Core: Update packages #3452 #3447 #3448 #3451 #3435 #3437 #3439 #3408 #3427 #3469 #3467 #3465 #3462 #3461 #3459
+    Core: Update the placeholder image URLs #3463
+    ContentBlocks: Fix mapping old content blocks when copying pages #3442
+    Docs: Put code in code block #3407
+    Docs: Update old screenshots #3210 #3412
+    Locale: Fixed exporting XML truncated by a few bytes
+    Locale: Fixed truncated locale XML export #3470
+    MediaLibrary: Fix image preview #3434
+    MediaLibrary: Fix item preview in the editor #3450
+    Page: Duplicate page image when copying a page to a different locale #3438
+    Pages: Revert usertemplates fix since it is broken because of the nex security fixes #3460
+    Search: Fix search total for short terms #3441
+
+Security:
+
+    Core: Fix xss issue in spoon form #3453
+    Core: Prevent CSRF logout in the backend #3471
+    Core: SpoonLibrary expects the charset to be in lowercase, otherwise some xss protections fail #3455
+    MediaLibrary: Fix xss in mediaitem type movie id on edit #3406
+
+Added:
+
+    Core: Add support for Google reCAPTCHA v3 #3409
+    FormBuilder: Copy forms and their widgets when making a language copy #3445
+    MediaLibrary: Add support for svg #3424 #3432
+
+Changed:
+
+    DX: Only run tests once on PR #3468
+    Test: Minor database optimalisation #3443
+
+5.10.0 (2021-05-16)
+
+Fixed:
+
+    Core: Fix double encoding in spoon library #3400
+    Core: Fix files not loading on some apache servers #3361
+    Core: Update packages #3398 #3394 #3386 #3385 #3382 #3364
+    Blog: Fix broken thumbnail in the backend #3360
+    Pages: Fix usertemplates #3371 #3365
+
+Security:
+
+    Authentication: Fix xss in redirect url #3355 #3353
+    MediaLibrary: Fix xss in media item title #3401
+    MediaLibrary: Fix xss in video ids #3402
+    Search: Fix xss in search referrer #3387
+    Spoon: Fix xss in form input files #3357
+
+Added:
+
+    Core: Add canonical URL to SEO tab #3188
+    Core: Add CLI command to install a module #3323
+    Core: Throw an event when the session id changes #3377
+    MediaLibrary: Add edit button to media item within a form #3192
+    MediaLibrary: Added a search box to the media library #3189
+    Pages: Make it possible to set an id in a usertemplate #3166
+
+Changed:
+
+    Core: Improve GDPR consent dialog #3372
+    Github: No codecov annotations in PR's #3378
+    Github: Upgrade to native dependabot #3384
+
+5.9.3 (2021-03-21)
+
+Fixed:
+
+    Core: Update packages #3332 #3329 #3328 #3325 #3282 #3269
+    Github: Add badge for security issues #3315
+    Github: Make sure we test all supported php versions #3254
+    Github: Remove duplicate github issue reporting system #3288
+    Groups: Excape new reserverd keywords in mysal #3264
+    Locale: Clarify that html in translations is not considered a security issue #3270
+    Pages: Duplicate user template images when copying page #3320
+    Pages: Rebuild page cache when changing url #3319
+
+Security:
+
+    Core: Security fixes #3351
+    Locale: Fix xss in translation datagrid #3314
+    Spoon: Fix css bug in Spoon Library #3316

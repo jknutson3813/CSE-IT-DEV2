@@ -1,0 +1,5 @@
+1. Please keep USING BTREE entries in sql to the left and not at the end.
+2. We have added minimum requirement for upgrade as 2.10.0, as upgrade is not possible from earlier versions(before 2.10.0)  which is mentioned here. https://addon.websitebaker.org/pages/en/browse-add-ons.php?id=0E2A6954
+3. PHP REQUIREMENT LINK : /DOCU/README_EN.md/
+4. Minimum required php version is changed to 8.0 ( upgrade doesn't work on php 7.4 )
+5. We have set min Mysql requirement to 5.7 because few tables generates UNIQUE KEY which requires large column size. On lower version of Mysql the script gives warning message on manual installation and skip all these tables.

@@ -1,0 +1,4 @@
+1. The folders 2author, 2lang, 2site and 2site2lang are copy templates and should not be included in our .zip file.
+2. PHP REQUIREMENT LINK : https://www.cmsimple.org/doku/en/?Installation___System_Requirements
+3. In CMSimple 5.1 , we can login for only 5 mins with default password 'test'(this time is considered since time of upload), code is in cmsimple/login.php on line 122. Give writable 666 permissions to setupControl.php in root folder while manual install.(Not required since 5.11)
+4. Since 5.11 copy content/content.php and content/pagedata.php from manual to zip and check the same from setup/defaults/content.php and setup/defaults/pagedata.php . Also copy cmsimple/languages/de.php and cmsimple/languages/en.php and check the same from setup/defaults/de.php and setup/defaults/en.php.

@@ -1,0 +1,72 @@
+Version 2.3.21 (2023-03-06) ↑
+
+    Add $IsPmArchive, $PmArchiveDir.
+    Sortable tables with <time datetime=""> elements can be sorted by the datetime attribute. Fix for tables with preexisting <thead> element.
+    Updates for PHP8.
+    Add CSV upload extension.
+    LocalTimes add mode=3 to show old dates as MM'YY.
+    Fix bug with multiline $MarkupDirectiveFunctions, reported by Antti Tikanmäki.
+    Add $EnableCopyCode and Copy code button to <pre> blocks, suggested by Alex Doré.
+    Update PmTOC to work better with Cookbook:SectionEdit.
+    Update documentation. 
+	
+Version 2.3.20 (2023-02-12)
+
+    Fix undefined variable warning, reported by Gregor Klarič. 
+
+Version 2.3.19 (2023-02-11)
+
+    Only set cookie params if headers not sent.
+    Update for PHP8.2, reported by Dfaure. PageVar() update for PHP 8.
+    Add variable $DiffPrepareInlineFunction.
+    PageListCache() remove unused global $PageIndexFile.
+    Add configurable $LocalCSSDir, $LocalCSSDirUrl.
+    DownloadUrl() add $FmtV['$LinkDownload'] with current or future download link.
+    Add pm_recode() helper function (based on PageStore::recodefn), check for more transcode options.
+    HandleBrowse() add $FmtV['$PageSourceText'].
+    Add helper function KeepBlock().
+    Add $IsFarmArchive, $FarmPubDirPrefix, pm_servefile(), $ServeFileExts.
+    Update documentation. 
+
+Version 2.3.18 (2023-01-15) 
+
+    Refactor scripts/utils.php, add pm_json_encode() (PITS:01486).
+    EditAutoText() fix for lines ending with multiple backslashes.
+    PmSyntax optimize/refactor for large pages (cont.), fix inline escaped texts could ignore line markups, add EnableStopwatch.
+    Notify fix typo in regular expression.
+    Add $EnableUploadVersions >=10 to rename base.ext to base-1.ext, base-2.ext,...
+    CondAuth() fix bug with global $AuthList.
+    Add helper function PRCB() for simpler preg_replace_callback passing variables.
+    Update scripts/refcount.php for PHP 8, reported by George Murray.
+    Add PageVariable $PageLogoUrl (PITS:01297).
+    Update documentation. 
+
+Version 2.3.17 (2022-12-17)
+
+    WikiStyles trim class names (PITS:01485).
+    GUIEditButtons refactor to enable Undo in textarea; allow for custom functions to configure mopen, mclose, and unselect for their buttons.
+    EditHelp refactor to allow undo; add shortcuts Ctrl+L convert selection to lowercase, Ctrl+Shift+L to uppercase, Ctrl+Shift+ArrowUp and ArrowDown to swap lines.
+    Skip upgrade check if $EnableReadOnly.
+    Fix bug with multiple $MarkupDirectiveFunctions.
+    Add $EnableBaseNameConfig.
+    PmSyntax optimize for larger pages (cont.).
+    Input password add class "inputbox" like the other fields.
+    CondAuth() added way to check for usergroup permissions.
+    Update in pagelist.php for PHP 8.
+    Documentation update. 
+
+Version 2.3.16 (2022-11-28) 
+
+    Class PPRC add generic callbacks.
+    IncludeText() update for PHP 8, reported by V.Krishn.
+    WikiStyle add 'overflow', 'notoc'.
+    Add PmNonce().
+    PmTOC update indented link style->classname.
+    Responsive skin: replace [[<<]] with <br class='clearboth' />, update PmTOC styles.
+    $EnableListIncludedPages use class name instead of style.
+    guiedit.js remove unneeded style.
+    PmSyntax realign font for nested programming languages in the edit form, optimize for large pages.
+    Only call session_status() if function exists.
+    Edit form remove unsafe-inline script.
+    Revert WikiStyleToClassName(), PrePrintFmt() -- need more work (PITS:01484).
+    Documentation update. 

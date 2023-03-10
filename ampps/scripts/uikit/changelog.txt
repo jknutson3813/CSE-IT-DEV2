@@ -1,0 +1,149 @@
+3.16.4 (March 8, 2023)
+
+	ADDED
+	Add observe to component options API
+	
+	FIXED
+	Fix default i18n option for Modal dialogs
+	FIXED
+	Fix Slideshow initially shows last slide first
+	FIXED
+	Fix Height Match component does not change height while updating
+	FIXED
+	Fix Slider reactivity when a slide is hidden/shown
+	FIXED
+	Fix Scroll component correctly changes history state
+
+3.16.3 (February 27, 2023)
+
+	FIXED
+	Fix object type coercion
+	
+3.16.2 (February 27, 2023)
+
+	FIXED
+	Fix event delegation did not delete current property causing parent event handler to trigger
+	FIXED
+	Fix focusable elements within none visible slides are no longer focusable in Slider component
+	FIXED
+	Fix opened Drop component prevents smooth scrolling of document on iOS
+
+3.16.1 (February 23, 2023)
+
+	FIXED
+	Fix missing dropnav.scss file from dist
+	
+3.16.0 (February 23, 2023) (Feature Accessibility)
+
+	ADDED
+	Add WAI-ARIA roles, states and properties to interactive JavaScript components
+	ADDED
+	Add WAI-ARIA keyboard interaction pattern to interactive JavaScript components
+	ADDED
+	Add language internationalization (i18n) for interactive JavaScript components
+	ADDED
+	Add i18n option to corresponding JavaScript components
+	ADDED
+	Add Dropnav component
+	ADDED
+	Add parent icon to Drop component
+	ADDED
+	Add support for YouTube Shorts URLs in Lightbox component
+	ADDED
+	Add Android, Android Robot, Apple and Microsoft icons
+	ADDED
+	Add uikit:init event triggered on document before components initialize
+	ADDED
+	Add countdownstart, countdownstop and countdownend events to Countdown component
+	
+	CHANGED
+	IMPORTANT: Remove .uk-dropdown-close from Dropdown component. Use uk-drop-close instead
+	CHANGED
+	IMPORTANT: Remove .uk-dropdown-grid from Dropdown component. Use uk-drop-grid instead
+	CHANGED
+	IMPORTANT: Remove .uk-navbar-dropdown-close from Navbar component. Use uk-drop-close instead
+	CHANGED
+	IMPORTANT: Remove .uk-navbar-dropdown-grid from Navbar component. Use uk-drop-grid instead
+	CHANGED
+	IMPORTANT: Remove error message options in Upload component, use i18n option
+	CHANGED
+	IMPORTANT: Rename labels default property and option on UIkit.modal to i18n
+	CHANGED
+	Move functional CSS from Dropdown, Dropbar and Navbar component to Drop component
+	
+	REMOVED
+	Remove ajax() util function, use native fetch instead
+	REMOVED
+	Remove getImage() util function
+	
+3.15.25 (February 23, 2023)
+
+	FIXED
+	Fix Dropbar partially closing before opening when switching between Navbar items
+	FIXED
+	Fix Parallax component updating too late during slide animation in Filter component
+
+3.15.24 (February 9, 2023)
+
+    Fixed
+    Fix Tooltip component appends to container option, prevents margins in scroll container
+    Fixed
+    Fix regression in scrollParents function
+
+3.15.23 (February 1, 2023)
+
+    Added
+    Add subnav parent icon to Subnav component
+
+    Fixed
+    Fix prevent background scrolling in Safari
+
+3.15.22 (January 19, 2023)
+
+    Added
+    Add Eye and Eye Slash icons
+
+    Changed
+    Update Lifesaver, Paint Bucket and Video Camera icons to fit outline style
+
+    Fixed
+    Fix Scroll component scrolls to elements by name
+    Fixed
+    Fix Tooltip appends itself to the closest scroll container if within element referenced by container option
+
+3.15.21 (January 12, 2023)
+
+    Added
+    Add larger gap on larger viewports to Navbar component in UIkit theme
+    Added
+    Add gradient for text background to Text component in UIkit theme
+    Added
+    Add gradient for thumbnav item to Thumbnav component in UIkit theme
+
+3.15.20 (January 5, 2023)
+
+    Changed
+    Improve close icon not overlaying content in Modal component for UIkit theme
+
+    Fixed
+    Fix nav in Dropdown component not overriding properties of Nav component
+    Fixed
+    Fix disable native position sticky in Sticky component if parents overflow is not set to visible
+    Fixed
+    Fix Drop positioning
+
+3.15.19 (December 20, 2022)
+
+    Changed
+    removeAttr no longer accepts a space separated list of attribute names
+
+    Fixed
+    Fix stacking context if using position: sticky in Sticky component
+    Fixed
+    Fix height calculation for box-sizing: border-box on Accordion content
+    Fixed
+    Fix error in console if image can't be loaded in Svg component with stroke-animation: true
+    Fixed
+    Fix scrollIntoView() no longer considers elements with position: clip as scrollable parents
+    Fixed
+    Fix Slider shows not centered initially with center: true

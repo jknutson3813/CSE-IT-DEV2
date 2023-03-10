@@ -1,0 +1,12 @@
+1. Install Composer and create zip for package use "php composer.phar install --no-dev" command to install.
+2. Copy .env.example to .env and fill the database details DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD, DB_PREFIX and APP_URL
+3. Run php artisan key:generate to generate APP_KEY in .env file.
+4. Run "php artisan migrate" from command line before creating tables step in manual installation.(confirmed with vendor)
+5. Add the following line to the .htaccess file in the root folder :
+<IfModule mod_alias.c>
+RedirectMatch 301 ^[[relativeurl]]/$ [[softurl]]/public
+</IfModule>
+6. PHP REQUIREMENT LINK: https://snipe-it.readme.io/docs/requirements
+7. We have not added upgrade yet because script provides upgrade/migrate through composer only. https://snipe-it.readme.io/docs/upgrading
+check everytime and add if possible
+8. delete inserts of oauth_clients and oauth_personal_access_clients tables. It creates after login. (check in every version)

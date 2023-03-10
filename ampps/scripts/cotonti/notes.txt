@@ -1,0 +1,4 @@
+1. Keep Default theme : Nemesis
+2. Keep Modules, Plugins to default
+3. PHP REQUIREMENT LINK: https://github.com/Cotonti/Cotonti/blob/master/Install.txt
+4. We have kept PHP req to 5.6 and Mysql req to 5.7 because manual installation throws error below these. (Since 0.9.20) Issue reported here. https://github.com/Cotonti/Cotonti/issues/1658

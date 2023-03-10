@@ -1,0 +1,28 @@
+****************************
+Changelog for eXtplorer
+Version $Id: CHANGELOG.txt 249 2016-12-11 16:11:03Z soeren $
+****************************
+--- version 2.1.15 ---
+- fixed a critical security issue reported by shimmeris
+- PHP 8 compatibility
+
+--- version 2.1.14 ---
+- fixed various security issues reported by Sander Bos:
+- fixed deprecated warnings on PHP 7.4
+
+--- version 2.1.13 ---
+- fixed various security issues reported by Mario Korth:
+  * potential XSS 
+  * Arbitrary file read
+  * Path traversal in listing directory contents
+  * Path traversal in archive feature
+- added new turkish translations 
+
+--- version 2.1.12 ---
+- fixed wrong version display
+- fixed empty language selector
+
+--- version 2.1.11 ---
+- fixed "text.js not found" message on server when editing text files
+- fixed PHP 7.2 incompatibility in Tar.php
+- PHP 5.3 compatibility fixes

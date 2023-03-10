@@ -1,0 +1,61 @@
+Version 4.7 - ⚠ PHP 8.1 required - Bugfixes, core upgrade, & album decorations Latest
+What's Changed
+
+    Use Enum to enforce stricter types (⚠ php 8.1) by @ildyria in #1618
+    Nuke demo generator, does not reflect the latest version. by @ildyria in #1673
+    Ensure php version is correct prior migrations by @ildyria in #1671
+    Customizable album decorations by @evoludolab in #1631
+    More robust fix on HasAdminUser by @ildyria in #1684
+    Composer update - php-exif 0.8 + bump to version 4.7 by @ildyria in #1680
+
+Version 4.6.5
+What's Changed
+
+    Fixes for v4.6.4 by @ildyria in #1665
+    allow username change by @ildyria in #1667
+
+Version 4.6.4
+What's Changed
+
+    Fix list of shares by @nagmat84 in #1590
+    Add flags to command by @qwerty287 in #1594
+    Add API to change upload date & fix API token auth by @qwerty287 in #1591
+    Fix remove album cover throwing 403 by @ildyria in #1598
+    add descriptions to configuration items by @ildyria in #1584
+    Merge gallery, view and frame Into a Unified Frontend by @nagmat84 in #1522
+    Refactor box model by @nagmat84 in #1562
+    enable strict mode in Laravel by @ildyria in #1588
+    refactor diagnostics to use Laravel pipelines by @ildyria in #1595
+    Checks if Webp is available for GD in diagnostics. by @ildyria in #1611
+    Smart album - On This Day - new feature by @aldjordje in #1607
+    Add option to enable-disable smart albums in the back-end by @ildyria in #1619
+    Add Unix socket support to Redis by @r7l in #1632
+    Versioning code refactoring by @ildyria in #1628
+    move contracts where they belong by @ildyria in #1638
+    Full URL for metadata by @qwerty287 in #1653
+    Remove and clean up unused files by @qwerty287 in #1649
+    Add number of foreign key check and listing option by @ildyria in #1655
+    Apply rights naming convention by @ildyria in #1539
+    Create admin during installation, allow multiple admins by @qwerty287 in #1602
+    Remove (broken and unused) installer scripts by @qwerty287 in #1662
+    release v4.6.4 by @ildyria in #1661
+
+Version 4.6.2
+What's Changed
+
+    Arrayable DTO using reflection by @ildyria in #1529
+    Adopt new modern dialog by @nagmat84 in #1519
+    Consolidate localization by @nagmat84 in #1494
+    Add option to skip diagnostic checks by @qwerty287 in #1558
+    Upgrade to Laravel 9 + switch to Laragear/WebAuthn by @ildyria in #1469
+    Add option to append tags by @qwerty287 in #1564
+    V4.6.2 by @ildyria in #1574
+    fix smart albums rights by @ildyria & @nagmat84 in #1578
+    Fix files installation if no Git repo is available by @qwerty287 in #1581
+
+Version 4.6.1 Latest
+IMPORTANT
+
+    This update contains a Security Update which fix multiple XSS vulnerability and update the Content Security Policy.
+    This update will drop the API key in favor to Authorization token.
+    As a result, once the migration is applied the old API token won't work anymore.

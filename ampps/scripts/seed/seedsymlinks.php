@@ -1,0 +1,21 @@
+<?php
+symlink('[[softpath]]/pear/vendor/sabre/vobject/bin/generate_vcards', '[[softpath]]/pear/vendor/bin/generate_vcards');
+symlink('[[softpath]]/pear/vendor/sabre/dav/bin/naturalselection', '[[softpath]]/pear/vendor/bin/naturalselection');
+symlink('[[softpath]]/pear/vendor/sabre/dav/bin/sabredav', '[[softpath]]/pear/vendor/bin/sabredav');
+symlink('[[softpath]]/pear/vendor/sabre/vobject/bin/vobject', '[[softpath]]/pear/vendor/bin/vobject');
+symlink('[[softpath]]/pear/vendor/pear/log/docs/guide.txt', '[[softpath]]/pear/vendor/pear/log/README.rst');
+symlink('[[softpath]]/seeddms-6.0.22', '[[softpath]]/seeddms');
+symlink('[[softpath]]/seeddms-6.0.22/views/bootstrap/images', '[[softpath]]/seeddms-6.0.22/views/bootstrap4/images');
+symlink('[[softpath]]/seeddms-6.0.22/.htaccess', '[[softpath]]/www/.htaccess');
+symlink('[[softpath]]/seeddms-6.0.22/controllers', '[[softpath]]/www/controllers');
+symlink('[[softpath]]/seeddms-6.0.22/inc', '[[softpath]]/www/inc');
+symlink('[[softpath]]/seeddms-6.0.22/index.php', '[[softpath]]/www/index.php');
+symlink('[[softpath]]/seeddms-6.0.22/install', '[[softpath]]/www/install');
+symlink('[[softpath]]/seeddms-6.0.22/languages', '[[softpath]]/www/languages');
+symlink('[[softpath]]/seeddms-6.0.22/op', '[[softpath]]/www/op');
+symlink('[[softpath]]/seeddms-6.0.22/out', '[[softpath]]/www/out');
+symlink('[[softpath]]/seeddms-6.0.22/pdfviewer', '[[softpath]]/www/pdfviewer');
+symlink('[[softpath]]/seeddms-6.0.22/restapi', '[[softpath]]/www/restapi');
+symlink('[[softpath]]/seeddms-6.0.22/styles', '[[softpath]]/www/styles');
+symlink('[[softpath]]/seeddms-6.0.22/views', '[[softpath]]/www/views');
+symlink('[[softpath]]/seeddms-6.0.22/webdav', '[[softpath]]/www/webdav');

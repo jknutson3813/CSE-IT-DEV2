@@ -1,0 +1,17 @@
+1. For manual installation use the following details:
+IMAP Host : ssl://imap.gmail.com:993
+
+SMTP Host : ssl://smtp.gmail.com:465
+
+2. If you get installation warning then add define('RCMAIL_CHARSET', 'UTF-8'); in \installer\index.php ( We have added in 0.8.2 mostly it will be solved by vendor in next version ).
+
+3. We had disabled the upgrade for windows because the GUI utility does not work and we use exec() for CLI upgrade. Next version when you do need exec() i.e. for versions greater than 1.0 change the requirement in upgrade.php that you cannot upgrade on AMPPS only if version is less than 1.0
+
+4. For next release check and change upgrade procedure.
+5. PHP REQUIREMENT LINK: https://github.com/roundcube/roundcubemail/wiki/Install-Requirements and https://github.com/roundcube/roundcubemail/wiki/Version-History
+
+6. [IMP] Do check upgrade in next version i.e from 1.4.x to 1.5.1 if it supports utf8mb4 changes.(checked in 1.5.1, changes are done)
+
+7. While manual installation set collation to utf8mb4_unicode_ci as mentioned in INSTALL file.(Since 1.5.1)
+
+8. Version 1.5.3 is not working on PHP 5.5 hence we have set PHP 5.6

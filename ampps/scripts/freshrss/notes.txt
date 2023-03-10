@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK : https://freshrss.github.io/FreshRSS/en/admins/02_Prerequisites.html (1.21.0 onwards requires  PHP 7.2+)
+2. We created blank "applied_migrations.txt" file because install redirect's to installation if not created.
+3. Keep default Authentication Method in manual installation.
+4. Select mysql in 'Type of database' while manual installation

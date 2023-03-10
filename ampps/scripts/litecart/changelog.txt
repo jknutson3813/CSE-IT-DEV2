@@ -1,0 +1,193 @@
+[-] LiteCart 2.5.2
+Download
+
++ Server/machine/app info page
++ Add method for shipping and payment validation
++ Add compatibility with PHP 8.2
++ Add support for Company Imprint and Do Not Share My Information legal document
++ Ability to skip downloading the latest updates (Like if resuming a failed upgrade with modified patches)
++ Add validation feedback during vMod editing
++ Add helper function image_relative_file() move ability to name destination into image_process() instead of image_thumbnail()
++ Display stock status description if present
+* Set default session timeout to 1440 for garbage cleaner
+* Mixed CSS adjustments
+* Patch module for PHP 8.2
+* Fix favicon size typo
+* Make easily replaceable sets of favicon sizes
+* Consistify log path
+* Fix set ip, user agent, and domain for order not being present until reload
+* Use a unified method for committing stock changes
+* Kindly instruct merchant to enable php Intl extension as no one seemed to understand the error
+* Fix move products and categories to root
+* Upgrade jQuery 3.6.3
+* Fix autosize height for textareas
+* Use autoloader to patch modules for PHP 8.2
+* Fix chat icons placement
+assignments
+* Fix ability to set negative value
+* Update credits
+* Use locally loaded Google Fonts for not violating the General Data Protection Regulation
+* Turn link for printing into a button
+* Fix cookiesAccepted JS event not firing upon cookies accepted
+* Fix reset login attempts upon successful login
+* Use final price reference instead of price
+* Adjust min and preset quantity
+* Fix import images
+* Translate path aliases when fetching file sources
+* Fix PHP 8 going completely bananas if step quantity is lower than 1 e.g. 0.25
+* Fix recent commit not being Windows comaptible
+* Fix default currency code EUR for Lithuania
+* Fix realpath for missing rlink resource
+* Adjust textarea auto height
+* Use form code component for code field
+* Copy Payson to swedish installations
+* Fix PHP Notice in PHP-CLI
+* Provide some better error feedback if mysqlnd is missing
+* Fix custom parameters for toggle buttons
+* Fix PHP notices when installing from CLI
+* Show missing recommended components as orange warnings instead of red errors
+* Hint we are not ready for PHP 8.2 when checking required PHP version
+* Fix missing condition for determining a temporary blocked account
+* Don't strip remaining non-latin characters for URL friendly formatting
+* Fix card footer and hide card if there are no products
+* CSS fixes for right-to-left layouts
+* Improve whitespace polishing when saving vMod
+* Fix save newsletter recipient
+* Fix translation mistakenly stating swedish word for Priority
+* Fix vMod decode install, uninstall, upgrade
+* Fix reinserted toggle value for displaying prices incl. tax
+* Don't enable WebP support by default as many web servers are reported to have a broken webp library in Imagick
+* Fix content wrapper padding
+* Fix variable spelling "payed" should be "paid"
+* Fix some upgrade patches crashing on some ancient installations
+* Fix notice background for default notices
+* Fix chart margin for bigget numbers and use number formatting
+* Also delete cached images in cache/ root when clearing thumnbnails
+* Fix watermark width
+* Fix nav indent
+* Use default-border-color for card-border
+* Fix not displaying month name by selected language
+* Prevent password fillers from agressively dishonouring autocomplete="off" by setting autocomplete="new-password" instead
+* Support redirected env variable for both CGI and FastCGI (they are appearantly different)
+* Use rlink instead of link for images to ensure no outdated cache
+* Set regional settings redirect url
+* Only show language tabs if more than one language
+* Set watermark to one fifth of image width instead of one third
+- Remove obsolete npm package
+- Remove orphan file lib_form.inc.php no longer used
+- Remove transcoding of arabic letters to latin for URL friendly formatting
+- Remove slideUp login transition as one transitions too many
+- Remove predefined slot for uploading image in edit product (could be mistaken for an invalid image)
+- Remove compression library and se PHP ini setting instead
+
+[-] LiteCart 2.5.1
+Download
+
+! Fix javascript XSS vulnerability in box_filter reported by omegapoint.se
++ Add helper function image_relative_file()
++ Display stock status description if present
++ Add class for scroll direction
++ Add live validation for vMod editor
+- Remove predefined slot for uploading image (could be mistaken for an invalid image)
+- Remove compression library module and use PHP ini setting for output compression rather than gzhandler
+* Move ability to name destination into image_process() instead of image_thumbnail()
+* Support redirected env variable for both CGI and FastCGI (they are appearantly different)
+* Use rlink instead of link for images to ensure no outdated cache
+* Fix premature committed name change for table reference lc_brands_info (not yet official)
+* Set default currency for purchase price
+* Fix adding a second operation to existing vMods
+* Make insert content optional allowing to remove code with find
+* Prevent password fillers from agressively dishonouring autocomplete="off" by setting autocomplete="new-password" instead
+* Fix loader not spinning
+* Fix Operand error
+* Fix generate favicon
+* Fix watermark transparency
+* Fix set zone_code unable to save due to disabled field
+* Fix identify vqmod offset
+* Fix set_time_limit() warning for one.com users by suppressing it (They have no way of detecting this limitation)
+* Fix MAX_JOIN_SIZE error
+* Fix category tree indent
+* Fix month name by selected language
+
+And some mixed minor adjustments and improvements.
+
+[-] LiteCart 2.5.0
+
++ Replace vQmod with vMod™ by LiteCart - Faster performing
++ Added full backwards compatibility with vQmod modifications
++ Built-in editor for vMods
++ File System Functions (including dual globstar support)
++ Favicon generator backend app
++ Payment Terms
++ Payment Receipt URL
++ Date Paid
++ Date Dispatched
++ Order States for grouping and defining an order status by type
++ Ability for orders to reserve stock without withdrawing from inventory
++ Ability to get reserved product quantity from reference object
++ Ability to store first name and last name of newsletter recipients
++ Important Store Notice available to be set under Settings
++ Introduce directory definition FS_DIR_STORAGE for storage content
++ Development Mode for development platforms
++ Form input code field
++ Added Payson payment service provider for SE installations
++ Added Frontend link button to login page
++ Ajax feedback how many items are in stock for a selected product option
++ Ability to batch change orders from one order status to another
++ Add privacy policy notice to newsletter subscription form
++ Emulate $_SERVER['SERVER_SOFTWARE'] if CLI environment
++ Add CSS class for scroll direction
+* Frontend facelifts
+* Backend facelifts
+* Refreshened logotype
+* Update country name North Macedonia
+* Upgrade Sass compiler
+* Upgrade jQuery 3.6.1
+* Upgrade Trumbowyg 2.25.2
+* Added some explaination to the Not Found report email
+* Use one solid list of icon aliases (defined in func_draw.inc.php)
+* Adjust backend login transitions
+* Ensure lowercase email address for newsletter recipient
+* Update Turkey now formally known as Türkiye
+* Reinstate comments on packing slip
+- Remove order status keywords as never been used
+- Remove language flags (We did not have them all. And we will display the language code instead.)
+- Remove country flags
+- Removed htpasswd protection (Not very industry standard to have two login systems)
+- Removed vQmod library
+- Remove vQmod backend app
+- Removed deprecated path constants from config
+
+[-] LiteCart 2.4.4 
+Download
+
++ Added Payson payment implementation for SE installations
+* Fix upload logotype
+* Fix ip address alias not confirming with translation
+* Fix upgrade patch 2.2.3
+* Fix wrong column prefix when sorting orders by column
+* Fix PHP notices
+* Fix edit slide
+* Consistently throw exception in entity objects instead of notices
+- Remove redundant HTTP header (already set by lib_language)
+
+And some minor adjustments and code polishing.
+Released Sep 25 2022
+
+[-] LiteCart 2.4.3
+Download
+
++ Add notice that special price is expiring
+* Fix searching for special characters
+* Fix keywords not being reverted back to string
+* Fix PHP 8.1 notices
+* Adjust search matching for most sold products
+* Fix option tax calculation when adding product to order
+* Check for upload validation errors
+* Break up product keywords to an array inside the entity object rather than in the edit product page
+* Fix passing empty string to add_image()
+* Fix format_path_friendly() not released yet
+* Fix PHP 8 going bananas if a numerical string is passed
+* Fix javascript join defaulting to commas where should be empty
+* Fix technical data columns
+Released Jul 19 2022

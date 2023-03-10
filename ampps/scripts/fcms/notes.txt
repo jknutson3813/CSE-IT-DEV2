@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : http://www.familycms.com/
+2. We have restricted the script on Mysql >= 5.7 and PHP >= 7.4 because it throws error. (Confirmed over email)

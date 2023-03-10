@@ -1,0 +1,2 @@
+1. We have kept version number in info as 3.13.0 and less.js is of 3.12.2 because vendor have kept the same.
+2. Rename less.min.js to less.js from dist folder and make our package from that.

@@ -1,0 +1,48 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/OrangeHRM
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/OrangeHRM
+	</ratings>
+	<space>
+		61060832 
+	</space>
+	<support>
+		http://www.orangehrm.com/
+	</support>
+	<version>
+		5.3
+	</version>
+	<mod>48</mod>
+	<release_date>28-12-2022</release_date>
+	<admin>index.php</admin>
+	<min_require>5.0</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.4.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">OrangeHRM</font>	aims to be the world’s leading open source HRM solution for small and medium sized enterprises (SMEs) by providing a flexible and easy to use HRM system affordable for any company worldwide. 
+		<br /><br />
+		OrangeHRM is released under the <a href="http://www.orangehrm.com/license.shtml" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>New Look and Feel</li>
+<li>Enhanced Recruitment Module</li>
+<li>Implementation of Advanced Security Measures </li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

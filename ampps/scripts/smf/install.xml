@@ -1,0 +1,98 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{settings}}</heading>
+			<input type="text" name="site_name" size="30" value="My Board">
+				<head>{{name}}</head>
+				<exp>{{name_exp}}</exp>
+			</input>
+			<input type="select">
+				<select name="visual_verification_type">
+					<option value="0">None</option>
+					<option value="1">Very Simple - Plain text on image</option>
+					<option value="2">Simple - Overlapping colored letters, no noise</option>
+					<option value="3" selected="selected">Medium - Overlapping colored letters, with noise/lines</option>
+					<option value="4">High - Angled letters, considerable noise/lines</option>
+					<option value="5">Extreme - Angled letters, noise, lines and blocks</option>
+				</select>
+				<head>{{visual_verification_type}}</head>
+				<exp>{{exp_visual_verification_type}}</exp>
+			</input>
+			<input type="text" name="board_email" size="30" value="board" softmail="true">
+				<head>{{email}}</head>
+				<exp>{{email_exp}}</exp>
+				<handle>__email_address</handle>
+			</input>
+			<input type="text" name="dbprefix" size="20" value="smf_">
+				<head>{{db_pre}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+				<handle>__admin_username</handle>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<input type="text" name="admin_realname" size="30" value="Administrator">
+				<head>{{real_name}}</head>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="english">English</option>
+					<option value="albanian">Albanian</option>
+					<option value="arabic">Arabic</option>
+					<option value="bulgarian">Bulgarian</option>
+					<option value="catalan">Catalan</option>
+					<option value="chinese_simplified">Chinese Simplified</option>
+					<option value="chinese_traditional">Chinese Traditional</option>
+					<option value="croatian">Croatian</option>
+					<option value="czech">Czech</option>
+					<option value="danish">Danish</option>
+					<option value="dutch">Dutch</option>
+					<option value="finnish">Finnish</option>
+					<option value="french">French</option>
+					<option value="galician">Galician</option>
+					<option value="german">German</option>
+					<option value="german_informal">German Informal</option>
+					<option value="greek">Greek</option>
+					<option value="hebrew">Hebrew</option>
+					<option value="hungarian">Hungarian</option>
+					<option value="italian">Italian</option>
+					<option value="japanese">Japanese</option>
+					<option value="lithuanian">Lithuanian</option>
+					<option value="norwegian">Norwegian</option>
+					<option value="persian">Persian</option>					
+					<option value="polish">Polish</option>
+					<option value="portuguese_pt">Portuguese</option>
+					<option value="portuguese_brazilian">Portuguese Brazilian</option>
+					<option value="romanian">Romanian</option>
+					<option value="russian">Russian</option>
+					<option value="slovak">Slovak</option>
+					<option value="spanish_es">Spanish</option>
+					<option value="swedish">Swedish</option>					
+					<option value="thai">Thai</option>
+					<option value="turkish">Turkish</option>
+					<option value="ukrainian">Ukrainian</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<files>
+		<exclude>install.php</exclude>
+		<exclude>upgrade.php</exclude>
+	</files>
+</softinstall>

@@ -1,0 +1,67 @@
+## Version 4.2.1 - May 9, 2022
+
+BUG: Issue #809 - Interface order and minimum required PHP version (ganiuszka)
+BUG: Issue #810 - Index 0 is out of range error from TAuthorizationRuleCollection::insertAt (ganiuszka)
+
+## Version 4.2.0 - Apr 19, 2022
+
+ENH: Issue #790 TPermissionsManager implements Role Based Access Control and Authorization Rules for each permission (belisoful)  
+ENH: Prado::createComponent can take an array with "class" and object properties to set on the new object (belisoful)  
+ENH: TAuthorizationRule adds Priority for proper ordering of Authorization Rules, eg. Deny All can be and stay the final rule using priorities. (belisoful)  
+ENH: TPageConfiguration is extendable with dynamic events for loading xml & php and then applying (belisoful)  
+ENH: TUser adds dynamic events dyDefaultRoles and dyIsInRole for default roles and checking the user in a role. (belisoful)  
+BUG: Issue #791 - TUserManager loads PHP user file configurations properly (belisoful)  
+ENH: Adds IPriorityItem for auto-prioritizing items in TPriorityList and TPriorityMap (belisoful)  
+CHG: Issue #783 - Refactor the Shell system with Composer in mind; shell routes and actions, updated the help system. (belisoful)  
+ENH: Issue #761 - TCronModule and TDbCronModule with supporting classes, scheduled like linux cron schedule expression, 8 languages. (belisoful)  
+ENH: Issue #743 - Integrate Composer extensions for PRADO, module ids can be the composer package names and the class will be ['extra']['bootstrap'] (from the composer.json file). TPluginModule/TDbPluginModule for additional functionality as the parent class for extensions.  Composer "type" : "prado4-extension" (belisoful)  
+BUG: Issue #784 - Prado-CLI corrected I18N by translating the shell "LANG" into "HTTP_ACCEPT_LANGUAGE" (belisoful)  
+ENH: Issue #778 - Added TEventContent for filling in the control content from handlers of a global event (belisoful)  
+ENH: Issue #776 - Added TDataSize for formatting data sizes with bytes, kB, MB, KiB, MiB, etc. (belisoful)  
+ENH: Issue #775 - TPageService::onAdditionalPagePaths for additional pages (to look for) from composer package extensions (belisoful)  
+ENH: Issue #772 - TMap, TPriorityMap adds dyNoItem, dyAddItem, and dyRemoveItem dynamic events. (belisoful)  
+ENH: Issue #771 - Added TDbParameterModule for reading and setting application parameters with a database-table. (belisoful)  
+CHG: Issue #765 - Prado-CLI moved into their own set of classes rather than one big prado-cli file with all the functionality in it. (belisoful)  
+CHG: Issue #763 - Moved secondary saving of global variables until after onEndRequest in case global state changes in onEndRequest. (belisoful)  
+ENH: Issue #750 - Added TGravatar (belisoful)  
+ENH: issue #744 - Added RTL theme support (belisoful)  
+BUG: Issue #742 - TSecurityManager::setHashAlgorithm uses hash_algos() rather than hash_hmac_algos() - some algos may be set that are not supported by hmac (belisoful)  
+ENH: Issue #741 - TBehaviorsModule and TBehaviorParameterLoader for instancing behaviors in an application; added various behaviors like TParameterizeBehavior that gives new defaults and data from the parameters to any prado object property. (belisoful)  
+ENH: Issue #740 - Behaviors can instances from an array with class and properties, important for #741 (belisoful)  
+BUG: Issue #739 - TApplicationConfiguration::loadParametersPhp variable unset but called (belisoful)  
+CHG: AutoGlobalListen is true for TApplicationComponents (but not TWebControls), and select TComponent children, their 'fx' events will automatically listen and unlisten to fx events on construct and destruct.
+ENH: Issue #738 - Added TAuthManager::onLogin, onLogout, and onLoginFailed events (belisoful)  
+ENH: Issue #737 - Added TSkinTemplate that doesn't do class/attribute validation so skins are more portable between apps (belisoful)  
+ENH: Issue #735 - Added TPageService::onPreRunPage so modules can access Page events (belisoful)  
+BUG: Issue #728 - TWeakCallableCollection makes use of 7.4 WeakReference so fx events do not stop garbage collection (belisoful)  
+CHG: Split Wsat into its own repo pradosoft/prado-wsat (ctrlaltca)  
+CHG: T(Active)HtmlArea4 has been replaced by T(Active)HtmlArea5, based on tinyMCE version 5 (ctrlaltca)
+CHG: removed hardcoded bootstrap libraries (ctrlaltca)
+
+## Version 4.1.2 - Aug 28, 2021
+
+BUG: Issue #706 - TOutputcache: don't serialize controls state (jcass77, ctrlaltca)
+BUG: Issue #715 - Problem saving files on TActiveFileUpload when Multiple=true (ctrlaltca)
+BUG: Issue #718 - Fix clientside exception logging in debug mode (jmartens, ctrlaltca)
+BUG: Issue #722 - Problem with TactiveButton Text property (ctrlaltca)
+BUG: Issue #720 - TSecurityManager: use correct private property (qysp)
+BUG: Fix bug in TStyleDiff that didn't render CssClass and Style correctly on callback (ctrlaltca)
+BUG: Issue #727 - Php compatibility bug in TMysqlMetaData.php (PixelHomie)
+ENH: Issue #724 - Ajax queue improvement (ganiuszka)
+ENH: Add support for SameSite property on cookies (ctrlaltca)
+
+## Version 4.1.1 - Mar 27, 2020
+
+BUG: TActiveFileUpload: avoid warning in browser console by removing usage of an empty page as initial content (ctrlaltca)
+BUG: TExpression: fix naming conflict of class variable (ctrlaltca)
+BUG TActiveRecordConfig: fixed bug in default manager class (LCSKJ)
+ENH: Added compatibility with Php 7.4 (ctrlaltca)
+ENH: issue #708 Add support for PostgreSQL 12 (ganiuszka)
+CHG: Deprecated / ported method using attributes obsoleted in html5 (ctrlalta)
+
+## Version 4.1.0 - Nov 18, 2019
+
+BUG: Issue #694 - Undefined variable: conn notice in Active Record Scaffold (ganiuszka)
+BUG: Issue #696 - SQL error when trying to disable PDO::ATTR_EMULATE_PREPARES option for MySQL (ganiuszka)
+BUG: Issue #698 - TActiveFileUpload - multi upload always shows a red X for incomplete upload (ctrlaltca)
+ENH: Added ClientSide.RetryLimit to retry timeout out ajax requests (ctrlaltca)

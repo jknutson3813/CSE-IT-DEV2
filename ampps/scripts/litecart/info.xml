@@ -1,0 +1,75 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/LiteCart
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/LiteCart
+	</ratings>
+	<space>
+		4108301
+	</space>
+	<support>
+		http://www.litecart.net/
+	</support>
+	<version>
+		2.5.2
+	</version>
+	<mod>65</mod>
+	<release_date>10-02-2023</release_date>
+	<admin>admin123/</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">LiteCart</font> is a free e-commerce platform focusing on simplicity and lightweight with logical design and a simple to use interface. LiteCart is known for it's it's small footprint and minimalistic design. The extreme performance is making it one of the world's highest performing e-commerce frameworks. Founded by swedish developer T. Almroth.
+		<br /><br />
+		LiteCart is released under the license <a href="http://www.litecart.net/license" target="_blank">Creative Commons (CC BY-ND 4.0)</a>.
+		</english-overview>		
+		<english-features>
+<font size="2" color="#1281B6"><b>Features:</b></font><br />
+<ul>
+<li>Lightweight</li>
+<li>Logical user interface</li>
+<li>Easy to navigate</li>
+<li>Reduced amounts of mouse clicks</li>
+<li>Modern interface</li>
+<li>Unlimited products</li>
+<li>Unlimited categories</li>
+<li>Multiple languages</li>
+<li>Multiple currencies</li>
+<li>Multiple charset support</li>
+<li>Fixed prices per currency</li>
+<li>ISO Codes</li>
+<li>One Step Checkout</li>
+<li>Plug 'n play admin apps</li>
+<li>Order editor</li>
+<li>Multiple product images</li>
+<li>Search Engine Friendly</li>
+<li>PHP, jQuery, HTML 5 &amp; CSS 3</li>
+<li>Injection based translations</li>
+<li>And much more...</li>
+</ul>
+Add-ons can be obtained on the official website
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-select_country>Select Country</english-select_country>
+		<english-select_timezone>Select Timezone</english-select_timezone>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

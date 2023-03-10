@@ -1,0 +1,88 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/QloApps
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/QloApps
+	</ratings>
+	<space>
+		99914722
+	</space>
+	<support>
+		https://forums.qloapps.com/
+	</support>
+	<version>
+		1.5.2.0
+	</version>
+	<mod>3</mod>
+	<mod_files>3</mod_files>
+	<release_date>10-02-2022</release_date>
+	<admin>admin123</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="version" operator="lt" value="8.0.0" />
+	<requirement check="mysql" type="version" operator="lt" value="8.0.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="soap" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="phar" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">QloApps </font> is a free &amp; open-source hotel reservation software designed on some of the popular open-source technologies such as PHP, MySQL, Smarty template engine, JavaScript, Bootstrap, HTML, XML, CSS, etc. With QloApps, hoteliers can launch an attractive hotel booking website through which guests can make a room reservation online with available various discounts and offers. <br />
+		Hotel owners can add unlimited properties (hotels, room types, rooms, etc.) to accept both online &amp; on-desk (offline) bookings. Hoteliers can set the prices &amp; availability of rooms. QloApps is built to serve multiple accommodation types and support their variations such as homestays, BnB, renting guest houses, enterprise hotel chains, etc.<br />
+		QloApps is a cost-effective solution to cut down your time, cost, and workforce for developing online hotel booking websites and be able to quickly convert your physical (offline) hotel business to the ever-demanding online world.<br />
+		QloApps is suitable for small to large-scale hotels. Enrich with multiple payment methods, design themes, automatic emails, and notifications. With the cherry on the cake, QloApps have its own marketplace add-on too. QloApps is very flexible, 100% customizable, and super easy to set it up for non-tech users.
+		<br /><br />
+		QloApps is a truly opensource Hotel-Commerce platform which is under the <a href="https://github.com/webkul/hotelcommerce/blob/develop/LICENSE" target="_blank">Open Software License 3.0</a>
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><strong>Launch a hotel booking website </strong><br />
+			It is super-easy to launch a Hotel Booking Website using QloApps. It provides a modern-looking, SEO-friendly, pixel-perfect, screen-responsive website. Guests can book the hotel room online and the Hotel owner gets an instant email notification for booking with payment status.
+			</li>
+			<li><strong>Booking Engine </strong><br />
+			Provides a built-in booking engine that provides a fully-automated booking &amp; cancellation process. You can accept secure online reservations through the website and booking data is then managed in the PMS so you can access and manage the bookings.
+			</li>
+			<li><strong>Property Management System </strong><br />
+			Add unlimited properties (hotels, room types, rooms, etc.) along with their prices &amp; availabilities. Using the "Book Now" feature, hotel receptionists can accept on-desk (offline) booking reservations, room assignments, managing room rates, etc.
+			</li>			
+			<li><strong>Multi-lingual &amp; Multi-currency </strong><br />
+			Supports multiple languages and currencies by default on the hotel booking websites so guests from different countries can view the price of the rooms and compare them in their local currency. Guests can make payments online and receive refunds in their local currency.
+			</li>			
+			<li><strong>Discounts &amp; Offers </strong><br />
+			Get feasibility to create multiple types of discounts (Cart rule, Catalog rule, Seasonal discount, advance pricing) and provide a percentage or fixed amount discount to a certain room type, specific customer, or vouchers for the whole cart.
+			</li>			
+			<li><strong>Multiple Integrated Payment Gateways </strong><br />
+			QloApps supports a majority of the payment gateways such as PayPal, Stripe, Razorpay, CCAvenue, Paytm, and many more. To give guests more flexibility, we are providing PayPal as a free payment gateway with QloApps to accept online payments.
+			</li>			
+			<li><strong>Employee Management </strong><br />
+			Being a hotel owner, you want to distribute an equal workload in your team, and to do so, you can create multiple profiles &amp; give them a specific set of permissions based on their roles like (Receptionist, Manager, Sales, Operations, etc.) and assign them to employees.
+			</li>			
+			<li><strong>Instant Email Notifications </strong><br />
+			Allows website owners to send emails to guests whenever any event takes place such as bookings, making payments, creating accounts, and many more. So the emails are received by customers instantly and in real time. Thus, one cannot miss out on any important message.
+			</li>
+			<li><strong>Stats Management: Reports &amp; Analytics </strong><br />
+			Take predictive decisions based on real-time statistics of guests' actions, website impressions, bookings, etc. QloApps provides a functional dashboard to handle various operational capabilities and display real-time analytical stats in tabular &amp; visual charts for - Occupancy, Availability, Sales &amp; Revenue, Operations Today, etc.
+			</li>
+		</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_admin_folder>The Admin folder name cannot be "admin" !</english-err_admin_folder>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

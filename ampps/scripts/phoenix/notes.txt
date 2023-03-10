@@ -1,0 +1,5 @@
+1. Install with sample data.
+2. Select 'New York' for timezone.
+3. PHP REQUIREMENT LINK : https://phoenixcart.org/download_ce_phoenix.php
+4. Make zip without .github folder.
+5. Please check the value of $__settings['secure'] variable (configured in our install.php)by installing once on https. Don't delete this variable from configuration files though it's output is empty on non https servers. the same code can be verified in /install/templates/pages/install_4.php

@@ -1,0 +1,63 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Chevereto_Free
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/galleries/Chevereto_Free
+	</ratings>
+	<space>
+		141819638
+	</space>
+	<support>
+		https://chevereto.com/free
+	</support>
+	<version>
+		4.0.7
+	</version>
+	<mod>30</mod>
+	<release_date>06-02-2023</release_date>  
+	<admin>dashboard</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="8.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Chevereto</font> enables you to create an image sharing website on your own server. No restrictions at all! Free yourself and use it for anything you want. Customize it as you see fit because it’s all yours!
+		<br /><br />
+		Chevereto is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPL v3</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+		<h6><b>Multi-server support:</b></h6><ul>Distribute the image uploads among as many external storage servers as you wish to add.</ul><br />
+		<h6><b>Bulk content importing:</b></h6><ul>Add tons of content with the bulk content importer.</ul><br />
+		<h6><b>Upload plugin:</b></h6><ul>Easily provide image uploading to any existing website via the upload plugin. It features seamless support for the most popular forum software packages.</ul><br />
+		<h6><b>Login providers:</b></h6><ul>Support account signup with third-party login providers right out the box. No additional plugins needed, just paste the API keys.</ul><br />
+		<h6><b>Superb user interface:</b></h6><ul>A gorgeous responsive user interface, with bulk manage actions, keyboard shortcuts, palettes and more.</ul><br />
+		<h6><b>Configurable uploading:</b></h6><ul>A configurable image upload that features image previews, drag-and-drop and parallel uploads. It also includes image resizing, watermarks, removal of Exif data, expire uploads, NSFW flags, private uploading and more.</ul><br />
+		<h6><b>Easy to set up:</b></h6><ul>Chevereto installs quickly and is highly configurable. You can install it anywhere, and it includes one-click update system to make things easier for you.</ul><br />
+		<h6><b>Moderation tools:</b></h6><ul>Configure how incoming uploads will be moderated. It also supports external services for checking the user generated content with NSFW flagging and blocking of undesired content.</ul><br />
+		<h6><b>Privacy settings:</b></h6><ul>You can set up either a public or private community based image hosting website, or configure it as a personal website.Chevereto also includes support for private profiles and password-protected albums.</ul><br />
+		<h6><b>Admin dashboard:</b></h6><ul>All the stats and tools that you need to run your website are all together in one central and extensive admin dashboard where you can manage everything.</ul>
+		</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : docs/Installation.english.txt
+1. RELEASE DATE : https://www.4homepages.de/forum/index.php

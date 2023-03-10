@@ -1,0 +1,14 @@
+1. Don't install with demo data
+2. We need to configure .htaccess to set RewriteBase
+3. Use composer command to download TastyIgniter and make zip i.e :
+php composer.phar create-project tastyigniter/tastyigniter [[softpath]]/tastyigniter354
+4. Use the following CLI command to install TastyIgniter :
+php artisan igniter:install (Demo data : no when CLI prompts for demo data)
+5. CLI installation steps are mentioned here:
+https://tastyigniter.com/docs/installation#command-line-installation
+6. PHP REQUIREMENT LINK : https://tastyigniter.com/docs/installation#minimum-requirements and check composer.json as well.
+7. Cron setup mentioned here : https://tastyigniter.com/docs/master/installation#setting-up-the-task-scheduler
+8. Please note that we haven't added mcrypt in extension list in info.xml though it's mentioned on official website. Since it's removed as of 7.2.0
+9. We have explicitly set 'super_user' entry under `[[dbprefix]]users` table to 1 due to this issue 
+https://github.com/tastyigniter/TastyIgniter/issues/878
+Check in next version, whether we need to do this explicitly or not.(Not needed since 3.2.0. resolved in 3.2.0)

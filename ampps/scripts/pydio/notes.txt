@@ -1,0 +1,4 @@
+1) Make script where Database ENGINE is InnoDB
+2) Use MySQL database.
+3) PHP REQUIREMENT LINK : https://pydio.com/en/docs/v8/pydio-requirements
+4) We have restricted the script on PHP >= 7.4 because the script uses get_magic_quotes() which is deprecated on PHP 7.4 and removed in PHP 8.0

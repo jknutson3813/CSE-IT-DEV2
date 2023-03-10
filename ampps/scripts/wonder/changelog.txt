@@ -1,0 +1,82 @@
+Version 3.4.1 released
+January 22, 2023
+
+This update brings 3 bug fixes, described below. We've also updated the Summernote plugin. 
+
+ Version 3.4.0 released
+January 2, 2023
+
+This update brings PHP 8.2 support and some minor updates, detailed below.
+We also have a new repository, which is an now an organization - if you haven't yet, please give us a star ⭐ on Github
+
+Important: previously, the minimum requirements for WonderCMS were PHP 7.2. Newest version of WonderCMS requires PHP 7.4+. Please verify before upgrading.
+
+Support our free and open source mission. Click here to donate or check out our awesome merch.
+🎅 🎄 We wish you and your loved healthy & happy holidays!
+
+Features & bug fixes
+
+    Support for webp and avif image uploading
+    PHP 8.2 support
+    Summernote image compression when uploading files with drag and drop
+    New plugin: Taiwan translation
+    WonderCMS repository upgraded to an organisation
+
+
+1 click update
+
+    IMPORTANT: First backup and update your WonderCMS, then update your themes and plugins.
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+	
+What's new in v3.3.3 and 3.3.4 (hotfix)
+July 26, 2022 
+
+Hotfix for null values in database
+
+What's new in v3.3.3
+July 25, 2022
+
+This update brings various fixes and improvements. Full description can be found below.
+Thank you for your support! If you're interested in supporting our free and open source mission, please check the donation page or our merch store. 💖
+
+Features & bug fixes
+
+    Fix Summernote drag and drop content location
+    Fix for reordering of first menu item
+    Fix for deleting subpages if there was only a single main menu item
+    Hide Summernote save dialog when clicking on basic toolbar items
+    Fix 500 error when using port in URL
+    Fix issue with "undefined" error in the menu items
+    Fix canonical URL in default sky theme
+    Fix of custom functions.php for editable blocks creation
+
+
+1 click update
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+    IMPORTANT: First backup and update your WonderCMS, then update your themes and plugins.
+	
+What's new in v3.3.2
+May 22, 2022
+
+This minor update brings bug fixes, Summernote drag and drop "image processing", Caddy web server support and more - described in details below.
+Thank you for your support! If you're interested in supporting our free and open source mission, please check the donation page or our merch store. 💖
+
+Features & bug fixes
+
+    Summernote image processing - files uploaded directly to data/files folder (drag and drop) instead of base64 encoding
+    Contact form plugin update - Polish translation added
+    Handle fatal error when logging in for some users if server is unable to download the cache file
+    Added Caddy server support + documentation
+    Fixed WonderCMS not working correctly on subdomains
+    Fixed additional contents plugin (solved within WonderCMS)
+    Fixed the logout URL parameter
+
+
+1 click update
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+    IMPORTANT: First backup and update your WonderCMS, then update your themes and plugins.

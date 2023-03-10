@@ -1,0 +1,30 @@
+1) Do not install with Demo data.
+2) SuiteCRM asks only for MySQLi
+3) Fill softurl with '/' at the end in manual installation.
+4) Dont forget to add the "generatepasswordtmpl" and "lostpasswordtmpl" in email_templates table in SQL
+5) Add :
+
+error_reporting(E_PARSE);
+
+$sugar_config['http_referer']['list'][] = '[[servervar]]'; 
+
+in config_override.php
+
+6) Make script where Database ENGINE is InnoDB
+
+7) Check and replace public/legacy/cache(clear htmlclean directory) and public/legacy/custom folder from manual to zip if there are any changes.
+
+8) Keep our code to redirect to public directory in .htaccess
+
+9) Give writeble permission to /public/legacy/install directory in manual installation to create status.json.
+
+10) PHP REQUIREMENT LINK : https://docs.suitecrm.com/8.x/admin/compatibility-matrix/
+
+11) We do not provide Upgrade in SuiteCRM because there is no manual (GUI Based) upgrade utility. Only CLI upgrade is supported.
+Upgrade Guide : https://docs.suitecrm.com/8.x/admin/installation-guide/upgrading/
+
+12) We do not change "MySettings" value in `config` table because they are default module names. Check with base64_decode('value');
+
+13) Keep URL OF SUITECRM INSTANCE: * as "[[softurl]]/public/" in manual installation and configure the same in config.php as well i.e 'site_url' as "[[softurl]]/public/", also in config_si.php i.e setup_site_url.
+
+14) Keep Database Port blank in manual installation since it is not mandatory since 8.0.1. It was mandatory in 8.0.0.

@@ -1,0 +1,60 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ProjectSend
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/ProjectSend
+	</ratings>
+	<space>
+		88261401
+	</space>
+	<support>
+		http://www.projectsend.org/
+	</support>
+	<version>
+		r1605
+	</version>
+	<mod>27</mod>
+	<mod_files>1</mod_files>
+	<release_date>26-10-2022</release_date>
+	<min_require>r180</min_require>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.4.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="gettext" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ProjectSend</font> is a free, secure and user friendly file sharing software. 
+		<br /><br />
+		ProjectSend is a self-hosted application (you can install it easily on your own VPS or shared web hosting account) that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files! 
+		<br /><br />
+		ProjectSend is released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li><h6><b>Keep your private files secure:</b></h6> Your files are safe with ProjectSend. As a self-hosted application, it is installed on your own VPS or web hosting account. And when you upload your private files, they are kept in your own space. </li>
+<li><h6><b>Share with clients or groups:</b></h6> Uploaded files can be assigned to clients or client groups that you create specially to work with. ProjectSend suits all your file sharing needs! </li>
+<li><h6><b>Your clients can upload too:</b></h6> ProjectSend is not a one way street. Your clients can upload files to their own account too, if you enable the option. You can also choose to have open or closed registrations.</li>
+<li><h6><b>Detailed log of actions:</b></h6> With ProjectSend you will never miss a thing. A detailed panel of everything that happens on your system will be available to administrators. For example, see who uploads, downloads, or edits files. Get in control!</li>
+</ul>
+Also statistics, categories, social login, self registration, files lists and notification email templates, multiple languages, and a growing community of awesome users, translators and developers that are helping ProjectSend grow day by day. 
+		</english-features>
+		<english-err_adminlen8>The username length should be 8 or more characters.</english-err_adminlen8>
+		
+	</languages>
+</soft>

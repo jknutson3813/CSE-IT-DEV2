@@ -1,0 +1,115 @@
+Version: ProjectSend r1605
+Date released: October 26, 2022
+
+    Added file version to css and js assets to prevent cache issues
+    Added and option to show a link to the public files repository under the log in form
+    Show image file dimensions (manage files, public page, download page, templates)
+    Updated Gallery theme to flexbox
+    Added link to download translations to the languages dropdown (system users only)
+    Fix upload button on default template (by SnappyBird)
+    Enlarged PDF preview (by ch1138 and serg499)
+    Fixed side menu visibility on dashboard (by ch1138)
+    Fixed public page not loading when not public groups were available
+    Disabled autocomplete on 2FA verification form (by SnappyBird)
+    Fixed PDO warning
+    Don’t add <p> tag to file description in email notifications if markup has HTML
+    Use full path for sort links (by Koenari)
+	
+Version: ProjectSend r1584
+Date released: October 14, 2022
+
+Features
+
+Users with “uploader” role can now be limited to certain clients only
+Added 2FA via email with a one time password
+Added Custom assets manager (HTML, CSS, JS), to insert custom code into available locations (public pages, admin, templates, all)
+New setting: set default expiration options (file expires or not, day before expiring)
+New privacy settings: record user’s IP for downloads of all users, anonymous only or never
+File editor: added buttons to copy expiration, public and hidden settings to other files
+Templates can be extended to the public files list and download file page
+Added preview for public files in listing and download page
+
+UI
+
+Updated to Bootstrap 5
+General update of colors, sizes and placing of elements.
+Completely revamped the public files list page using the default template style.
+Added a button to create new items in pages where they belong (ie: clients list -> Create client, manage files -> Upload file, etc)
+Applied filters and search bar to public files list
+Added a simple side modal class to show static content, or load it via ajax
+Email template tags can now be clicked to insert them into the content area
+Unsed email template tags are highlighted when editing a template
+Removed grayed out effect from date selector on file editor, made the field look disabled
+Copy file selection/settings (expiration, public, categories, clients, groups) grouped together for a cleaner experience.
+File editor: added expand/collapse of each file
+Updated the click to copy UI and functions, added Toastr for messages
+Added copy to clipboard buttons to cron commands and social login callbacks
+Public files list page group filter: show file count in each group
+Download information UI fixes
+Fixed a bug where installer errors were not showing
+
+General Fixes and improvements
+
+Added language selector to all non-logged in pages. On language change, return to previous page instead of index
+Fixed user password being changed during editing
+Fixed social login with Linkedin, Twitter, WindowsLive and Yahoo
+Fixed a bug that prevented removing all categories from a file
+Import orphan: by default, show allowed files.
+Improved loading time of Orphan files pages when traversing several thousand files
+Orphan files can now be deleted. Updated UI to import via actions selector
+Fixed memberships requests failing when requested_by had to be null
+Fixed loading plupload language
+General code cleanup
+JS and SCSS files completely reorganized
+Removed Open Sans font since it was loading externally just for the headings
+Fixed button that loads default emails content
+Fix for installer not creating the user
+Separated installer instances into different files
+Replaced chosen-js with select2
+Public file: don’t show title if it is equal to filename
+Public download: file title used as page title
+Replaced psendmodal with SweetAlert2
+Highlight current submenu also on options and email templates
+Upgraded to Gulp4 (by redondi88)
+Cron fixes for FreeBSD (By xzenor)
+Leave only html5 runtime on plupload
+Updated dependencies
+
+Version: ProjectSend  r1420
+Date released: May 28, 2022
+
+    Fixed deleting files as admin
+    Fixed deleting files from the database when they don't exist on the disk
+    Added filtering files by assigned/not assigned
+
+Version: ProjectSend r1415
+Date released: May 26, 2022
+
+	New feature: throttle and ban failed log in attempts to prevent brute force attacks.
+	New in security Settings: whitelist or blacklist IPs from the log in ban feature.
+	New in Tools: unblock a banned IP address
+	New feature: cron jobs. Set up a task that can send pending email notifications in batches, deletes expired files and orphan files.
+	New Cron settings page: Enable/disable cron, change cron security key, select which tasks to run, enable or disable running via url, save log to database, send results via email.
+	New in Tools: Cron log viewer
+	Orphan files can now be filtered by allowed/not allowed.
+	If Recaptcha is enabled, use it on login, password reset request and register forms
+	New setting: disable sending email notifications of new files after adding/editing assignations. Enable this and combine it with a cron task to prevent long loading times after saving a file and overloading your mail server.
+	Updates are now separated into different files, with the latest database update number being independent from the software version. Cleans up the process and makes adding new updates easier.
+	Fixed installer issues (redirect loops and old sessions)
+	Fix: Category edit: verify parent id is not equal to same category id (by luca-rigutti)
+	While installing, get default timezone from system
+	Added max-width to the logo image on the gallery template.
+	Enable or disable debug from the custom config file, instead of using a core file
+	Fixed translations not loading and warnings on php 8+
+	Enable csv uploading by default
+	Use curl -if available- to get new versions and news data, enables timeout to prevent long loading times
+	Fixed: dashboard counters labels where not translatable
+	When editing a user, if role is not client, some fields should be always null (phone, contact, address)
+	Fixed XSS vulnerability on search forms
+	Fixed .htaccess (by RoboDoc)
+	Batch actions are sent as post instead of get to prevent malicious users from sending an action url to an admin user
+	Updated dependencies
+	Prevent registering via POST if self registration is disabled
+	Fixed Title TAG instead of file name (by deklica)
+	Spellchecking + Changed all instances of "his" to "their" when referencing an unknown individual (by ehawman-rosenberg)
+	Fixed JSON responses on widgets (by RiversideRocks)

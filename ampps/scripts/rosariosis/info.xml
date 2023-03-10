@@ -1,0 +1,57 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/RosarioSIS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/RosarioSIS
+	</ratings>
+	<space>
+		35746713
+	</space>
+	<support>
+		https://www.rosariosis.org/
+	</support>
+	<version>
+		10.8.4
+	</version>
+	<mod>5</mod>
+	<release_date>25-02-2023</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.9" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" mariadb="10.0.5" />
+	<requirement check="php" type="extension" name="gettext" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="xmlrpc" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">RosarioSIS</font> is a Free &amp; open source Student Information System (SIS), also known as School Management System (SMS) or even School ERP.
+		<br /><br />
+		RosarioSIS features students demographics, grades, scheduling, attendance, student billing, discipline &amp; food service modules for school management, in one web-application. Primarily designed for K-12 schools, it will easily fit for any educational institution (college, university, academy or institute). 
+		<br /><br />
+		RosarioSIS is released under the <a href="https://gitlab.com/francoisjacquet/rosariosis/blob/mobile/LICENSE" target="_blank">GNU GPL v2.0</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>Responsive design: compatible with tablets and smartphones.</li>
+				<li>Colorful statistical charts for decision-making.</li>
+				<li>PDF documents generation.</li>
+				<li>Online registration.</li>
+				<li>Discipline, Accounting &amp; Student Billing modules included.</li>
+				<li>Moodle Learning Management System (LMS) integration included.</li>
+			</ul>
+		</english-features>
+	</languages>
+</soft>

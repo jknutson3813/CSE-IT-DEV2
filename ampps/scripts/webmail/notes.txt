@@ -1,0 +1,12 @@
+1. Install using superadmin as username, and an empty password, update "Admin Account","Database settings", "Common settings" and "Mail servers settings" and take dumps.
+2. Keep "*" in Any Domain.
+3. PHP REQUIREMENT LINK : https://afterlogic.com/docs/webmail-lite-8/system-requirements
+4. Release date : https://afterlogic.org/webmail-lite
+5. Click on "Test Connection", "Create/Update Tables", "Update configuration" buttons one by one of "Database settings" while manual installation.
+https://afterlogic.com/docs/webmail-lite/configuring-webmail
+6. UPGRADE GUIDE: https://afterlogic.com/docs/webmail-lite-8/installation/upgrading-instructions
+7. We have set min PHP to 7.2.5 because in version 8.8.3 it's composer dependencies require PHP >= 7.2.5
+8. db_init.php and migrate.php files included in our package to support migration from 8.8.0 to 9.0.0 Do not delete these files.
+9. Download db_init.php from https://afterlogic.com/files/db_init.zip and migrate.php from /dev/migrate.php of the new package and update it's $sPassword = "pass"; as suggested in upgrading notes.
+10. We are keeping "SmtpPassword" field blank in mail_servers table because this is a random value and regenerates on saving mail_server config from the admin panel.
+11. Check and move files from /data/settings/modules from manual to our zip. (Except Core.config.json)

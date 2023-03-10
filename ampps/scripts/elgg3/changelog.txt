@@ -1,0 +1,44 @@
+4.3.7 (2023-02-10)
+Contributors
+    Jerôme Bakker (4)
+    
+Bug Fixes
+    icons: improved handling of invalid cropping coordinates (db7cf911)
+    upgrades: use correct function to report upgrade failure (a860911e)
+
+4.3.6 (2023-01-20)
+Contributors
+
+    Jerôme Bakker (5)
+
+Bug Fixes
+
+    cache: correctly load simplecache from database (0f92673f)
+    comments:
+        no longer add duplicate html ID in threaded comments (242d9a5d)
+        correctly remove threaded comments (65817a0e)
+    discussions: correctly handle last comment (bfc1700c)
+
+4.3.5 (2022-12-07)
+Contributors
+
+    Jerôme Bakker (7)
+
+Bug Fixes
+
+    account: improved valid username detection (0115b714)
+    developers: correctly show metadata boolean values (189370c3)
+    icon: improved handling of multiple icon uploads on the same page (d7da537a)
+    register: set correct middleware on registration action (39648e30)
+    webservices: pass authentication failure message to api result (5d852205)
+
+4.3.4 (2022-10-27)
+Contributors
+
+    Jerôme Bakker (8)
+    Jeroen Dalsem (2)
+
+Bug Fixes
+
+    groups: correctly detect default access based on input parameters (4a8a05c9)
+    users: correctly redirect after user deletion (b5b35701)

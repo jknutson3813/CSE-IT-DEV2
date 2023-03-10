@@ -1,0 +1,91 @@
+SeoToaster v3.6.0 New Features
+
+E-commerce
+
+    Added operational hours verification support for add-to-cart button and checkout. Add the ability to disable stores based on your hours of operations.
+
+    Added filter by client group on the orders screen
+
+    Added full pagination for the clients’ grid. Reworked sorting and search mechanism.
+
+    Improved pagination for the supplier screen
+
+    Added operations tab to the shopping config
+
+    Added custom order support for displaying products on the order's detailed screen
+
+    Added words splitting search for orders and users grid screen
+
+Sales Proposals:
+
+    Added custom product fields widgets for the quotes page
+
+    Added quote thank you page
+
+    Added quote conversion support (for newly created quotes)
+
+    Adjusted quote expiration. Prevent quote expiration for signed quotes.
+
+Seotoaster CMS:
+
+    Added support for .webp in the Directupload widget
+
+    Added youtube shorts URL video support for Videolink widget
+
+Core:
+
+    Added to referer utm tags
+    Added preheader to action emails
+    Added counter for Manage Users screen
+    Added .webp support for the page optimization process
+
+News system:
+
+    Added word splitting for search on the news organize screen
+
+CRM:
+
+    Added additional filters for email triggers grid and edit trigger button for email sequence screen
+    Added delete trigger confirmation for the trigger details screen
+    Added preheader to action emails
+    Added email click tracking link support
+    Added support for processing lead and organization coordinates
+    Added remarketing organizations' mass action
+    Added upload multiple files to the document upload
+    Added support for .mov and .eml formats for document upload
+    Added preheader for action emails
+    Added clean-up tab Added search by secondary email
+
+SeoToaster v3.5.0 New Features
+
+E-commerce / Sales Proposals:
+
+    Added operational hours verification support for add-to-cart button and checkout. Add the ability to disable stores based on your hours of operations.
+    Added ability to hide some product options on the checkout
+    Added support for minimum order amount
+    Added maximum allowed products in the quote configuration
+    Added quote expiration notifications
+    Improve shipping calculation for the quote system
+    Added partial payment reminder notification
+    Added ability to assign suppliers on the product screen
+    Added information about first and second partial payments
+    Added default order filter preset
+    Added "without groups" Magicspace
+    Added quote info in the order details screen
+    Added subfolder support for PWA
+    Added ability to verify spam (spam filter) for system forms
+    Updated version of the TinyMCE editor (5.5.1)
+    Added auto reply form email/pdf attachment support
+
+CRM:
+
+    Added IMAP parsing rules
+    Added partially paid info in the timeline
+    Added processing multiple Ad accounts for rules
+    Added ability to parse additional params during user registration
+    Added unassigned email lists to the rules
+
+General improvements:
+
+    Added support for php7.4
+    Updated MPDF library version to 8

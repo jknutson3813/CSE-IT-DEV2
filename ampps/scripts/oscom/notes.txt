@@ -1,0 +1,16 @@
+1. PHP REQUIREMENT LINK: https://wiki.oscommerce.com/index.php?title=Server_Requirements
+2. Extract the package on linux and then make our package.
+3. Installation guide: https://wiki.oscommerce.com/index.php?title=Installing_osCommerce_v.4.0
+4. Manual installation requires 7.2.0
+5. Take the dump of an extracted package before starting the manual installation and using that make our zip package (excluding symlinks which we have handled in install.php)
+6. Do not change "Sales channel type" in manual installation.
+7. Install with sample data as it doesn't fill much of Database.
+8. Keep conutry United states in manual installation.
+9. Take dump on login page.
+10. As the database is huge take dump using command. and package dump in .tgz format.
+mysqldump --routines -u root -pIj7cttIge2jkFE9gJUhvgTuQJRguo5Ar oscom40854127 > oscom40854127.sql
+11. api_key in connector_osclink_configuration table and platforms_api table is same for two different installations.
+12. If we face the issue while importing the SQL while installing through Softaculous, increase the memory_limit in 3rd party php.ini (Default is 128MB) We have asked softaculous team to look into it.
+13. whos_online table entry generates on visiting front panel.
+14. We have disabled the script on windows platform because it creates symlinks to visit the pages which is not possible on windows environment.
+15. Keep the recaptcha and mapskey blank in google_settings table because user needs to generate according to their website. This can be added from "Settings --> Google Settings"

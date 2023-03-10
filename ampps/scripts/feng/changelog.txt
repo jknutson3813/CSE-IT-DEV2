@@ -1,0 +1,54 @@
+Since 3.8.6.11
+-----------------
+
+  bugfix: Set subtask's financials to the calculated as default (#839)
+
+Since 3.8.6.10
+-----------------
+
+  enhancement: Improve template task variables formulas (#836)
+    * In task templates modify estimated time varible assignation selectors to specify time units for the variable and for the additional amount
+    * MVP for task templates numeric properties assignation with formulas involving the numeric variables defined in the template
+  bugfix: ensure that the group by column passed to the advanced reports hook has the right table alias to avoid sql conflicts (#837)
+
+Since 3.8.6.9
+-----------------
+
+  bugfix: fix don't show warning when deleting draft email from secondary account (#832)
+  bugfix: show or hide add worked time option depending on if task is parent and config settings (#831)  
+  bugfix: if there is an error validating the access token, catch the exception and return that it is invalid, so the user can login again to qbo (#835)  
+  bugfix: Set to 'calculated' all the values in the template task's financials tab (#834)
+
+Since 3.8.6.8
+-----------------
+
+  bugfix: fix billing report showing gliched date data (#827)
+  feature: Task templates new variable type numeric (#830)
+    * allow to add 'numeric' variables when configuring a task template
+    * add 'Estimated time' to the elegible properties of a task to be assigned with the value of a template variable when configuring a task template
+    * in tasks form, if a task estimated time has an amount of minutes that is not present in the selector options, then add it to the selector, to prevent losing the value after saving the form
+    * use getColumnType function for the template variable type
+    * refactor code for template variables instantiation
+    * allow text, numeric, date and user custom properties to be used in template tasks and re-use the same functions that fixed task properties use for calculations
+  bugfix: only recalculate due date (using selected payment terms) in the controller if it's not sent by the interface (#825)  
+  bugfix: Fix columns layout in the expenses list for the expense items rows (#826)
+    * Add column 'is_billable' to the expense items row in the expenses list
+    * Remove log message
+  bugfix: Inherit task's financials info when it gets cloned (#828)
+
+Since 3.8.6.7
+-----------------
+
+  feature: Feature improved outbox email user feedback (#822)
+    * add methods for counting total emails in outbox and showing popup to user
+    * show number of emails in outbox folder and give feedback when trying to send emails in outbox
+    * remove legacy method that showed outbox emails count fron cron
+    * new messages for outbox emails feedback
+  bugfix: fix typo on email notification messages (#801)
+  bugfix: errors reported on fresh enterprise edition installation (#766)
+    * add typecast to avoid warning: 'count(): Parameter must be an array or an object that implements Countable'
+    * call ->database_connection instead of DB, as DB class is not available from this dir
+    * add date field to insert query for fo_cron_events table to avoid error when installing crpm plugin  
+  feature: when creating a project from evx to quickbooks, set the option BillWithParent (#821)
+    * when creating a project from evx to quickbooks, set the option BillWithParent to true
+    * put some comments at project creation in qbo

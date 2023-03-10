@@ -1,0 +1,9 @@
+1) Choose : I want to use HumHub for: "Skip this step, I want to set up everything manually"
+2) Install with sample data i.e TICK Set up example content (recommended)
+3) Move all the images of uploads/profile_image/ from manual to zip.
+4) PHP REQUIREMENT LINK : http://docs.humhub.org/admin-requirements.html#server-requirements
+5) Upgrade Notes: https://docs.humhub.org/docs/admin/updating/
+6) Upgrade supports step by step upgrade from previous major upgrade only. So always update version number in info.xml in every major version.
+7) Download upgrader package from https://github.com/humhub/updater always take the latest package and update our upgrader.zip (We can cross check this package by downloading from Administration --> Modules --> search for "Humhub Updater" and download. This new package downloaded in protected/modules/updater.
+"Update Humhub" icon stays post upgrade.
+8) Keep guid same in SQL for all tables.

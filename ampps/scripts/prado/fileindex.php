@@ -1,0 +1,16 @@
+.github
+.gitignore
+.php-cs-fixer.dist.php
+HISTORY.md
+LICENSE
+README.md
+UPGRADE.md
+bin
+composer.json
+composer.lock
+docs
+framework
+phpdoc.dist.xml
+phpstan.neon.dist
+phpunit.xml
+tests

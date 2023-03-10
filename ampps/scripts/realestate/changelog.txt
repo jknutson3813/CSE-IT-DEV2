@@ -1,0 +1,27 @@
+Version 1.36.2 (October 26, 2022): #
+
+    minor bugfixes.
+
+Version 1.36.1 (September 8, 2022): #
+
+    minor bugfixes.
+
+Version 1.36.0 (November 19, 2021): #
+
+    an opportunity to specify the "Deal type" for fields in a module 'Extended Forms Editor';
+    new website section and the "Сallback" function;
+    numerous improvements and bug fixes.
+	
+Version 1.35.1 (September 11, 2021): #
+
+    update Yii framework to version 1.1.24;
+    PHP 8.0 support.
+
+Version 1.35.0 (August 30, 2021): #
+
+    links to edit info pages under the administrator and moderator in the BASIS theme
+    sending an ad for moderation after changing data or uploading new photos, videos or documents
+    in the section "History of messages with the user" displaying information about the user and his contacts
+    in the section "Sitemap setup" link to the sitemap
+    buttons for sending a message to the user and viewing the ad on the ad editing page
+    update Yii framework to version 1.1.23

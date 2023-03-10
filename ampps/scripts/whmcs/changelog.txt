@@ -1,0 +1,137 @@
+Changelog:WHMCS V8.6.1
+
+Version 8.6.1 Release Notes
+Maintenance
+
+CORE-17036 - Correct record of payment for non-decimal currency to prevent fractional credit
+CORE-18211 - Correct client area action 'Change Approver Email' for addon SSL certificates
+CORE-18254 - Prevent error during configuration of Google SMTP provider
+CORE-18259 - Correct display values when switching between legacy and OAuth methods for department mail configuration
+CORE-18262 - Prevent error in PHP 8.1 when Suspend Days is not defined
+CORE-18266 - Prevent error in PHP 8.1 for invoices generated with 100% discount
+CORE-18268 - Prevent error in PHP 8.1 when performing a server sync
+CORE-18271 - Improve system charset enforcement for Microsoft mail
+CORE-18274 - Prevent error in PHP 8.1 when status is set to Paid for invoices with deleted services
+CORE-18276 - Prevent error in PHP 8.1 when recalculating price with 100% promo code
+CORE-18277 - Prevent error in PHP 8.1 when initiating a domain transfer
+CORE-18278 - Prevent error in PHP 8.1 with saving calendar event
+CORE-18279 - Prevent error in PHP 8.1 when updating exchange rates against a base currency not in ECB feed
+CORE-18281 - Ensure correct language URLs are used with basic URLs and Six theme
+CORE-18285 - Prevent error in PHP 8.1 when saving a Lookup Provider with no TLDs selected for suggestion
+CORE-18286 - Prevent error in PHP 8.1 on ticket observer requests
+CORE-18288 - Prevent error in PHP 8.1 when adding a transaction with an outgoing amount and no invoice ID
+CORE-18289 - Prevent error in PHP 8.1 when initiating an email campaign that includes the general BCC address
+CORE-18298 - Restore deactivation UI for payment gateways in the event of missing module files
+CORE-18302 - Prevent error in PHP 8.1 when moving services between client accounts
+CORE-18304 - Redacted
+Modules
+
+CORE-18272 - Prevent error when receiving unknown error message from domain info or transfer requests with ResellerClub
+MODULE-7865 - Prevent error in PHP 8.1 when capturing payment with SecurePayAU
+MODULE-7869 - Prevent error in PHP 8.1 for usage update with VirtualMin
+MODULE-7870 - Prevent error in PHP 8.1 for email forwarding actions with Namecheap
+MODULE-7871 - Prevent error in PHP 8.1 when changing weight of MarketConnect addon products
+
+Changelog:WHMCS V8.6.0 GA
+
+Version 8.6.0 Release Notes
+Maintenance
+
+CORE-17898 - Correct merge field link for OX App Suite welcome email
+CORE-18126 - Correct spinner for MarketConnect SSL sidebar action
+Also known as: MODULE-7838
+CORE-18127 - Ensure MarketConnect SSL active action is highlighted in sidebar
+Also known as: MODULE-7837
+CORE-18128 - Do not render Change Approver action for MarketConnect SSL once issued
+Also known as: MODULE-7836
+CORE-18142 - Nullify previous POP3/IMAP configuration when saving MS configurations
+CORE-18156 - Correct inability to manage or activate Marketconnect services
+CORE-18161 - Correct generated redirect path for MS OAuth
+CORE-18165 - Prevent error in PHP 8.1 when performing domain search with premium domains enabled
+CORE-18168 - Prevent error in PHP 8.1 during render of Marketgoo landing page with a single currency
+CORE-18169 - Prevent error in PHP 8.1 on configpromotions page when configurable options group is set up
+CORE-18173 - Improve CLI output of POP Import for MS imports
+CORE-18174 - Correct email message ID handling for MS Graph API to ensure deletion of unexpected IDs following import
+CORE-18200 - Correct error handling for invalid domain check input
+Modules
+
+MODULE-7696 - Ensure invoice can be paid using PayPal Checkout when recurring service is $0.00
+Also known as: CORE-17201
+MODULE-7709 - Improve phone number handling in Nominet
+MODULE-7854 - Prevent error in PHP 8.1 for Offline CC
+CORE-18224 - Remove previously deprecated PayPal Express module if not active
+Languages
+
+CORE-18098 - Update Hungarian translations
+
+Changelog:WHMCS V8.5.1
+
+Version 8.5 Release Notes
+Maintenance
+
+CORE-17759 - Correct convertto processing for Mollie iDeal
+CORE-17760 - Restore Digicert icon lost when upgrading to 8.5.0-release.1
+CORE-17762 - Correct styling overlap and offset of My Services homepage panel
+CORE-17767 - Correct language key reference for Weebly
+CORE-17769 - Update WHOIS server for .org and .ink
+CORE-17770 - Prevent error when using 100% discount on registration checkout with Stripe
+CORE-17774 - Prevent erroneous SSL addon listings on Manage SSL Certificate page
+Modules
+
+MODULE-7694 - Prevent fatal error during meta data retrieval from Plesk 
+
+Version 8.5.0 Release Notes
+Maintenance
+
+CORE-16377 - Correct dynamic translation of Support Department Name
+CORE-17547 - Correct admin support ticket filtering by "Any"
+CORE-17667 - Correct redirection with Friendly URLs after using 2FA in client area
+CORE-17689 - Documentation for ClientDelete hook deprecation and preference for PreDeleteClient
+CORE-17703 - Correct additional domain fields for .travel TLD
+CORE-17706 - Update WHOIS entry for .pro TLD
+CORE-17718 - Maintain security question selection on error or reload during user registration
+CORE-17726 - Ensure invoices with client group discounts and product addons resulting in zero-dollar invoices are marked paid
+CORE-17728 - Update WHOIS entries for various TLDs
+CORE-17729 - Add recently visited to System Settings sidebar
+Modules
+
+MODULE-5903 - Update API used for Mollie iDeal gateway
+Also known as: CORE-6141
+MODULE-7789 - Update CIRA Agreement Version for eNom
+MODULE-7798 - Client Area SSO: cPanel Login default button
+
+Version 8.4.1 Release Notes
+Maintenance
+
+ADDON-6138 - Remove exectued mailchimp queue jobs
+CORE-17061 - Correct display format of product addon custom fields
+CORE-17090 - Ensure best handling of mixed case of transfer form domain entries
+CORE-17100 - Generate product slug when duplicating a product
+Also known as: CORE-17119
+CORE-17150 - Prevent erroneous "Service Not Found" during domain ownership transfer
+CORE-17273 - Correct percentage promo code display format on Admin Area Orders page
+CORE-17312 - Prevent error when processing the email verification of a new user
+CORE-17317 - Ensure proper form submission for Google Sign-In configuration
+CORE-17383 - Correct addon service recurring calculation on non-monthly cycle
+CORE-17391 - Correct OAuth redirect proto validation
+CORE-17400 - Ensure correct entity is used when retrying in module queue
+CORE-17420 - Ensure product bundle configuration step is performed when an addon or custom field is defined
+CORE-17437 - Prevent declaration error related to Menu items
+Also known as: CORE-17436
+CORE-17442 - Process Stripe fees only for known currencies
+CORE-17456 - Ensure ticket reply from unknown email can be imported when Insecure Import is enabled
+CORE-17467 - Correct link to user on "Pay Method Created" activity log entry
+CORE-17474 - Improve robustness of user migration for mixed collation environments
+CORE-17475 - Correct user link in admin dashboard activity widget
+Modules
+
+MODULE-7458 - Prevent erroneous failures from SagePay 3DS duplicate callbacks
+MODULE-7717 - Prevent error when provisioning free feature addon
+MODULE-7738 - Remove SagePay Tokens v1 from distribution
+MODULE-7739 - Implement 3DS v2 support for SagePay Repeats
+MODULE-7740 - Introduce SagePay Tokens v2 Module
+MODULE-7743 - Correct blank page on 3DS in SagePay
+MODULE-7745 - Remove trailing space on fr TLD additional domain field
+API
+
+CORE-17191 - Honor client group pricing for domain orders via AddOrder

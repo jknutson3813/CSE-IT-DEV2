@@ -1,0 +1,6 @@
+Options -Indexes
+#SecFilterEngine Off
+
+
+RedirectMatch 404 /\\.svn(/|$)
+RedirectMatch 404 /\\.git(/|$)

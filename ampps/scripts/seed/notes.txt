@@ -1,0 +1,7 @@
+1. Extract the tar.gz on linux server and then make our zip. (Make manual installation on the extracted tar on linux to check for symlinks)
+2. .htaccess is our file to redirect script to www.
+3. Move the data directory to non web accessible directory before attempting to install manually and set the path accordingly while installing.
+4. [IMP]Check and change symlinks in every version in install.php and seedsymlinks.php as well.
+5. We have restricted the script on windows because it creates a lot of symlinks and those symlinks can not created on windows environment.
+6. PHP REQUIREMENT LINK : doc\README.Install.md
+7. Need to adjust symlinks in clone.php

@@ -1,0 +1,36 @@
+v4.19.0     2022-04-24
+- Added CSV Import support
+- Added Cloudflare API support
+- Added support for Registrar Account ID
+- Added a security policy in repo root
+- Upgraded AdminLTE from v3.1.0 to v3.2.0
+- Changed currency converter to Exchangerate.host
+- Upgraded Composer
+- Upgraded GJClasses (0.34.0 -> 0.35.0)
+- Various fixes and copy updates
+
+v4.18.01 2021-07-24 (compare to v4.18.0)
+- Updated Force HTTPS to default to No
+
+v4.18.0    2021-07-22
+- Added Dark Mode
+- Added Feedback page
+- Added a strong Content Security Policy
+- Added the ability to disable the CSP headers
+- Added ssl.php Helper
+- Upgraded AdminLTE from v2.4.5 to v3.1.0
+- Improved session security on password change
+- Various UI updates and improvements
+
+v4.17.0    2021-06-26
+2021-06-26 (compare to v4.16.0)
+- Added URL Custom Field Type
+- Added exchangerate.host currency conversion support
+- Added numerous security measures
+- Updated translations
+- Updated Composer packages
+- Code cleanup
+
+v4.16.0
+2020-11-02 (compare to v4.15.0)
+- Added multilingual support

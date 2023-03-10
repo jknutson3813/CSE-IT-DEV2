@@ -1,0 +1,14 @@
+1. Install Composer and create zip of package
+2. configure .env file install through command
+	php artisan key:generate
+	php artisan migrate --seed
+	php artisan storage:link
+	https://github.com/BadChoice/handesk#installation
+3. PHP REQUIREMENT LINK : see composer.json require
+4. Keep bootstrap/cache/services.php and packages.php in zip
+
+NOTE : IN version 1.3.3. forget password link not working. Vendors have added in their enhancement issues in github
+5. openssl, pdo_mysql, mbstring, iconv added in Requirement as many functionality does not work without it.
+6. On PHP 7.4, we get error while creating tickets in manual install. So we have added restriction in info.xml for PHP 7.4.
+7. Delete Procedures and functions of DELIMETER if it's empty because it results in error while importing sql through softaculous.
+8. We have modified .env.example (line no. 39,49) as it was giving error while installing manually. https://github.com/BadChoice/handesk/pull/767

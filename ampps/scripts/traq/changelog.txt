@@ -1,0 +1,31 @@
+Changes in Traq v3.7.3
+---------------------------
+Backport PHP 7/8 fixes from 3.8 to 3.7
+
+Changes in Traq v3.7.2
+---------------------------
+
+    Some models are broken on PHP 7+
+    Private tickets
+    Admin permissions are missing
+    PHP Error during install
+
+
+Changes in Traq v3.7.1
+---------------------------
+
+	Invalid min/max length values
+	Unable to create Milestones
+	Undefined index on Timeline
+	Unable to create Wiki pages
+
+Changes in Traq v3.7.0
+---------------------------
+
+    Ticket time management
+    Password migration prompt
+
+Changes in Traq v3.6.0 
+---------------------------
+    User pruning
+    Unique email address required during registration

@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://sourceforge.net/projects/humo-gen/files/v6.1/
+2. Keep username of family as 'family' and password same as admin.

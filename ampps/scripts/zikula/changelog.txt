@@ -1,0 +1,84 @@
+3.0.4 (2021-12-21)
+
+    Fixes:
+        [CoreBundle] More robust autoloader detection.
+        [CoreBundle] Add flex-wrap class to pagination for responsive behaviour (bs#23504).
+        [Admin] Sanitize extension title in admin panel.
+        [Blocks] Removed unneeded index for string column from block positions (#4825)
+        [Blocks] Sanitize block title and description in admin list view.
+        [Blocks] Strip script tags from XSLT block stylesheets.
+        [Categories] Removed unneeded index for string column from categories (#4825)
+        [Categories] Sanitize context menu in admin category list.
+        [Extensions] Disable caching headers in AbstractTheme if user is logged in.
+        [Theme] Fix resolving assets location on Windows if Zikula is installed in a sub directory (#4480).
+        [Permissions] Correctly handle non-existing username during permission testing.
+        [ThemeModule] Replaced robloach/component-installer with oomphinc/composer-installers-extender (#4558).
+        [Users] Dispatch UserPostLoginFailureEvent after login failure as expected.
+        [Users] Add missing check in CurrentUserApi to avoid an error in PHP8.
+        [Users] Fix possibly open redirect in login function.
+        [ZAuth] Fix wrong DateTime argument in UserVerificationRepository.
+
+
+Zikula Core 3.0.3 released!
+
+The core development team is proud to announce the availabilty of Zikula Core 3.0.3.
+
+Zikula Core 3.0.3 is available as of today, 04 September, 2020.
+
+    Security fixes from Symfony:
+        Prevent RCE when calling untrusted remote with CachingHttpClient (CVE-2020-15094).
+
+    The following bugfixes have been included:
+        [Users] Minor correction in user online block template.
+
+3.0.2 (2020-08-28)
+
+    Fixes:
+        [Categories] Fix hiding registry label in form (#4452).
+        [CoreBundle] More robust autoloader detection.
+        [Menu] Fix error during creation of new menus.
+
+Zikula Core 3.0.0
+
+Zikula Core 3.0.0 is available as of today, 25 June, 2020.
+Most important changes
+
+    Foundation
+        Requires at least PHP 7.2.5; uses scalar type hints.
+        Technology updates: Symfony 5.1, Twig 3, Bootstrap 4 including Bootswatch styles, Font Awesome 5.
+        Utilise autowiring and autoconfiguring functionality from Symfony.
+        Using utf8mb4 charset on MySQL platforms for real utf8 support.
+    Extension handling
+        In general, 'module' and 'theme' are now generically referred to as 'extensions'.
+        Extensions module automatically contributes admin menu item to display Markdown docs for other extensions. Help UI can be configured to use either a modal window or a fixed sidebar.
+        Added "Connections" menu to ExtensionsMenu so extensions can add menu children to other connected extension's admin UI.
+    Administration
+        Added ability to choose a Font Awesome icon for admin categories, categories and extensions.
+        Added support for creating and changing translations on-site using "Edit in Place" and/or a WebUI.
+        Added new fields for optional comments and colours to permission rules.
+        Start page can now be defined much easier (a dropdown allows to choose a route/controller combination).
+        Start page can now be configured for each available language.
+        Added CLI Commands to manage extension installation, upgrade and uninstall and sync.
+        Added CLI Command to import users.
+        Added CLI Command to delete any number of users.
+        Added CLI Command to edit password, email, username properties of ZAuth user mappings (a replacement for the old Zikula Recovery Console).
+    Allow users to delete themselves (with admin setting).
+    Password handling
+        Passwords in the ZAuth module are now always hashed with the the most up-to-date algorithm available (via Symfony security component) and automatically updated on login.
+        Passwords can optionally be validated with Symfony's NonCompromisedPassword validator.
+        A new password strength meter is implemented.
+        Added a simple password generator in all places where a new password might be needed.
+        Added ability to force a group of users to change their password on next login.
+    Developers
+        Added twig-inspector for easy debugging of Twig templates.
+        Introduced a 'site definition' concept.
+            Adds means for site-wide branding.
+            Adds the ability to create dynamic site properties (e.g. titles, meta descriptions etc.).
+        Blocks can now specify default property defaults used for custom form fields.
+        Added @PermissionCheck annotation for use in Controllers.
+        Added UserCreationApi to assist with the manual creation of ZAuth-method users.
+        Moved calling adminHeader() and adminFooter() into theme layer.
+        Added CLI Command to create any number of users for testing purposes.
+        Added CLI command to generate an Extension skeleton with instruction on using Symfony MakerBundle to complete development.
+        Added new Doctrine Paginator wrapper and paginator template.
+        Added new AlphaFilter class and template.

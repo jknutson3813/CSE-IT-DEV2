@@ -1,0 +1,103 @@
+
+## 5.7.18 - 2023-01-03
+
+### Fixed
+- [Issue 6775](https://github.com/firefly-iii/firefly-iii/issues/6775) OAuth authentication was broken for Authelia and other remote user providers.
+- [Issue 6787](https://github.com/firefly-iii/firefly-iii/issues/6787) SQLite value conversion broke several functions
+
+## 5.7.17 - 2022-12-30
+
+### Fixed
+- [Issue 6742](https://github.com/firefly-iii/firefly-iii/issues/6742) Error when a rule tries to add or remove an amount from a piggy bank
+- [Issue 6743](https://github.com/firefly-iii/firefly-iii/issues/6743) Error when opening piggy bank overview
+- [Issue 6753](https://github.com/firefly-iii/firefly-iii/issues/6753) Rules are not finding any transactions with trigger 'Amount is greater than 0'
+
+## 5.7.16 - 2022-12-25
+
+### Added
+- You can now search for SEPA CT, thanks @dasJ!
+
+### Changed
+- Links go to [Mastodon](https://fosstodon.org/@ff3), not Twitter.
+- Most if not all remaining float values removed. None were used in financial math.
+- Expand Laravel Passport settings.
+
+### Fixed
+- [Issue 6597](https://github.com/firefly-iii/firefly-iii/issues/6597) Edit existing split transaction's source did not work properly.
+- [Issue 6610](https://github.com/firefly-iii/firefly-iii/issues/6610) Fix search for attachments
+- [Issue 6625](https://github.com/firefly-iii/firefly-iii/issues/6625) Page of the links is not displayed due to an error
+- [Issue 6701](https://github.com/firefly-iii/firefly-iii/issues/6701) Ensure remote_guard_alt_email if changed, thanks @nebulade!
+- Remove some null pointers in the code.
+- Add missing locale data
+- Fixed typo, thx @charlesteets!
+- Various issues with piggy banks
+- Clear cache after a transaction is deleted.
+- Be more clear about registrations being disabled.
+
+### Security
+- Updated all packages and dependencies.
+
+### API
+- Fix API endpoint that would not accept two of the same dates.
+
+## 5.7.15 - 2022-11-02
+
+### Fixed
+- You can no longer set the currency of expense and revenue accounts.
+- Form elements are not spell checked anymore (privacy).
+- [Issue 6556](https://github.com/firefly-iii/firefly-iii/issues/6556) Wrong value used in bill chart
+- [Issue 6564](https://github.com/firefly-iii/firefly-iii/issues/6564) Right-Align numbers to match monetary value digits
+- [Issue 6589](https://github.com/firefly-iii/firefly-iii/issues/6589) Webhook not fired after destroying transaction
+- Add missing locale data
+
+## 5.7.14 - 2022-10-19
+
+### Fixed
+- Bulk editing transactions works.
+- Negative budgets no longer work.
+
+## 5.7.13 - 2022-10-17
+
+### Added
+- [Issue 6502](https://github.com/firefly-iii/firefly-iii/issues/6502) A few students from @D7032E-Group-6 added MTD and YTD, thanks!
+
+### Fixed
+- [Issue 6461](https://github.com/firefly-iii/firefly-iii/issues/6461) Broken link in `/public` directory warning.
+- [Issue 6475](https://github.com/firefly-iii/firefly-iii/issues/6475) Method name mixup.
+- [Issue 6471](https://github.com/firefly-iii/firefly-iii/issues/6471) Fix float conversion
+- [Issue 6510](https://github.com/firefly-iii/firefly-iii/issues/6510) Destroy transaction now also triggers liability recalculation.
+- Amount check for budget amounts was too low.
+- Some other small fixes
+
+### API
+- [Issue 6481](https://github.com/firefly-iii/firefly-iii/issues/6481) Mixup in API validation, fixed by @janw
+
+## 5.7.12 - 2022-09-12
+
+### Fixed
+- [Issue 6287](https://github.com/firefly-iii/firefly-iii/issues/6287) Catch error when trying to email with invalid settings.
+- [Issue 6423](https://github.com/firefly-iii/firefly-iii/issues/6423) Fix redis error, thanks @canoine!
+- [Issue 6421](https://github.com/firefly-iii/firefly-iii/issues/6421) Fix issue with SQLite.
+- [Issue 6379](https://github.com/firefly-iii/firefly-iii/issues/6379) Fix issue when user has lots of currencies but short list settings.
+- [Issue 6333](https://github.com/firefly-iii/firefly-iii/issues/6333) Fix broken chart for reconciliation.
+- [Issue 6332](https://github.com/firefly-iii/firefly-iii/issues/6332) Fix issue with uploading zipped PDF's.
+
+## 5.7.11 - 2022-09-05
+
+### Added
+- [Issue 6254](https://github.com/firefly-iii/firefly-iii/issues/6254) Use Piggy Bank's start date in monthly suggestion by @rickdoesdev
+- Add best practices badge.
+- Various sanity checks on large amounts.
+
+### Removed
+- Service worker is removed.
+
+### Fixed
+- [Issue 6260](https://github.com/firefly-iii/firefly-iii/issues/6260)
+- [Issue 6271](https://github.com/firefly-iii/firefly-iii/issues/6271) Improve settings for Redis, by @canoine
+- [Issue 6283](https://github.com/firefly-iii/firefly-iii/issues/6283) Convert to deposit means the transaction loses its bill.
+- Fix issue with foreign currencies in transaction form.
+- Fix various issues with SQLite.
+- [Issue 6379](https://github.com/firefly-iii/firefly-iii/issues/6379) Some foreign currencies not list for setting on new transactions
+- Make 2FA code + validation more robust. Thanks to @jtmoss3991, @timaschew and @Ottega.
+

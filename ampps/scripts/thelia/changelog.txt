@@ -1,0 +1,69 @@
+# 2.4.5
+- #2834 Add svg support
+- #3015 RestoreCurrentCart also restore currency
+- #3014 Fix docker for 2.4
+- #2909 Protecting content from preg_replace errors
+- #2858 Adding IDs in product SEO export
+- #2846 Change link tag and append javascript init on order payment gateway
+- #2841 Fix Spelling Mistakes
+- #2832 Fix export with no date
+- #2831 Fix case where lang is null
+- #2830 Fix language when multi domain is enabled
+- #2828 Fix wrong id in ProductSaleElementsDocument Loop
+
+# 2.4.4
+- #2821 Fix can set not active lang in front office
+- #2820 Add translations page for customer titles
+- #2819 Add a more modern template for Thelia front office
+- #2818 Update Smarty and Markdown
+- #2817 Update email-layout.tpl
+- #2815 Fix license to be detectable by github
+- #2814 Fix export end date calculation
+- #2813 Fix csv export for multiline
+- #2812 Export locale
+- #2810 Removed wrong parameter in findOne()
+- #2808 Add localPickup as delivery mode allowed list
+- #2807 Add i18n for HookAnalytics configurations
+- #2801 Add a command to switch the front template from CLI
+- #2800 Fix missing state in CartPostage getDeliveryInformation
+- #2799 Deep cloning of template definition
+- #2797 Added template type to template paths cache cache key
+- #2796 Fix delivery when state is null
+- #2795 Fix new delivery with state interface
+- #2794 Fix filter by product_image_id loop parameter
+
+# 2.4.3
+- #2792 Add GithubActions
+- #2791 Fix compatibility to composer 2
+- #2790 Fix state not checked in deliveries modules
+- #2788 Fix issue #2787 TinyMce add link to img doesn't work
+- #2785 Add config value to disallow module install by ZIP
+- #2784 Fix TinyMce - display preview thumbs in a subfolder
+- #2783 Fix state tax in product loop
+- #2782 Fix typo in base tax rule names
+- #2781 Improved the readme file
+- #2780 Fix a bug where the path isn't correct if the template is in a directory
+- #2779 Force return to page 1 after changing the limit of displayed products…
+- #2777 The checkbox not appear on the product page - Tab Image
+- #2776 Fix issue #2516 loop search_in param doesn't work
+- #2775 Added tweeter feed to admin home
+
+# 2.4.2
+- #2773 Add description to module composer skeleton
+- #2772 Update default config values
+- #2771 Better default tax rules names
+- #2770 Add shared option for services (from SF 2.8)
+
+# 2.4.1
+- #2765 Tax and Taxed price variables are now rounded in OrderProduct loop
+- #2764 Fix MoneyFormat when have space in number
+- #2763 Improvement on delivery events
+- #2762 Fix total prices and taxes in order edit page
+- #2761 Improve DeliveryPostage event to get more data
+- #2760 Improve Pickup locations
+- #2758 add a new event MODULE_DELIVERY_GET_PICKUP_LOCATION
+- #2757 Fix model generation at module activation
+- #2756 Fix Url are not rewritten if no locale in url
+- #2754 Fix remove zero decimal on number > 1000
+- #2752 Order by alpha_reverse returns an error in feature-availability loops
+- #2748 Upgrade docker compose to a more mordern stack

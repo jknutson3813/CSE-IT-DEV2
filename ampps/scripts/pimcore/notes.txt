@@ -1,0 +1,49 @@
+1. PHP REQUIREMENT LINK : https://pimcore.com/docs/pimcore/current/Development_Documentation/Installation_and_Upgrade/System_Requirements.html
+2. Install using composer and make zip, remove extra files eg.
+	1.config/services.yaml
+	2.config/local/database.yaml
+	3.var/*
+	4.public/bundles
+	5.public/var
+	
+and keep public/.htaccess file from manual for apache environment.
+https://pimcore.com/docs/pimcore/current/Development_Documentation/Installation_and_Upgrade/System_Setup_and_Hosting/Apache_Configuration.html
+
+Keep APP_ENV as prod in .env file in our package.
+
+3. Follow installation steps mentioned in the link below, use the skeleton package to install via composer:
+composer create-project pimcore/skeleton my-project
+https://pimcore.com/docs/6.x/Development_Documentation/Getting_Started/Installation.html
+
+4. Use utf8mb4_general_ci collate for database while manual installation otherwise command throws error.
+
+5. Check "pimcore/pimcore" version in composer.json of "pimcore/skeleton" and download that version of "pimcore/pimcore" and check "lib/too/requirements.php"  if requirements verfication code is changed in "checkMysql" function then change requirements code accordingly.
+
+6. Don't remove double quotes from "[[softdbpass]]" it throws error when contain "[" and "]".
+
+7. Remove "DEFINER=`root`@`localhost`" From sql file.
+
+8. Remove COLLATE=utf8mb4_0900_ai_ci From sql file if we have installed manually on Mysql 8. Because it gives error on installing with MariaDB. Besides this script itself doesn't use any collation and hence it takes server's default collation.
+https://github.com/pimcore/pimcore/blob/34d4734eafbb18bf91320452ecd7846c29c37c0f/bundles/InstallBundle/Resources/install.sql#L45
+
+9. We have added redirection rule from public/.htaccess to our .htaccess to resolve image url issue. update when there is change.
+
+# ASSETS: check if request method is GET (because of WebDAV) and if the requested file (asset) exists on the filesystem, if both match, deliver the asset directly
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)
+RewriteCond [[softpath]]/public/var/assets%{REQUEST_URI} -f
+RewriteRule ^(.*)$ /var/assets%{REQUEST_URI} [PT,L]
+
+# Thumbnails
+RewriteCond %{REQUEST_URI} .*/(image|video)-thumb__[\d]+__.*
+RewriteCond [[softpath]]/public/var/tmp/thumbnails%{REQUEST_URI} -f
+RewriteRule ^(.*)$ /var/tmp/thumbnails%{REQUEST_URI} [PT,L]
+
+# static pages
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)
+RewriteCond %{QUERY_STRING}   !(pimcore_editmode=true|pimcore_preview|pimcore_version)
+RewriteCond [[softpath]]/public/var/tmp/pages%{REQUEST_URI}.html -f
+RewriteRule ^(.*)$ /var/tmp/pages%{REQUEST_URI}.html [PT,L]
+
+10. works only on apache as we have added apache code in public/.htaccess
+
+11. We have disabled the script on ampps because we configure the .htaccess which has RewriteCond rules which is not compatible with ampps.

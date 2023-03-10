@@ -1,0 +1,13 @@
+1. install without demo data
+2. comment php_value and php_flag from www/.htaccess ( Suggested by vendor as php_value and php_flag causes issue on suPHP servers )
+3. index.php is our file to redirect url.
+4. PHP REQUIREMENT LINK : Read doc/INSTALL File
+5. Keep $config->requestType  = 'GET'; in my.php (Confirmed with vendor via email)
+6. set timezone "(UTC-05:00) Eastern Time (US &amp; Canada)"
+7. Download international package which is named as ZenTaoALM.{{version}}.stable.int(suggested by vendor in email).
+8. Select mode : Keep the 'ALM' mode.
+9. PHP version set to 5.5 from 5.2 check and revert if its working on php 5.3
+10. We have removed lines i.e  SET global log_bin_trust_function_creators = 1; and SET global sql_mode = ''; from updatefunctions.sql and zentao.sql on vendor recommendation via email as upgrade was throwing error from 16.4 to 17.0. (This is mandatory to remove in every version as 16.x to 17.x upgrade breaks if this isn't removed. Not needed while manual installation)
+(Check if vendor includes these changes in next version in package itself)
+11. Since version 17.5 we have added MYSQL >= 5.6.0 requirement in info.xml since it was throwing error for INNODB engine on MYSQL 5.5.
+12. "key" value in generated in config table on visiting admin panel.

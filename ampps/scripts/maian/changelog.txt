@@ -1,0 +1,140 @@
+Maian Support Changelog (www.maiansupport.com)
+
+[+] Added [*] Updated [-] Bug Fix
+
+Version 4.5 (26/06/2022):
+  [*] Updated PHPMailer to latest stable release (6.6.3)
+  [-] Fixed attachment downloads for visitor portal tickets (thanks Evrim)
+  [-] Fixed issue with undefined class errors with Tracy debugger
+  [-] Upgrade routine bug fixes and improvements
+
+Version 4.4 (17/04/2022):
+  [+] Added basic captcha as an alternative to the CleanTalk anti spam system
+  [+] Added batch ops to all ticket list screens for faster processing
+  [+] Added official support for PHP8.0* & PHP8.1*
+  [+] Added option to enable/disable if visitor can close tickets
+  [+] Added option to hide IP addresses on ticket view screens (control/options.php). Can be hidden for accounts, admin or both.
+  [+] Added option to move ticket/dispute from one account to another in the admin CP. Requires move privileges for none admins.
+  [+] Added option to send email notification if support staff close or open tickets
+  [+] Added option to set custom prefix for random ticket numbers
+  [+] Added option to specify whether 'Write Ticket History' box on ticket screens for admins is auto checked by default
+  [+] Added support for Wysiwyg editor. Legacy version posts fall back to BB code if Wysiwyg enabled.
+  [+] Added year switcher for admin dashboard graph to see stats for selected years
+  [+] Added {subject} variable for email language vars related to tickets. Parses as ticket subject.
+  [+] In admin CP added staff option to auto set status on ticket reply page. Useful if a custom status is always needed after a staff reply.
+  [+] Update for admin CP ticket / reply edit screens. Attachments can now be added to original ticket message and ticket replies in admin CP
+  [+] Visitor notes can now be edited directly from the ticket view screens
+  [*] Added Nette Tracy PHP debugging system for better error reporting and exception handling (2.9.1)
+  [*] Admin cookie option can now easily be switched off in the 'control/options.php' file
+  [*] Import and export routines now use the system temporary folder. This is auto cleared by the garbage collector and is used for better performance.
+  [*] Improvements to HTML emails when reading via imap. If detected, only data between the body tags is parsed.
+  [*] In Admin CP, entry logs and work timers can now be individually disabled for admins, not just other support staff
+  [*] In admin CP mail settings moved to individual page for easier access
+  [*] In admin CP when ticket is added, redirect screen is now view screen, not edit screen. This can be reverted back if required.
+  [*] Main portal updated to include FAQ and pages on portal homescreen
+  [*] Security enhancement. Backup folder path must explicitly be set in admin CP now for security.
+  [*] Security improvements and enhancements.
+  [*] Update to admin ticket reply screens. Attachments are now visible here same as ticket edit screens.
+  [*] Updated API to return comma delimited list of IDs when multiple accounts or tickets are added
+  [*] Updated Bootstrap library (3.4.1)
+  [*] Updated Mobile Detection Class (2.8.39)
+  [*] Updated PHPMailer to latest stable release (6.6.0)
+  [*] Updated jQuery javascript library (3.6.0)
+  [-] Fixed Cross-Site Request Forgery vulnerability in first 4.3 branch (March 2020). Thanks to Besim Altinok.
+  [-] Fixed MySQL autoenable date issue for MySQL servers running in STRICT mode that disallow 0000-00-00 date fields.
+  [-] Fixed MySQL error when dispute was locked by an admin user and another admin user viewed the same dispute
+  [-] Fixed MySQL issue where integers were stripped from integer only queries when processing multi byte characters on older versions of MySQL
+  [-] Fixed MySQL join issue that resulted in ticket search returning a zero result set on some servers
+  [-] Fixed admin CP search tickets/custom fields bug that threw a database error when searching a date range
+  [-] Fixed attachments limit bug that meant unlimited attachments could be uploaded
+  [-] Fixed bug where ticket assign count on admin dashboard and overview window was incorrect for tickets with a custom status
+  [-] Fixed bug where user setting "On Login, Go to Mailbox if at least 1 Unread Message in Inbox" didn't work.
+  [-] Fixed entry log filters in admin CP, which always showed all login events
+  [-] Fixed fatal error which occurred during account validation
+  [-] Fixed issue where attachment options were still displayed even if they were disabled on admin reply screen
+  [-] Fixed issue where new names for Open, Closed and Locked tickets under ticket statuses was not correctly displayed on certain admin pages and ops
+  [-] Fixed mail template path issue for ticket replies during imap (Tickets by Email) routines
+  [-] Fixed read folders issue with imap when SSL was enabled causing mailbox to not connect
+  [-] Fixed undefined logging error for imap (Tickets by Email) feature
+
+Version 4.3 (09/03/2020):
+[+] Added draft option to ticket creation and reply screens. Draft is saved for textarea to help prevent loss of data.
+[+] Added option to add custom admin pages. Useful for backend information in a secure area. Can be restricted to team members.
+[+] Added option to add custom ticket statuses besides Open, Closed and Locked.
+[+] Added option to disable spam notifications for admin support team. Useful if you prefer to check manually from time to time.
+[+] Added option to spam settings to disable accounts when tickets are moved to spam. This prevents further tickets from being opened via email.
+[+] Added optional custom email response for new tickets. You can now send a custom message when tickets are opened. Configurable per department.
+[+] Added support for PHP7.4
+[+] Added support for the server spam score headers (eg: SpamAssassin) to help detect spam tickets for the Tickets by Email option. This does not require CleanTalk to be enabled.
+[+] In admin CP added F.A.Q history to question edit screen. Shows staff edit history. Optional.
+[+] In admin CP added confirmation to check mail option on imap list screen
+[+] In admin CP added one click view option for image type FAQ attachments
+[+] In admin CP added option for admin staff to send update notifications to other staff when ticket replies are added
+[+] In admin CP added option on assign tickets page to send update notification to visitors
+[+] In admin CP added quick links to confirmation message popups for quicker access
+[+] In admin CP on ticket view screen, one click delete options added to custom fields for quicker removal.
+[+] In admin CP you can now re-order the main off canvas menu. Options you don't need can also be hidden.
+[+] In admin CP, Move to Spam option added to ticket edit screen besides list screens.
+[+] In admin CP, added 'Show All' option to show filters on all list screens
+[+] Updated email digest for day restrictions for staff. Email can be sent on specific days.
+[+] Updated email digest. You can now specify which emails are to be sent in emails.
+[*] Department auto subject/comments/priority can now be enabled for admin tickets. Edit department to enable/disable.
+[*] Improvements to imap routines for tickets with invalid data which caused crashes
+[*] Improvements to sessions and session handling for enhanced security
+[*] In admin CP, custom field and attachment deletions are now written to the ticket history
+[*] Tickets opened by email for accounts disabled are now not permitted.
+[*] Updated PHPMailer to latest stable release (6.1.4)
+[*] Updated and revised all document screenshots
+[*] Updated imap routines to check for emails from staff accounts which would previously open new tickets. If detected, email is ignored as staff replies should come from the admin interface only.
+[*] Updated jQuery library (3.4.1)
+[*] Updated the "Send Notification to Admin When New Account is Created Manually" setting. Notification is now sent to all admins.
+[*] You can now attach custom fields to individual accounts. Useful for getting specific information from certain accounts. Read the docs about this before use.
+[*] Removed ticket reply status. Tickets are now simply open, closed, locked or have a custom status.
+[-] Fixed BB code help page in admin that showed the same display for all list types
+[-] Fixed account ticket history filters in admin CP which didn't work
+[-] Fixed admin mailbox bug where Empty Bin button didn't display if inbox was empty
+[-] Fixed case sensitivity issue with SSL ciphers when decoding licence files.
+[-] Fixed export ticket history to CSV, which failed due to invalid parameter
+[-] Fixed fatal error that occurred when an account was added by admin with the password left blank.
+[-] Fixed http protocol issues for servers using ModSecurity that caused settings to not update
+[-] Fixed issue where admins didn`t receive ticket reply emails if ticket assign was used
+[-] Fixed issue where private categories didn`t display if no account filters were set
+[-] Fixed issue with auto close cron job emails that included the standard ticket number even if random tickets were used
+[-] Fixed several language bugs related to multiple languages where email templates weren't correctly loaded for the set language. Mainly applied to support staff.
+
+Version 4.2 (12/11/2018):
+[+] Added option for visitor to close their account to comply with GDPR law. This is optional and can be enabled in the admin CP in the account settings.
+[+] Added option to disable HTML emails. Update your preference in your mail settings. Default is enabled.
+[+] Added option to set default priority level for ticket creation screen. This defaults if the department auto population options aren`t used. Settings > General > Ticket System
+[+] Added option to set search keywords for FAQ questions. Helps visitors find relevant questions easier.
+[+] In admin CP, visitor accounts can now be sorted by date added
+[*] Account creation API now returns database ID number of account created. Useful for custom backend operations. See docs.
+[*] In admin CP, for ticket list screens, notes icon has been moved to be always visible. Dark icons indicate ticket has notes.
+[*] Ticket creation API now returns database ID number of ticket created. Useful for custom backend operations. See docs.
+[*] Updated all ticket admin list screens to show at a glance assigned support agents/staff
+[*] Updated password reset. If reset, visitor is forced to choose new password on login. Security enhancement.
+[*] Updated tickets by email feature (imap) to use "reply-to" email address if set and different from "to" address.
+[-] Fixed MySQL error when removing attachments from tickets via ticket edit screen
+[-] Fixed a few doccumentation 404 links which were either incorrect or had moved to new urls
+[-] Fixed admin ticket search issue where assigned user filters didn`t work correctly
+[-] Fixed api settings where enabling json enabled xml and vice versa. Language vars wrong way around.
+[-] Fixed backup which was missing closing apostrophe on data causing backups to fail when imported
+[-] Fixed imap encoding issue for emails encoded using windows-1256 charset
+[-] Fixed issue where some attachment data was corrupted for imap routines
+[-] Fixed issue with helpdesk status automatically switching back on if date field was empty.
+[-] Fixed minor issue where action bar wasn`t removed, if open, when tickets were deleted in admin
+[-] Fixed potential overlay issue with bootbox plugin if buttons were double clicked
+[-] Fixed tab index ordering on ticket creation page causing tabbing to be out of sequence
+
+Version 4.1 (29/08/2018):
+[*] Updated ticket quick view in admin to not lock tickets.
+[-] Fixed bug preventing FAQ preview window from opening in the admin CP
+[-] Fixed bug preventing imap folders from being read on imap settings page if SSL was enabled
+[-] Fixed bug preventing spam tickets menu option from appearing for none admin support staff
+[-] Fixed bug related to parse_str for Imap emails running PHP7.2+
+[-] Fixed bug that caused other administrators to revert back to none admins when editing their own profile
+[-] Fixed bug that prevented ticket history for being written for none admin support staff
+[-] Fixed bug where "Display On The Following Days Only" for departments didn`t work with none English languages
+[-] Fixed bug where latest / popular FAQ limits were being ignored if set
+[-] Fixed bug where some imap reply actions were being logged against the wrong tickets
+[-] Fixed logging bug for email digest where function was outside query loop

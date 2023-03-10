@@ -1,0 +1,9 @@
+1. Choose default Timezone America/New_York
+(This is CLI install now and timezone isn't asked, set America/New_York in php.ini file i.e date.timezone = "America/New_York") and then install. Also check the same in kimai2_user_preferences table i.e 'timezone' entry value)
+2. PHP REQUIREMENT LINK: https://www.kimai.org/download/ and also check README.md
+3. Install Composer and create zip for package and Remove "var/cache/prod" from package
+4. Add following entry in kimai2_configuration table : (2, 'defaults.user.language', '[[language]]'); and in kimai2_user_preferences : (3, 1, 'language', '[[language]]');
+5. Steps for installation https://www.kimai.org/documentation/installation.html from command line.
+6. We have changed the version in 1.14.3 in /src/Constants.php as it was a mistake by the vendor. Check in 1.15 version.
+https://github.com/kevinpapst/kimai2/issues/2582
+7. We can not provide upgrade in kimai because it supports CLI upgrade only. Check in every version and if it supports GUI upgrade then add it. (Many users ask for the same)

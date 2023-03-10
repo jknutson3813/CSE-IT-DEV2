@@ -1,0 +1,124 @@
+Hubzilla 8.0 (2023-01-13)
+	Updated ru strings
+	Implement ability to edit addon PDL with pdledit_gui and pdledit
+	Implement queueworker auto sleep time
+	Always add sys channel to receivers for public items
+	Improved server sent events loop
+	Exclude not tagable xchan networks handle_tag()
+	Add mark html tag to the html2bbcode parser
+	Embed or attach uploaded files depending on file type
+	Changed logic to enable site only public stream - please revisit admin setting
+	Updated nb-no strings
+	Moved queueworker to core
+	Provide a PDL file for mod invite and set the profile
+	Disabled outdated context help
+	Mark unseen items seen after a certain amount of time (default 90 days)
+	Slightly restructure lib webfinger
+	Improved redbasic dark schema
+	Implement unseen thread and unseen items count in HQ widget
+	In unseen items notifications just count the first 99 and display 99+ if there are more
+
+	Bugfixes
+	- Fix race conditions when processing multiple choice polls
+	- Fix affinity slider updates - issue #1714
+	- Fix issue where accounts created with a did2 could change their password
+	- Fix no message displayed if file not found in mod cloud
+	- Fix pubstream tagcloud unthreaded view
+	- Fix french invite template
+	- Fix comment permission issue in site only public stream
+	- Fix privacy tag not referring to latest hubloc entry
+	- Fix selected item not highlighted
+	- Fix poll issue when special chars and spaces are involved
+	- Fix prune_hub_reinstalls() to only care about zot6 hublocs
+	- Fix redis session PHP warnings
+	- Fix remote visitor photo uploads
+	- Fix mod shredwithme not showing any items
+	- Fix api_auth not referring to latest hubloc entry
+	- Fix category widget URLs
+	- Fix poller always polling broken feeds
+	- Fix sse event always triggered if public stream notification are off or the app is not installed
+	- Fix more PHP8 warnings
+	- Fix wrong variable in tag_deliver()
+	- Fix mod follow use trim() after punify() - issue #1698
+
+	Addons
+	- Cards: update widget info
+	- Articles: update widget info
+	- Wiki: update widget info
+	- Sse: filter apporvals
+	- Cards: use html_entity_decode before purify and html2plain for summary
+	- Articles: use html_entity_decode before purify and html2plain for summary
+	- Wiki: use html_entity_decode before purify and html2plain for summary
+	- Cards: fix comments not displayed if filter by category
+	- Articles: fix comments not displayed if filter by category
+	- Sse: respect the site public stream setting
+	- Queueworker: moved to core
+	- Pubcrawl: move db query out of foreach loop
+	- Pubcrawl: add mentions and thread owner to recipients for public items
+	
+Hubzilla 7.6.1 (2022-08-07)
+	Bugfixes
+	- Fix attachments displayed in visible response activities
+	- Fix wrong attribution in unseen like notifications
+
+	Addons
+	- Cards: fix widget not implemented via pdl file (requires re-install)
+	- Articles: fix widget not implemented via pdl file (requires re-install)
+	- Wiki: fix widget not implemented via pdl file (requires re-install)
+
+Hubzilla 7.6 (2022-07-26)
+	- Add filter rule to check for false condition
+	- Implement HQ dashboard to display recently created content for various modules
+	- Updated spanish translations
+	- Implement a max oembed size which defaults to 1MB
+	- Update composer libs
+
+	Addons
+	- Cart: do not attempt oembed
+	- Cards: implement channel_activities_widget for HQ dashboard
+	- Articles: implement channel_activities_widget for HQ dashboard
+	- Wiki: implement channel_activities_widget for HQ dashboard
+
+	Bugfixes
+	- Fix language filter filtering ambigous results
+	- Fix vcard-card background for dark schema
+	- Fix contact edit dialog not displayed in chrome browser
+	- Fix readability of category pills in dark schema
+	- Fix opengraph images inside zmg opening tag
+	- Fix oembed attempted for text previews
+
+Hubzilla 7.4 (2022-06-01)
+	- Updated russian translations
+	- Raise min PHP version to 8.0
+	- Rewrite inbound attachment handling
+	- Move photo flag feature from addon to core
+	- Adjust default production php logging
+	- Update composer libs
+	- Add a hidden config to enable the hs2019 http signature algorithm
+	- Allow starring of pubstream items
+	- Update spanish translations
+	- Add the title in forum post reshares if applicable
+	- Implement inbound pleroma reactions
+	- Add real name info to the navbar template data
+	- Add the updated date to the icon url so that other platforms will pick it up on change
+	- Move wiki from core to addon
+	- Move articles from core to addon
+	- Move cards from core to addon
+
+	Addons
+	- Rendezvous: add missing default value to sql schema
+	- Wiki: moved from core to addons
+	- Articles: moved from core to addons
+	- Cards: moved from core to addons
+	- Photoflag: moved to core
+	- Sse: fix issue where notifications were emited for created tasks
+
+	Bugfixes
+	- Fix issue where inbound activitypub items lost image descriptions (issue 1679)
+	- Fix issue where observer tags were not rendered correctly in event items (issue 1674)
+	- Fix forum posts leaked into network stream
+	- Fix tags not found in search if not logged in (issue 1677)
+	- Fix dislikes causing stuck notifications (issue 1676)
+
+Hubzilla 7.2.2 (2022-04-26)
+	- Fix item_verified not set due to data structure changes

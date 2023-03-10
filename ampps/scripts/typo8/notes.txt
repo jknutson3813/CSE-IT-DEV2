@@ -1,0 +1,13 @@
+1. Install manually using composer package.
+https://docs.typo3.org/m/typo3/tutorial-getting-started/11.5/en-us/Installation/Install.html
+2. TCP/IP based connection for manual installation (Database details)
+3. check Take me straight to the backend.
+4. PHP REQUIREMENT LINK: https://get.typo3.org/version/11
+5. We have disabled the upgrade because this gives error when upgraded from 10.4.21. Check in next version and if it supports then enable it again. Aslo they have recommended to Upgrade through CLI which we can not offer.
+6. Upgrade Documentation: https://docs.typo3.org/m/typo3/guide-installation/11.5/en-us/Index.html
+7. To convert package installation to Composer compatible installation: (To upgrade installation which are installed through source zip package) https://docs.typo3.org/m/typo3/guide-installation/main/en-us/MigrateToComposer/Index.html
+8. For Database upgrade through CLI
+https://stackoverflow.com/questions/64874179/table-tx-scheduler-task-doesnt-exist-after-composer-typo3-cms-scheduler
+https://docs.typo3.org/p/helhum/typo3-console/main/en-us/CommandReference/DatabaseUpdateschema.html
+php vendor/bin/typo3cms database:updateschema "*.add,*.change"
+9. .htaccess is our file to redirect the script to public directory.

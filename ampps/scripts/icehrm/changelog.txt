@@ -1,0 +1,102 @@
+## Release note v32.4.0.OS
+
+### 🧲 New features
+* PHP 8.1 and MySQL 8.0.32 support.
+* Introducing [IceHrm extension market-place](https://icehrm.com/explore/extensions/).
+* Ability to provide employees access to admin only modules with custom user roles.
+* Delayed payroll processing.
+  * Now the payroll is processed using a background cron job. This makes it possible to process a huge amount of employee data in a single payroll.
+* Bulk payslip generation.
+  * After the payroll is processed employees will be able to download the payslip via `My Documents` module.
+  * Admins can download the payslips for employees via `Document Management` module.
+  * Employees will be notified when a new payslip is available.
+* Adding a new tab to `Documents` module for downloading payslips.
+
+### 🧑🏻‍💻 For developers
+* [Docker based development environment](https://github.com/gamonoid/icehrm#setup-development-environment) with php 8.1 and mysql 8.0.32
+* Support for extending IceHrm with [custom extensions](https://github.com/gamonoid/icehrm#extend-icehrm-with-custom-extensions).
+* Commands to generate boilerplate code for extensions.
+* IceHrm [developer shell](https://github.com/gamonoid/icehrm#debugging-code-with-psysh).
+
+### 🐛 Bug fixes
+* Fix: employees are not able to edit own profile.
+* Fix: Pagination issues when searching.
+* Fix: Not being able to add long text values to custom field options.
+* Fix Payslip download issue.
+* Fix: Payroll editable fields after the first page cannot be edited.
+* Some minor fixes to validations.
+
+## Release note v32.1.0.OS
+
+### 🧲 New features
+
+* PHP 8 support
+* Add department to attendance status filter
+* Add employee management reminders
+* Add leave and expense management reminders
+* UI improvements to attendance module.
+* UI Improvements to employee filed names module.
+* Restructuring main menu.
+* Adding non-binary gender.
+* Payroll template design improvements.
+* Automatically set payroll column order.
+* Improvements to payroll calculations.
+
+### 🐛 Bug fixes
+* Change attendance punch In/Out labels based on users' current attendance status
+* Fix table pagination when filters are applied
+* Fix the issue with showing employee name on attendance status
+* Fixed the issue with loading some approval requests
+
+### 🧑🏻‍💻 For developers
+* AdoDB is replaced with a mysqli based fast and simple ORM
+* URL based API
+* Sort attendance API response based on time
+
+## Release note v31.0.0.OS
+
+### 🧲 New features
+
+* Allow filtering employee skills using either skill or the employee.
+* Employee training sessions ability to filter by employee.
+* Improvements to employee filters in education, certifications and languages.
+* Ability set employee status and daily goals.
+
+### 🐛 Bug fixes
+* Filtering fixed on monitor attendance page.
+* Filters on employee travel request are fixed.
+* Fix issue: searching from any other page than first page is not showing search results.
+* Fix filters for employee projects.
+* Changes to employee field names are now correctly reflected on employee profile.
+* Fix company document visibility issues.
+* Show active employee count under connection module.
+
+### 🗑️ For developers
+* Add slider component.
+* Add editor js.
+
+### 🗑️ Features removed
+* Module grouping feature is removed.
+
+### 🛡️ Security improvements
+* Fixing [https://github.com/gamonoid/icehrm/issues/284](https://github.com/gamonoid/icehrm/issues/284)
+* Fixing [https://github.com/gamonoid/icehrm/issues/285](https://github.com/gamonoid/icehrm/issues/285)
+
+## Release note v30.0.0.OS
+
+### 🛡️ Security improvements
+
+* This release is fixing some critical security issues related to file storage. All IceHrm installations should be upgraded to this version immediately.
+  Please review instructions provided under [this link](https://icehrm.gitbook.io/icehrm/getting-started/securing-icehrm-installation) to make sure your IceHrm installation is secure.
+
+### 🧲 New features
+
+* Ability to use Amazon S3 as a secure file storage for IceHrm [find instructions here](https://icehrm.gitbook.io/icehrm/getting-started/using-aws-s3-for-icehrm-file-storage)
+* Secure local file storage
+* Connection module for showing critical errors in installation and sending extracting system information
+* Ability to change AWS region via settings
+
+### 🐛 Bug fixes
+* Displaying employees list with non-UTF employee names
+* Fix extension loading issue. This fixes the issue with loading new extension created following the [documentation](https://icehrm.gitbook.io/icehrm/developer-guide/creating-first-extension).
+* Fix the issue with editing employee fields

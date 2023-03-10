@@ -1,0 +1,4 @@
+1. Check app/Services/HousekeepingService.php and index.php to delete unwanted files from previous version while upgrade and update upgrade.php accordingly.
+2. PHP REQUIREMENT LINK: https://www.webtrees.net/index.php/en/
+3. Download webtrees-x.y.z.zip package from github and not source code as webtrees-x.y.z.zip contains language files.(confirmed vendor)
+4. Delete entries of SITE_UUID,LATEST_WT_VERSION and LATEST_WT_VERSION_TIMESTAMP from site_setting and log table, created when accessed.

@@ -1,0 +1,41 @@
+[9.6.1]
+[+] Tenant adminpanel rewritten
+[+] EnableFailedLoginBlock setting now affects superadmin user as well
+[*] Fixed LDAP change password issue with PHP 8.1
+[*] Corrected an issue with creating Mail.config.json file
+[*] Fixed issue with scrollbar in log viewer
+[*] Updated the Chinese-Simplified translation
+[*] Updated the Dutch translation
+[*] Various bugfixes
+
+[9.6.0]
+[+] Storing PGP keys in team contacts
+[+] Dark theme
+[+] Unsubscribe functionality
+[*] EnableFailedLoginBlock option is now turned on by default
+[*] cPanel installer updated to support the latest version of cPanel
+[*] Various bugfixes
+
+[9.5.2]
+[*] Fixed issues with sharing files and address books with Team
+[*] Fixed issue with moving files from subfolder to root folder
+[*] Fixed multiple issues with document editing by OnlyOffice (Aurora Corporate, Aurora Files)
+[*] Fetchers functionality rewritten (MailSuite Pro, Aurora Corporate all-in-one)
+[+] Plesk package is now available for Aurora Corporate
+[*] Minor bugfixes
+
+[9.5.1]
+[*] Fixed the problem of sharing the personal address book (Aurora Corporate, Aurora Files)
+
+[9.5.0]
+[+] Sharing address books (Aurora Corporate, Aurora Files)
+[+] Multiple address books supported, address book management is enabled by default (WebMail Pro, Aurora Corporate, Aurora Files)
+[*] Office document editor and viewer now fully support OnlyOffice v7 with JWT protection enabled
+[*] Files under "Shared with me" are now listed fully, regardless of whether they're in root folder
+[*] "Use SSL" options are added under "IMAP and SMTP hosts for external mail clients" section of mail server settings
+[*] IncludePasswordInProfile setting for iOS profile is now working as expected
+[*] DAV compatibility issue with PHP 8 is corrected
+[*] DAV stacktrace is now disabled by default for security reasons
+[*] Various optimizations made for MySQL queries affecting installations with large number of users
+[*] MTA versions refactored, it's now possible to upgrade MTA installation by updating just the web components
+[*] Miscellaneous bugfixes

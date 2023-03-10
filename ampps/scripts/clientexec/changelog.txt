@@ -1,0 +1,317 @@
+6.6.1
+* Added
+    - Added the ability to import TLDs/Prices from NameCheap
+    - Added a new setting called ‘Apply Credit Balance Automatically’. When enabled, credit will automatically be applied to outstanding invoices.
+
+* Improvement
+    - The WHMCS importer has been updated to import invoice transactions.
+    - You can now use emoji’s in knowledge base articles
+
+* Fixed
+    - Client country was missing on invoices within the admin area.
+    - Fixed a signup issue when calling validateCredentials and using PHP 8.1.
+    - Fixed a PHP 8.1 issue resulting in the admin area CSS/JS to not load properly.
+    - Fixed an issue with VirtualMin's server password not being passed properly encoded to the API.
+    - Fixed an issue preventing the VAT Number field description from being properly saved.
+    - Fixed issue preventing invoice generation with a non-recurring package
+    - Fixed an issue when using the PHP round() function on string values when trying to format prices in the currency class
+    - Fixed a issue with our internal nusoap when using PHP 8.1
+    - Domain name renewal prices for free domains will now display correctly during the signup flow
+    - Corrected how quantity decimals are displayed on the Recurring tab
+    - Fixed an issue resulting in missing descriptions for PayPal payments
+    - Fixed a PHP 8.0+ issue related to the order of the parameters when calling implode()
+    - Resolved an issue with the cPanel Accounts Report displaying an error
+    - Resolved an issue with incorrectly rounding prices in the cart when using percentage coupons
+    - Fixed an issue with the display of KB images when SEO links is enabled, but the KB article is accessed from the old URL
+    - Resolved an issue with directly linking to currencies that are not enabled
+    - Resolved an edge case with the ‘Forbidden Domain Phrases’ and ‘Forbidden Subdomains’ settings when a trailing comma was included.
+    - Fixed an issue with the affiliate system displaying the incorrect currency if an admin is viewing as a client
+    - Fixed issue when setting default values for datetime fields when enabling the affiliate system
+    - Resolved a menu display issue on the client pages: Domain Contact Info, Domain Host Records, and Domain Nameservers
+    - Fixed an issue causing an affiliate accounts status being reset to pending if the user signs up for another package
+    - Fixed an issue with the getDNS function in registrar plugins not properly being used
+    - The ‘Total’ column in the Packages table of the client area has been renamed to ‘Last Billed’ and will now reflect the price of the last invoice payment
+    - Fixed different translations and properly showing country name on product custom fields.
+    - Fixed an issue with the ‘Login to SolusVM’ link
+    - Fixed an issue with the ResellerClub integration when sending the state code instead of the state name
+    - Fixed the knowledge base top navigation link to use the proper link format when SEO links are enabled
+    - Fixed an issue where the ‘Recurring Amount’ box was showing in the client area when the product is one-time
+    - Fixed an issue when using the PHP round() function on string values when trying to format prices in the currency class.
+    - Fixed an issue when using limited-time recurring discounts resulting in PayPal subscription miscalculations
+    - Fixed an issue when sorting the Cancellation List by ‘Cancel On’
+
+* Removed
+    - Removed company email address from the top address section of the default PDF invoice
+
+
+================================================================================================================
+================================================================================================================
+
+6.6.0
+* Signup
+    - Treat guest users as new users when placing a new order. (JD)
+    - Ensure domain name field has proper validation when not bundling with a domain product. (MG)
+    - Allow GET autoSearchType on sign up even if no domain name is shown, so transfer can be auto selected. (MG)
+    - Improved the look of the "Custom Details" description on mobile. (MG)
+    - Ensure a blank subdomain can not be entered at sign up. (MG)
+    - Fixed issue preventing Stripe plugin from showing validation issues on step 3 of sign up. (MG)
+    - Updated domain Extended Attributes to allow for required fields. (MG)
+    - Do not show transfer custom fields on sign up for .ES TLD. (MG)
+    - Ensure session/request coupon codes are valid, if not, use auto coupon if available. (MG)
+    - Fixed issue preventing domain sign up from completing if you were first on a product, and did not finish configuring the product. (MG)
+    - Ensure usernames are always lowercase. (MG)
+
+* System / Admin
+    - Updated minimum PHP Version to 7.2. (MG)
+    - Added support for PHP 8.1.  PHP 8.0 is not supported as it is not supported by ionCube. (MG)
+    - Added an Affiliate System. (MG)
+    - Fixed issue with HTML tags showing when editing an announcement. (MG)
+    - Allow guests to have "View Domain Overview" permission, so the top "Domains" menu will show. (MG)
+    - Added checkPermissions() function to SnapinPlugin, so Snapins can use $this->checkPermissions() to check user permissions. (MG)
+    - Fixed issue with [COMPANYURL] tag not working in Account Creation email. (MG)
+    - Fixed issue when using the word 'system' in a query. (JD)
+    - Updated pluginused column on invoice table to be varchar(30) to match users table paymenttype. (MG)
+    - Removed reference to templates/default/css/style.css from Installer. (MG)
+    - Allow custom fields to have regex validation. (MG)
+    - Added our live chat to CE staff to the invalid license page. (MG)
+    - Ensure we properly validate the email address when updating an admin user. (MG)
+    - When creating a new product, "Allow direct link?" now defaults to turned on. (MG)
+    - When creating a new product, "Show in signup form?" now defaults to turned on. (MG)
+    - Fixed missing field "acctproperties" for "hosting" packages on Blesta importer. (JD)
+    - Added some notes in Blesta, WHMCS and Clientexec Format Importers, about the importance of first generating backups of the databases and making sure to set a default currency. (JD)
+    - Updated login page to redirect to dashboard if the user is logged in.  (MG)
+    - Updated captcha to work like other plugins, and added additional settings to determine when/where to have a captcha enabled.
+    - Fixed issue with support widget ticket creation requiring session hash. (MG)
+    - Removed "Recent Warnings/Errors" from admin dashboard. (MG)
+    - Removed "Full Name" and "Full Address" custom fields, and re-add the normal custom fields, so they can be properly sorted. (MG)
+    - Updated both admin and client side fonts to not pull from google fonts. (MG)
+    - Fixed display issue on pending orders page when affiliate system is not activated. (MG)
+    - Fixed issue with hook clientarea_footer and clientarea_all causing a redirect loop when All Clients is not enabled. (MG)
+
+* Clients
+    - Ensure "Update Contact Information" can be properly translated. (MG)
+    - Ensure the billing cycle can be properly translated on product page. (MG)
+    - Package List now shows the last billed price for that Package instead of the current price of the Product. (JD)
+    - Ensure "Change Password" only shows when a package is active. (MG)
+    - Fixed the "Update" button in "Edit Payment Method" on the client side. (JD)
+    - Added [PACKAGEID] as an available tag for welcome emails. (MG)
+    - Fixed display issue of "External VPS/Package ID" showing "null" when not set. (MG)
+    - Changed "Cancel" to "Go Back" on request cancellation page. (MG)
+    - Ensure plugin actions show for a package that is pending cancellation. (MG)
+    - Allow a client to update their CSR for an SSL package. (MG)
+
+* Plugins
+    - Fixed issue with domain passwords being too strong and preventing registration with ResellerClub. (MG)
+    - Fixed bug with DomainNameAPI not sending additional TLDs for name suggest. (MG)
+    - Added Boot, Reboot and Shutdown actions to Vultr. (MG)
+    - Added Web Console access to Vultr. (MG)
+    - Fixed issue with NetIM not sending properly validated phone numbers. (MG)
+    - Added new Coinbase Commerce Gateway Plugin, thanks to Rainhost.net. (MG)
+    - Updated softaculous auto installer to support auto installs on DirectAdmin. (MG)
+    - Added new AliPay Gateway Plugin. (MG)
+    - Updated Square to Web Payments. (JD)
+    - Added a new option to "Migrate Stripe CC Accounts to Stripe" in the Migrate Payment Method diagnostic report. (JD)
+    - Add the ability to have public panels to any plugin. (MG)
+    - Added the ability to have the captcha be hCaptcha instead of ReCaptcha. (MG)
+    - Added new OpenSRS Hosted Email plugin. (MG)
+    - Moved __construct code to setup() function in DomainNameAPI to prevent issues if they are down or if SOAP is missing. (MG)
+    - Ensure all required NameSilo fields are set when registering a domain. (MG)
+    - Added new shurjoPay gateway plugin (Contributed by Echost). (MG)
+    - Fixed Pterodactyl plugin not sending proper username when creating a client. (MG)
+    - Added new PayTR gateway plugin. (MG)
+    - Updated WHMCS importer to properly import client's passwords. (JD)
+    - Updated ControlWebPanel to add additional error checking for cURL errors. (MG)
+    - Added additional error checking to DirectAdmin get login link. (MG)
+    - Updated CyberPanel to add additional error checking for cURL errors. (MG)
+    - Added support for CPU, Memory and Virtual Memory settings for TCAdmin. (MG)
+
+* Reports
+    - Updated "New Customers" report to count clients of any group if they have paid invoices. (JD)
+
+* Support
+    - Ensure "Staff" can be properly translated on ticket view. (MG)
+    - Added new [TICKETSTATUS] as an email tag for support emails. (MG)
+    - Fixed default emails using wrong ticket URL tag. (MG)
+    - Add ticket subject to top of ticket page. (MG)
+    - Allow the textarea of submit ticket on client side to be resizable. (MG)
+    - Ensure Ticket-ReplyByCustomer event is triggered when a client submits a ticket from the submit ticket form. (MG)
+    - Do not show the custom fields tab on the ticket view client side if there are no custom fields. (MG)
+
+* Knowledgebase
+    - Fixed issue with Pending Approval KB Comments not properly displaying in admin. (MG)
+    - Added Captcha to KB comments form if the client is not logged in. (MG)
+
+* Billing
+    - Added new [INVOICEDATE] tag for billing emails to show the invoice creation date. (MG)
+    - Removed "Applies to: all" details from coupons invoice entries and recurring fees when it is an amount coupon as it always applies to all. (JD)
+    - When manually adding a payment to an invoice, the Amount field will now validate it is a valid amount formatted in the currency being used to avoid unwanted characters. (JD)
+
+================================================================================================================
+================================================================================================================
+
+6.5.0
+* System / Admin
+    - Add the Garuda font files for PDF Invoices. (MG)
+    - Updated Blesta importer to properly get the names and descriptions of Product Groups, and also some plugins references. (JD)
+    - Updated WHMCS importer to properly import registrar synergywholesaledomains as synergywholesale. (JD)
+    - Updated WHMCS importer to also import users passwords. (JD)
+    - Updated WHMCS importer to also import: Invoice Transactions, Emails History for each client, adds a note with the original Invoice ID in the imported invoices, import clients Credit Balance and Credit History. (JD)
+    - Fixed more issues with "groups" being a reserved keyword in MySQL 8.0. (JD)
+    - Fixed "State" not being properly set when creating a client from importing a domain. (MG)
+    - Fixed issue with a user not being set for auto payment when they manually register an account. (MG)
+    - Show a better database connection error during installation. (MG)
+    - When passing the username to the SMTP server, ensure we trim() the username. (MG)
+    - Fixed WHMCS importer to import Virtualizor VPS Id. (JD)
+    - Fixed issue with MySQL 8.0 and password migrations. (MG)
+    - Fixed issue with client side redirects when coming to a link that requires the user to be logged in. (MG)
+    - Added new public location hook: clientarea_all that gets triggered at the top of each client area page. (MG)
+    - Direct Link should link to step 2. (MG)
+    - Added the ability to set custom from name and email addresses to auto mailer/notifications. (MG)
+    - Fixed a wrong variable name inside the InvoicepublicController functions. Should be $invoiceid instead of $invoice_id. (JD)
+    - Increased the max length of an email address. (MG)
+    - Added missing translations on invoice page, and signup. (MG)
+    - Updated password generation code to generate better passwords. (MG)
+    - Allow get user packages API call (/api/v2/clients/packages/getpackages/type=?&customerId=?) (MG)
+
+* Clients
+    - Removed the secondary sub-heading on client main page for the bottom content lists (Announcements, FAQs, Popular Articles). (MG)
+    - Allow pending clients to reset their password. (MG)
+    - Fixed issue loading package page on client side if the domain does not have a billing cycle / recurring amount. (MG)
+    - Fixed style issue with recurring amount on client side package page. (MG)
+    - Display the current due date of a package instead of the next if the package is not paid. (MG)
+    - Ensure "Read Only" fields are not disabled on client registration page. (MG)
+    - Updated host record field to not be required when editing DNS records. (MG)
+    - Moved "Actions" to "Quick Actions" side bar menu on client package pages. (MG)
+    - Ensure "External VPS/Package ID" is always displayed on the hosting account tab of a client's package. (MG)
+    - Fixed issue that was preventing custom public package panels to be displayed properly. (MG)
+
+* Billing
+    - Updated note in the invoice when doing a package upgrade/downgrade, indicating the previous and new package names and billing cycles. (JD)
+    - Fixed issue causing an Invoice to be deleted when editing it by completely deleting all the current Invoice Entries and adding new ones. (JD)
+    - Added option to set time for manually added payments on invoices. (JD)
+    - Fixed issue that was adding credit balance to the client when adding a manual payment to an invoice and there was a very small difference between the amount due and the payment values. (JD)
+    - Fixed issue related to javascript subtraction issues causing to miscalculate tax values when editing an invoice. (JD)
+    - Updated the message displayed to clients when there was an error processing an invoice, for them to contact the company if the issue persists. (JD)
+    - Fixed issue with coupons expiring before completing their usage. (JD)
+    - Added new setting "Delete Client From Gateway" on Stripe and Stripe Checkout payment plugins to determine if delete the client from the gateway when the client changes the payment method or is deleted. (JD)
+    - Fixed issue with Mass Pay that was allowing to merge any invoices, ignoring their status or if they were a subscription. (JD)
+    - Update Switzerland to use VAT. (JD)
+    - Replaced General Billing Setting 'Void Unpaid Invoices When Deleting A Package' with multiselect setting 'Void Unpaid Invoices' to be able to void unpaid invoices when deleting or canceling a package. (JD)
+
+* Signup
+    - Allow to pre-set custom field values when linking to the order page. For example, if using the Softaculous auto-installer you can use: order.php?cf_script=wordpress. (MG)
+    - Ensure addon one-time fees properly show in cart summary, even if hide setup fees is turned on. (MG)
+    - Fixed issue with still showing invalid products in cart summary on step 3 when they have been removed from the cart (bundled product with no domain). (MG)
+    - Fixed issue with "Leaving now will cancel this item.  Are you sure you want to leave?" popup not letting the user cancel. (MG)
+    - Fixed validation issue on sign up when using a longer TLD when "use my own domain" is selected. (MG)
+    - Fixed "validate_vat is not defined" error on cart step 3 when using CloudFlare. (MG)
+    - Do not show transfer checklist for UK domains. (MG)
+    - Added com.bn, edu.bn, gov.bn, net.bn, org.bn and .bn TLD lookups when not using a registrar plugin. (MG)
+    - Added mk, com.mk, org.mk, info.mk, net.mk and edu.mk TLD lookups when not using a registrar plugin. (MG)
+    - Added product name and product description to step 2 of sign up. (MG)
+    - Avoid displaying a dot to separate decimals in the prices displayed on the Compare view in the signup section, if there are actually no decimals to be displayed. (JD)
+    - Added a setting in Settings > Products > Order Pages > No Invoice, to avoid generating invoices when placing a free order (Total Amount 0). (JD)
+    - Ensure PayPal checkout does not cause duplicate transactions when captcha fails. (MG)
+    - Ensure sign up submit button has cursor pointer. (MG)
+    - Fixed price size and format in compare view. (JD/MG)
+    - Ensure premium domains do not show as available from eNom until we fully support premium domains. (MG)
+
+* Plugins
+    - Add update functionality to Virtualizor. (MG)
+    - Update StripeCheckout to the latest version of API. (MG)
+    - Added Mollie Payments Plugin, thanks to intio.nl. (MG)
+    - Updated Stripe Checkout to ensure Client Name and Address are properly stored in Stripe. (JD)
+    - Fixed issue with Square Payment expecting an integer value for amount. (JD)
+    - Fixed issues in payment plugins that were trying to use unavailable parameters when trying to place a new order while being logged in as client. (JD)
+    - Fixed importing domains failing with Synergywholesale. (MG)
+    - Fixed org.za TLD lookups when not using a registrar plugin. (MG)
+    - Fixed issue with TeamStatus Notifier Service and MySQL 8.0. (MG)
+    - Fixed issue with ResellerClub/NetEarthOne/ResellBiz not properly identifying when a domain transfer has completed. (MG)
+    - Fixed display issue with Square Payment fields. (MG)
+    - Fixed sending ClientIp to NameCheap, it should be the server IP, not the web user IP. (MG)
+    - Fixed issue with eNom marking domains as cancelled when cURL times out resolving the host. (MG)
+    - Updated Stripe Integration to Stripe Elements (replacing the legacy Stripe integration). (JD)
+    - Square Payment plugin will now try to prefill the postal code. (JD)
+    - Fixed issue with importing domains from OpenSRS. (MG)
+    - Updated PayPal plugin to use image_url and stop using page_style. (JD)
+    - Updated PayPal plugin to use https://www.paypal.com/sdk/js. (JD)
+    - Updated 2Checkout plugin to ignore duplicated transactions, instead of marking them as fraud. (JD)
+    - Added 20i.com Server Plugin. (MG)
+    - ApisCP Usernames should always be lowercase. (MG)
+    - Added new CyberPanel Server Plugin. (MG)
+    - Added Nominet Registrar Plugin. (MG)
+    - Added VirtFusion Direct Server Plugin. (MG)
+    - Added new Pterodactyl Server Plugin. (MG)
+    - Fixed issue with Virtualmin not updating the username when we validate it (lower case, etc). (MG)
+    - Fixed issue when Vultr fails to create a VM, and show a proper error message. (MG)
+    - Fixed issue with HTML showing in the ticket message when a ticket is auto closed. (MG)
+    - Added additional phone number validation to eNom Reseller Account Creation Snapin. (MG)
+    - Added new SSO Standard Ports Setting for Virtualizor, so SSO can be on port 443 instead of 4083. (MG)
+
+* Support
+    - Fixed issue with the display of ticket status alias names in ticket list on client area. (MG)
+    - Fixed issue preventing clients from seeing the "Submit Reply" button on support ticket unless "Allow Customer File Uploads" was enabled. (MG)
+    - Fixed text overflow issue in support ticket messages on client and admin UI. (MG)
+    - Support Emails "From" will now also show the Company Name. (JD)
+    - Emails sent by the "Ticket Auto Close" automation service plugin will now also make use of the "Ticket Number Prefix". (JD)
+    - Emails sent by the "Ticket Auto Close" automation service plugin now use HTML (<br>) for new lines. (JD)
+    - Fixed issue causing a blank page under certain routing rule configuration when a guest user was trying to open a support ticket. (JD)
+    - Fixed issue with parsing emails that contained inline image attachments.
+    - Fixed formatting issue when editing a suppor ticket message. (MG)
+
+* Knowledgebase
+    - Fixed display of OL's and UL's in knowledgebase articles. (MG)
+    - Ensure members only KB articles show properly. (MG)
+    - Ensure the article count is displayed properly. (MG)
+	
+6.4.2
+* System / Admin
+    - Do not hide the top header when you scroll anymore. (MG)
+    - Fixed display issue of the color picker on Add/Edit Client Group. (MG)
+    - New installs now default "Shared Web Hosting" to "compare/modern" style. (MG)
+    - Fixed the ' character not displaying properly in the success message in admin when resetting a client's password. (MG)
+    - Ensure the "Allow Registration" setting is properly checked. (MG)
+    - Fixed how amount coupon displays the amount when editing a coupon configuration. (JD)
+    - Fixed WHMCS importer to properly import admin responses from support tickets. (JD)
+    - Show a better error message when testing mail configuration. (MG)
+    - Ensure events are properly triggered when called from cron. (MG)
+
+* Clients
+    - Fixed display issue on product page with very long custom field values.  Values >= 25 will now open in a modal box. (MG)
+    - Fixed display issue on product page improperly showing HTML currency codes. (MG)
+    - Fixed issue with iframe payment plugins not properly showing the iframe on edit payment method (QuantumVault, AuthnetCIM, etc). (MG)
+    - Fixed multiple Upgrade/Downgrade actions showing on products action list. (MG)
+    - Only show action cogwheel if there are actions to be taken on products list. (MG)
+    - Added missing translations. (MG)
+    - Fix issue with CloudFlare Rocket Loader and the new client UI. (MG)
+    - Added sub-page header to login page. (MG)
+    - Fixed padding on domain page, select cart steps section. (MG)
+    - Fixed permission checking in dashboard side menu for "Edit Profile". (MG)
+    - Fixed permission checking in top user menu for "Change Password". Change password will always show, even if edit customer profile permission is turned off. (MG)
+    - Fixed extra </div> in article.phtml
+    - Added actions column to dashboard packages list. (MG)
+    - Fixed issue displaying wrong addon data to clients. (JD)
+    - Fixed how "Read Only" works for "User Custom Fields" in Signup and Customer Profile. (JD)
+
+* Billing
+    - Fixed issue preventing search from working on all invoices client page. (MG)
+    - Fixed issue preventing all invoices to display if an invoice existed for a package that was deleted. (MG)
+    - Fix issue when trying to create a Paypal Subscription with an invoice that only has items using Custom Billing Types and having different Billing Cycles. (JD)
+
+* Plugins
+    - Fixed issue preventing DirectAdmin Direct Login from working. (MG)
+    - Updated WHMCS importer to display connection errors. (JD)
+    - Ensure the domain name is shown in the error message when a domain does not exist anymore at ResellerClub. (MG)
+    - Ensure username is all lowercase when sending to DirectAdmin. (MG)
+    - Fixed issue with case sensitive checking in Softaculous AutoInstall when not using a script. (MG)
+
+* Signup
+    - Removed an extra </div> that should not have been there. (MG)
+    - Ensure custom fields show their descriptions. (MG)
+    - Fixed how the percentage amount is displayed for coupons in signup. (JD)
+    - Fixed how "Coupon Applies to" is displayed for percentage coupons in signup. (JD)
+    - Fixed issue with coupon code not applying after changing the billing cycle on step 2. (MG)
+    - Fixed style issue with Discount in cart summary when discount is an amount discount. (MG)
+
+================================================================================================================
+================================================================================================================

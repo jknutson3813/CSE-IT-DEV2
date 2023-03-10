@@ -1,0 +1,106 @@
+Version 8.3.2 Release Notes
+Maintenance
+
+CORE-17239 - Check for deleted affiliates during Process Credit Card Charges task
+CORE-17294 - Prevent incorrect deletion of pending affiliate commissions on upgrade
+CORE-17299 - Ensure that the Client-Side Top Bar displays whilst visiting affiliates.php
+
+Version 8.3.1 Release Notes
+Maintenance
+
+CORE-17166 - Disregard non-grouped products when generating friendly URLs on upgrade to 8.3
+CORE-17167 - Ensure credit card fields are show on new card input for existing customers without prior pay methods
+CORE-17168 - Improve format and messaging of admin Dispute page when no support gateways are active
+CORE-17173 - Add index to improve performance of Ticket Mail Import Log
+CORE-17177 - Client Profile Modified activity log entry text mistakenly uses "User ID" to refer to the client ID
+CORE-17178 - Prevent circular dereference when loading list of client services with same domain value
+CORE-17179 - Correctly render 'Out of Stock' message
+Also known as: CORE-17203
+CORE-17185 - Improve backwards compatibility for ticket import statuses
+CORE-17197 - Prevent viewing error of invoices associated with a deleted affiliate client account
+CORE-17205 - Prevent error during Delayed Affiliate Commissions when affiliate client account has been deleted
+CORE-17206 - Do not display list of client's services on Client Summary if admin does not have the 'List Services' permission
+CORE-17207 - Improve error rendering for non-existent product requests to cart
+
+Modules
+
+MODULE-7133 - Provide multiple variants of address indices when using existing contact with Nominet
+MODULE-7701 - Correct record and display of Stripe fees for decimal currencies
+Also known as: CORE-17212, CORE-17189
+CORE-17194 - Prevent error when saving settings for WordPress hosting with Plesk
+
+Version 8.3.0 Release Notes
+Maintenance
+
+CORE-16706 - Add indices for pricing table
+Also known as: CORE-16939
+CORE-16894 - Use translated service merge field when available
+CORE-16914 - Improve resilience of duplicate recipient check for system emails
+CORE-17053 - Log user account deletion
+CORE-17067 - Prevent transliteration of original dataset provided to registrar function SaveContactDetails
+CORE-17083 - Correct support department connection test
+CORE-17099 - Prevent manual transaction entry for invalid invoice ID
+CORE-17115 - Correct syntax error in Service Renewal Failed email template
+CORE-17123 - Prevent erroneous failure when saving general settings
+CORE-17126 - Add FileInfo extension to recommended environment health check
+Languages
+
+CORE-17015 - Update Hebrew translations
+CORE-17039 - Update Farsi translations
+
+Version 8.2.1 Release Notes
+Maintenance
+
+CORE-16394 - Correct display format used for client name in ticket list
+CORE-16460 - Prevent unnecessary authentication request for appropriately permissioned admin when viewing quote
+CORE-16486 - Ensure ClientAreaPageContacts hook fires when managing contacts
+CORE-16495 - Correct use of form data for mail import connection test
+Also known as: CORE-16799
+CORE-16668 - Correct labeling of 'Default' pay method when merging clients
+CORE-16689 - Correct error in mandateAcceptance language string of French translation
+CORE-16724 - Ensure display of correct currency in Billing > Transactions List
+Also known as: CORE-16845
+CORE-16765 - Correct handling of nested API input for Plesk services
+CORE-16803 - Ensure Ticket Merge Field [Firstname] is populated for contacts
+CORE-16812 - Ensure client IP is passed to the Plesk module when clicking "login to control panel" in the client area
+CORE-16836 - Ensure tax rate is notated on invoices with zero amount
+CORE-16841 - Ensure Resend Welcome Email for addon uses correct email template
+CORE-16844 - Ensure recurring product with zero price can be added to cart
+CORE-16846 - Correct random value maxiumum for 32-bit systems
+CORE-16869 - Correct import of tickets when requested to ignore error and import
+Modules
+
+MODULE-7071 - Ensure existing customer is used for Stripe
+MODULE-7630 - Correct sixty-day-lock-optout parameter used in ResellerClub
+MODULE-7646 - Ensure friendly error messaging displayed during falied Validation.com signup
+Languages
+
+CORE-16764 - Update Dutch Translations
+
+Version 8.2.0 Release Notes
+Implemented
+
+FEATURE-2623 - Provide landing page for WordPress Toolkit with Smart Updates for Plesk Add-on Feature
+FEATURE-2621 - Update SiteBuilder landing page's template section with dozens of examples and links to live demos
+Maintenance
+
+CORE-16174 - Correct Addon Recalculate on Save with multiple quantities
+CORE-16228 - Correct alphabetical sort of promotion codes in service overview dropdown
+CORE-16641 - Correct display of metric usage for custom daily period
+CORE-16665 - Improve styling of MarketConnect addons on product details page
+Also known as: CORE-16696
+CORE-16707 - Prevent erroneous creation of paymethod reference for 3D Secure with Stripe
+CORE-16720 - Correct template inherence for support department custom fields
+CORE-16733 - Correct missing Markdown Guide template in child themes
+CORE-16797 - Correct CSS for Twenty-One sidebar width on mobile view
+Modules
+
+MODULE-7498 - Update additional domain fields structure for .app and .bio with Enom
+MODULE-7592 - Correct additional domain field data for .es with LogicBoxes
+MODULE-7622 - Correct transfer parameters for .fr to ResellerClub
+MODULE-7624 - Add TNC additional domain field for transferring .nz domains with ResellerClub
+MODULE-7626 - Ensure IDN language is provided for domain registration orders as part of hosting orders
+MODULE-7632 - Correct PayPal unlink account command for non-English UIsVersion 8.1.3 Release Notes
+Security
+
+CORE-16334 - REDACTED

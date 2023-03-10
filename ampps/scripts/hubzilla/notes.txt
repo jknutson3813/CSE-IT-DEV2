@@ -1,0 +1,7 @@
+1. Choose timezone = America/New_York in manual installation.
+2. After populating database, execute "php util/config system verify_email 0" command to skip email validation in manual installation.
+3. Keep name and nickname same in manual installation.
+4. Encryption keys are not getting generated on windows in manual installation due to oppenssl issue, hence we have disabled hubzilla on windows.
+5. PHP REQUIREMENT LINK: https://framagit.org/hubzilla/core/blob/master/install/INSTALL.txt and also check /vendor/composer/platform_check.php
+6. No GUI upgrade docs are available on official website. https://framagit.org/hubzilla/core/-/issues/1721
+CLI command was given for Hubzilla 5.x but it gives error "unable to update [[softpath]]". (Also the version is too old https://framagit.org/hubzilla/core/-/issues/1504)

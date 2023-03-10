@@ -1,0 +1,3 @@
+1. change "use_database" to "true" to use database
+2. PHP REQUIREMENT LINK : https://www.net2ftp.com/index.php?state=homepage&state2=4b
+3. The script is throwing syntax error on PHP 8.0 onwards and no specific information is given on website for PHP requiremenet. Hence we have restricted it.

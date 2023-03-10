@@ -1,0 +1,28 @@
+2023-03-08T12:55:14.163896Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-03-08T12:55:14.163941Z 0 [System] [MY-010116] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe (mysqld 8.0.31) starting as process 5988
+2023-03-08T12:55:14.206565Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-03-08T12:55:14.808310Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-03-08T12:55:15.154239Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-03-08T12:55:15.155378Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-03-08T12:55:15.220935Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-03-08T12:55:15.221016Z 0 [System] [MY-010931] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.31'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-03-08T13:14:53.638547Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-03-08T13:14:53.638606Z 0 [System] [MY-010116] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe (mysqld 8.0.31) starting as process 8172
+2023-03-08T13:14:53.710236Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-03-08T13:14:54.343287Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-03-08T13:14:54.723733Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2023-03-08T13:14:54.726836Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2023-03-08T13:14:54.791307Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-03-08T13:14:54.791644Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-03-08T13:14:54.854463Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-03-08T13:14:54.854525Z 0 [System] [MY-010931] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.31'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-03-09T15:22:54.122420Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-03-09T15:22:54.122507Z 0 [System] [MY-010116] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe (mysqld 8.0.31) starting as process 8952
+2023-03-09T15:22:54.304392Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-03-09T15:22:55.580870Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-03-09T15:22:56.121418Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2023-03-09T15:22:56.151851Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2023-03-09T15:22:56.275348Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-03-09T15:22:56.275779Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-03-09T15:22:56.388561Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-03-09T15:22:56.388687Z 0 [System] [MY-010931] [Server] C:\Program Files\Ampps\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.31'  socket: ''  port: 3306  MySQL Community Server - GPL.

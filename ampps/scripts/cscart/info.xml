@@ -1,0 +1,73 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/CS-Cart_Free
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/CS-Cart_Free
+	</ratings>
+	<space>
+		200979031  
+	</space>
+	<support>
+		http://forum.cs-cart.com/
+	</support>
+	<version>
+		4.16.1
+	</version>
+	<mod>15</mod>
+	<release_date>31-01-2023</release_date>
+	<admin>admin123.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="sockets" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="exif" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="libxml" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="xmlreader" />
+	<requirement check="php" type="extension" name="xmlwriter" />
+	<requirement check="php" type="extension" name="soap" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="Phar" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">CS-Cart Store Builder Free</font> is an Open-source and Free Shopping Cart Software.
+		<br /><br />
+		Store Builder Free is a professional eCommerce solution that has all the features you need to get your store up and running. It's powerful functionality allows you to easily manage your store with little to no time spent on complex tasks. 
+		<br /><br />
+		CS-Cart Free is based on the same core as CS-Cart Standard. It means that CS-Cart Free has all the advantages of Store Builder Standard, but it comes with no cost. No need to pay for the license and search for new platforms to build new projects.
+		<br /><br />
+		CS-Cart Free is released under <a href="http://www.cs-cart.com/license.html" target="_blank">License Agreement</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>Open code.</li>
+				<li>Support by the CS-Cart team.</li>
+				<li>Updates along with the paid version.</li>
+				<li>Add-ons and theme on the Add-on market.</li>
+				<li>Learning resources.</li>
+				<li>Low cost of ownership.</li>
+			</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_admin_folder>The Admin folder name cannot be "admin" !</english-err_admin_folder>
+	</languages>
+</soft>

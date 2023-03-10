@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://github.com/ilosuna/mylittleforum#system-requirements
+2. Move 'USING HASH' entries in sql to the left.

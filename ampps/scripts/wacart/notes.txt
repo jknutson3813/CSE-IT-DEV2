@@ -1,0 +1,9 @@
+1. Set Environment to "production" and Timezone to "America/New_york" in manual install
+2. leave blank "Database Admin user name" and "database Admin pass" in manual install
+3. PHP REQUIREMENT LINK : http://whatacart.com/installation
+4. Copy images from "resources\images" from manual install to our package exclude "thumbs" folder
+5. Install with Demo Data 
+6. Download a package using composer as no vendor folder in there in their zip package. (Since 2.0.7)
+composer create-project ushainformatique/whatacart
+7. Keep "tbl_customer" entries as it is because these are random users.
+8. We have disabled this script on AMPPS because getting "internal server error" on accessing any module. i.e no products, category, settings getting created on ampps. (even in manual) 

@@ -1,0 +1,12 @@
+1) Move USING BTREE to work on strict MySQL environments.
+2) Remove DEFINER=`root`@`localhost` from SQL file
+3) When converting preg_replace to soft_preg_replace check the database details properly it should not have test_
+4) PHP REQUIREMENT LINK: /installer/config/system_requirements.php
+5) Release date : https://sourceforge.net/projects/orangehrm/files/stable/
+6) If you getting error "Database connection problem" while installing manually select "127.0.0.1" instead of "localhost". (Since 4.1) https://github.com/orangehrm/orangehrm/issues/221 (Not required since 4.3.1)
+7) Script is asking for resetting of password post first login (even in manual since 4.1). It requires too many files to be included for password strength checking. Hence we have not included as it is allowing in manual installation also.(NA)
+8) We didn't exclude the installer folder in 4.9 as it needs files from installer folder to run. If we remove it, it causes issue.
+9) We explicitly put quotes around databases.yaml file even though they are not there in manual installation, as internal server error occurs when there are special characters in password.
+10) We have disabled the upgrade because no upgrade documentation provided by the vendor. We have created an issue on Github and vendors are working on documentaions on upgrading from 4.x to 5.x https://github.com/orangehrm/orangehrm/issues/1373
+11) If by the next version they do not update the docs we can try giving upgrade from 5.x to 5.x (Need to check this when 5.2 releases.)
+12) Uncheck the register option while creating user in manual installation.
